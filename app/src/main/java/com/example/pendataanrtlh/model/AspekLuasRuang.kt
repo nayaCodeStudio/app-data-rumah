@@ -4,10 +4,10 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 /**
- ** Written by @JoeFachrizal 25/08/2020 10.25
+ ** Written by @JoeFachrizal 23/08/2020 21.51
  **/
 @Parcelize
-class LuasDanRuang (
+class AspekLuasRuang(
     var luasRumah: String? = null,
     var jumPenghuni: String? = null,
-):Parcelable
+) : Parcelable

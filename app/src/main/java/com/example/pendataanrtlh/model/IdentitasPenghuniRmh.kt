@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
  ** Written by @JoeFachrizal 23/08/2020 21.34
  **/
 @Parcelize
-data class IdentitasRumah(
+data class IdentitasPenghuniRmh(
     var noUrutRumah: String? = null,
     var nmLengkap: String? = null,
     var tahun: String? = null,
@@ -17,11 +17,12 @@ data class IdentitasRumah(
     var noNIK: String? = null,
     var jumKK: String? = null,
     var pekerjaan: String? = null,
-    var penghslDpngluarnPerbln: String? = null,
-    var stsKepemilikan: String? = null,
+    var penghslanPengluarn: String? = null,
+    var stsKepemilikanTnh: String? = null,
+    var stsKepemilikanRmh: String? = null,
     var astRumahDitmpatLain: String? = null,
     var astTanahDitmpatLain: String? = null,
-    var prnhMendapatkanBantPermhan: String? = null,
-    var jnsKawasanLokRmhDitmpti: String? = null,
+    var bantuan: String? = null,
+    var jnsKawasan: String? = null,
 ) : Parcelable
 
