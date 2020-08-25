@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "794200253483",
+    "firebase_url": "https://kuisoneranri.firebaseio.com",
+    "project_id": "kuisoneranri",
+    "storage_bucket": "kuisoneranri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794200253483:android:d794721e80d48da055366e",
+        "android_client_info": {
+          "package_name": "com.example.pendataanrtlh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794200253483-agj3p3ilvaglrhjq3jf8cfmi6onok5cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC13_85G9fhkC1b31KAjymwnGhwBvPfVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794200253483-agj3p3ilvaglrhjq3jf8cfmi6onok5cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
