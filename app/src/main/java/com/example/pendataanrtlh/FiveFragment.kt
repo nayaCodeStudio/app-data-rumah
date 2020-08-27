@@ -9,23 +9,27 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class FiveFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        return inflater.inflate(R.layout.fragment_five, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<Button>(R.id.buttonSebelumnya).setOnClickListener {
+            findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)
+        }
+
         view.findViewById<Button>(R.id.buttonLanjut).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_FiveFragment_to_SixFragment)
         }
     }
 }
