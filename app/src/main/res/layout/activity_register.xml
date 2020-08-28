@@ -1,219 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgKuningMuda"
+    android:fillViewport="true"
     tools:context=".RegisterActivity">
 
-    <View
-        android:id="@+id/viewSatu"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="180dp"
-        android:background="@drawable/side_ovalbuttom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:background="@color/bgKuningMuda">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/ic_user"
-        app:civ_border_color="@android:color/white"
-        app:civ_border_width="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Halaman Register"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/viewSatu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/philosopher_bold"
-        android:text="Halaman Register"
-        android:textColor="@android:color/white"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/circleImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
-        android:scrollbars="vertical">
+        <View
+            android:id="@+id/viewSatu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/side_ovalbuttom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <LinearLayout
             android:id="@+id/activity_input"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingStart="@dimen/separator_size_16"
+            android:paddingEnd="@dimen/separator_size_16"
+            app:layout_constraintTop_toTopOf="@+id/viewSatu">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/EditTextCustom"
+                app:counterEnabled="true"
+                app:counterMaxLength="16">
 
-                <EditText
-                    android:id="@+id/textUsername"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:hint="Username"
-                    android:inputType="text"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
-
-                <EditText
-                    android:id="@+id/textPassword"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
-
-                <EditText
-                    android:id="@+id/textPasswordConfirm"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:hint="Konfirmasi Password"
-                    android:inputType="textPassword"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/textFullName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:hint="Nama Lengkap"
-                    android:inputType="text"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textNomorKTP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
                     android:hint="No. KTP"
-                    android:inputType="text"
+                    android:inputType="number"
+                    android:maxLength="16"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/EditTextCustom"
+                app:endIconMode="password_toggle">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Nama Lengkap"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textNomorHP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
                     android:hint="No. HP Aktif"
-                    android:inputType="text"
+                    android:inputType="phone"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/philosopher_bold"
                     android:hint="Alamat Tempat Tinggal"
                     android:inputType="text"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_13" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
+                style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/bg_button"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="55dp"
+                android:layout_margin="@dimen/separator_size_4"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
                 android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/bgBiruLangit" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Sudah punya akun? "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/btnLogin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Klik disini!"
-                    android:textAllCaps="false"
-                    android:textColor="@color/bgBiruLangit"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                android:textSize="@dimen/text_size_16"
+                app:cornerRadius="@dimen/separator_size_10"
+                app:rippleColor="@android:color/white" />
         </LinearLayout>
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -2,9 +2,10 @@
 <resources>
     <color name="colorPrimary">#FFBF01</color>
     <color name="colorPrimaryDark">#FFBF01</color>
-    <color name="colorAccent">@android:color/black</color>
+    <color name="colorAccent">@android:color/secondary_text_light</color>
 
     <color name="bgKuningTua">#FF9800</color>
     <color name="bgKuningMuda">#FFBF01</color>
-    <color name="bgBiruLangit">#0597F2</color>
+    <color name="bgBiruLangit">#3C3F41</color>
+    <color name="textColor">#272727</color>
 </resources>
