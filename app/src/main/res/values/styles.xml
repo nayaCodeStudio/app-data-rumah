@@ -31,21 +31,29 @@
     <style name="MyTemaH1">
         <item name="android:textColor">@color/textColor</item>
         <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="MyTemaH2">
         <item name="android:textColor">@color/textColor</item>
         <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="MyTemaH3">
         <item name="android:textColor">@color/textColor</item>
         <item name="fontFamily">@font/poppins</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="MyTemaH4">
         <item name="android:textColor">@color/textColor</item>
         <item name="fontFamily">@font/poppins_light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="EditTextCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

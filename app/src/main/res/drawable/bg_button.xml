@@ -24,7 +24,7 @@
 
     <gradient
         android:angle="45"
-        android:endColor="@color/bgBiruLangit"
-        android:startColor="@color/bgBiruLangit"
+        android:endColor="@color/bgBiru"
+        android:startColor="@color/bgBiru"
         android:type="linear" />
 </shape>
