@@ -29,7 +29,7 @@ class PageTwoFragment : Fragment() {
 //            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
 //        }
 
-        view.findViewById<Button>(R.id.btnNextTwo).setOnClickListener {
+        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
         }
     }

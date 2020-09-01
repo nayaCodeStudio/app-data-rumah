@@ -4,27 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgKuningMuda"
+    android:padding="24dp"
     tools:context=".addsurvey.PageSevenFragment">
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/side_ovalbuttom"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/philosopher_bold"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Terimakasih telah melakukan survey :)"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
+        style="@style/MyTemaH2"
+        android:text="@string/title_succes_survey"
+        android:textAlignment="center"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +22,7 @@
         android:layout_width="300dp"
         android:layout_height="180dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:lottie_autoPlay="true"
@@ -43,26 +31,27 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/philosopher_bold"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Tanggapan Anda telah kami rekam dan berhasil masuk database."
-        android:textColor="@android:color/black"
-        android:textSize="25sp"
+        style="@style/MyTemaH3"
+        android:text="@string/subtitle_success_survey"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/separator_size_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationViewSatu" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMainMenu"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_button_right"
-        android:fontFamily="@font/philosopher_bold"
-        android:text="Kembali ke Menu Utama"
+        style="@style/MyTemaH2"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/separator_size_10"
+        android:letterSpacing="0"
+        android:text="@string/title_back_to_menu"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/bgBiru"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />

@@ -22,6 +22,11 @@
     <string name="title_page_off_4">4 dari 6 Halaman</string>
     <string name="title_page_off_5">5 dari 6 Halaman</string>
     <string name="title_page_off_6">6 dari 6 Halaman</string>
+    <string name="kurang_dari"><![CDATA[< 10 Meter]]></string>
+    <string name="lebih_dari"><![CDATA[> 10 Meter]]></string>
+    <string name="title_succes_survey">Terimakasih telah melakukan survey.</string>
+    <string name="subtitle_success_survey">Tanggapan Anda telah kami rekam dan berhasil masuk database.</string>
+    <string name="title_back_to_menu">Kembali ke Menu Utama</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>---Pilih---</item>

@@ -25,11 +25,11 @@ class PageFiveFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttonSebelumnya).setOnClickListener {
+        view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)
         }
 
-        view.findViewById<Button>(R.id.buttonLanjut).setOnClickListener {
+        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_SixFragment)
         }
     }

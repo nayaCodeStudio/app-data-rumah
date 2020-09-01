@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".addsurvey.PageSixFragment">
 
     <androidx.constraintlayout.widget.Guideline
@@ -94,135 +94,136 @@
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_page1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:id="@+id/content"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="5dp"
-            android:orientation="vertical"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            app:layout_constraintBottom_toTopOf="@+id/btnNextTwo"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintVertical_chainStyle="spread_inside">
-
-            <TextView
-                style="@style/MyTemaH2"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="@dimen/separator_size_10"
-                android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
-                android:textAlignment="center"
-                android:textSize="@dimen/text_size_16" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="1. Material Atap Terluas" />
-
-            <Spinner
-                android:id="@+id/listMaterialAtap"
+            <LinearLayout
+                android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_height="40dp"
-                android:entries="@array/list_material_atap" />
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="2. Kondisi Atap" />
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnNext"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <Spinner
-                android:id="@+id/listKondisiAtap"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:entries="@array/list_kondisi_atap" />
+                <TextView
+                    style="@style/MyTemaH2"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="3. Material Dinding Terluas" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="1. Material Atap Terluas" />
 
-            <Spinner
-                android:id="@+id/listMaterialDinding"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:entries="@array/list_material_dinding" />
+                <Spinner
+                    android:id="@+id/listMaterialAtap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_material_atap" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="4. Kondisi Dinding" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="2. Kondisi Atap" />
 
-            <Spinner
-                android:id="@+id/listKondisiDinding"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:entries="@array/list_kondisi_dinding"/>
+                <Spinner
+                    android:id="@+id/listKondisiAtap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_kondisi_atap" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="5. Material Lantai Terluas" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="3. Material Dinding Terluas" />
 
-            <Spinner
-                android:id="@+id/listMaterialLantai"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:entries="@array/list_material_lantai" />
+                <Spinner
+                    android:id="@+id/listMaterialDinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_material_dinding" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:text="6. Kondisi Lantai" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="4. Kondisi Dinding" />
 
-            <Spinner
-                android:id="@+id/listKondisiLantai"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:entries="@array/list_kondisi_lantai"/>
+                <Spinner
+                    android:id="@+id/listKondisiDinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_kondisi_dinding" />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="5. Material Lantai Terluas" />
+
+                <Spinner
+                    android:id="@+id/listMaterialLantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_material_lantai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="6. Kondisi Lantai" />
+
+                <Spinner
+                    android:id="@+id/listKondisiLantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_kondisi_lantai" />
+
+            </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnNextTwo"
+                android:id="@+id/btnNext"
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -232,7 +233,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selanjutnya"
+                android:text="Selesai"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -259,9 +260,9 @@
                 android:textSize="@dimen/text_size_14"
                 android:textStyle="bold"
                 app:backgroundTint="@color/bgBiru"
-                app:layout_constraintBottom_toBottomOf="@+id/btnNextTwo"
+                app:layout_constraintBottom_toBottomOf="@+id/btnNext"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btnNextTwo"
+                app:layout_constraintTop_toTopOf="@+id/btnNext"
                 app:rippleColor="@android:color/white" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -16,8 +16,8 @@ import com.example.pendataanrtlh.R
 class PageSixFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page_six, container, false)
@@ -26,13 +26,13 @@ class PageSixFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttonSebelumnya).setOnClickListener {
+        view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_FiveFragment)
         }
 
-        view.findViewById<Button>(R.id.buttonSubmit).setOnClickListener {
+        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
-            Toast.makeText(view.context,"Data berhasil disubmit!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(view.context, "Data berhasil disubmit!", Toast.LENGTH_SHORT).show()
         }
     }
 }
