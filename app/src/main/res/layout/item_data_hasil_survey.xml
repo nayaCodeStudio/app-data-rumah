@@ -22,8 +22,9 @@
 
             <ImageView
                 android:id="@+id/fotoRumah"
-                android:layout_width="170dp"
+                android:layout_width="160dp"
                 android:layout_height="126dp"
+                android:scaleType="fitXY"
                 android:layout_marginStart="@dimen/separator_size_16"
                 android:layout_marginTop="@dimen/separator_size_16"
                 android:layout_marginBottom="@dimen/separator_size_16"
