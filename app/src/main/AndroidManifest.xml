@@ -4,15 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo_rtlh"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo_rtlh"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".surveyresult.DetailHasilSurveyActivity"/>
+        <activity android:name=".surveyresult.HasilSurveyActivity" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".addsurvey.AddSurveyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

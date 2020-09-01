@@ -9,4 +9,180 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="imageview">imageView</string>
+    <string name="msg_error_empty">Wajib Diisi</string>
+    <string name="title_des_kel">Nama Desa / Kelurahan</string>
+    <string name="title_kec">Nama Kecamatan</string>
+    <string name="title_KotKab">Nama Kabupaten/Kota</string>
+    <string name="title_prov">Nama Provinsi</string>
+    <string name="title_lokasi_survey">Lokasi Tempat yang Disurvey</string>
+    <string name="title_page_off_1">1 dari 6 Halaman</string>
+    <string name="title_page_off_2">2 dari 6 Halaman</string>
+    <string name="title_page_off_3">3 dari 6 Halaman</string>
+    <string name="title_page_off_4">4 dari 6 Halaman</string>
+    <string name="title_page_off_5">5 dari 6 Halaman</string>
+    <string name="title_page_off_6">6 dari 6 Halaman</string>
+
+    <string-array name="list_pendidikan_terakhir">
+        <item>---Pilih---</item>
+        <item>Tidak Punya Ijazah</item>
+        <item>SD/Sederajat</item>
+        <item>SMP/Sederajat</item>
+        <item>SMA/Sederajat</item>
+        <item>D1/D2/D3</item>
+        <item>D4/S1</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_pekerjaan_utama">
+        <item>---Pilih---</item>
+        <item>PNS</item>
+        <item>TNI/POLRI</item>
+        <item>BUMN/D</item>
+        <item>Pensiunan</item>
+        <item>Pramuwisma</item>
+        <item>Ojek/Sopir</item>
+        <item>Honorer</item>
+        <item>Karyawan</item>
+        <item>Tukang/Montir</item>
+        <item>Petani</item>
+        <item>Wirausaha</item>
+        <item>Lansia/IRT</item>
+        <item>Nelayan</item>
+        <item>Buruh Harian</item>
+        <item>Tidak Bekerja</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_penghasilan">
+        <item>---Pilih---</item>
+        <item>Kurang dari 1,2 juta</item>
+        <item>1,9 - 2,1 juta</item>
+        <item>2,2 - 2,6 juta</item>
+        <item>2,7 - 3,1 juta</item>
+        <item>3,2 - 3,6 juta</item>
+        <item>3,7 - 4,2 juta</item>
+        <item>Lebih dari 4,2 juta</item>
+    </string-array>
+
+    <string-array name="list_status_tanah">
+        <item>---Pilih---</item>
+        <item>Milik Sendiri</item>
+        <item>Bukan Milik Sendiri</item>
+        <item>Tanah Negara</item>
+    </string-array>
+
+    <string-array name="list_status_rumah">
+        <item>---Pilih---</item>
+        <item>Milik Sendiri</item>
+        <item>Kontrak/Sewa</item>
+        <item>Bukan Milik Sendiri</item>
+    </string-array>
+
+    <string-array name="list_bantuan_perumahan">
+        <item>---Pilih---</item>
+        <item>Ya, Lebih dari 5 Tahun yang Lalu</item>
+        <item>Ya, Kurang dari 5 Tahun yang Lalu</item>
+        <item>Belum Pernah</item>
+    </string-array>
+
+    <string-array name="list_kondisi_kolom">
+        <item>---Pilih---</item>
+        <item>Kondisi Baik</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Sedang/Sebagian</item>
+        <item>Rusak Berat/Seluruhnya</item>
+    </string-array>
+
+    <string-array name="list_kondisi_konstruksi">
+        <item>---Pilih---</item>
+        <item>Kondisi Baik</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Sedang/Sebagian</item>
+        <item>Rusak Berat/Seluruhnya</item>
+    </string-array>
+
+    <string-array name="list_kepemilikan_kamar_mandi">
+        <item>---Pilih---</item>
+        <item>Sendiri</item>
+        <item>Bersama/MCK Komunal</item>
+        <item>Tidak Ada</item>
+    </string-array>
+
+    <string-array name="list_sumber_air_minum">
+        <item>---Pilih---</item>
+        <item>PDAM</item>
+        <item>Air Kemasan/Isi Ulang</item>
+        <item>Sumur</item>
+        <item>Mata Air</item>
+        <item>air Hujan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_sumber_listrik">
+        <item>---Pilih---</item>
+        <item>PLN dengan Meteran</item>
+        <item>PLN tanpa Meteran</item>
+        <item>Listrik Non PLN</item>
+        <item>Bukan Listrik</item>
+    </string-array>
+
+    <string-array name="list_material_atap">
+        <item>---Pilih---</item>
+        <item>Genteng</item>
+        <item>Asbes</item>
+        <item>Seng</item>
+        <item>Jerami</item>
+        <item>Ijuk</item>
+        <item>Daun-daunan</item>
+        <item>Rumbia</item>
+    </string-array>
+
+    <string-array name="list_kondisi_atap">
+        <item>---Pilih---</item>
+        <item>Baik</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Sedang/Sebagian</item>
+        <item>Rusak Berat/Seluruhnya</item>
+    </string-array>
+
+    <string-array name="list_material_dinding">
+        <item>---Pilih---</item>
+        <item>Tembok</item>
+        <item>GRC (Asbes)</item>
+        <item>Kayu/Papan</item>
+        <item>Plesteran Anyaman Bambu</item>
+        <item>Anyaman Bambu</item>
+        <item>Bambu</item>
+        <item>Rumbia</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_kondisi_dinding">
+        <item>---Pilih---</item>
+        <item>Baik</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Sedang/Sebagian</item>
+        <item>Rusak Berat/Seluruhnya</item>
+    </string-array>
+
+    <string-array name="list_material_lantai">
+        <item>---Pilih---</item>
+        <item>Marmer/Granit</item>
+        <item>Keramik</item>
+        <item>Ubin/Tegel</item>
+        <item>Plesteran</item>
+        <item>Kayu</item>
+        <item>Bambu</item>
+        <item>Tanah</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_kondisi_lantai">
+        <item>---Pilih---</item>
+        <item>Baik</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Sedang/Sebagian</item>
+        <item>Rusak Berat/Seluruhnya</item>
+    </string-array>
 </resources>

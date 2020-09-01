@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addsurvey.PageTwoFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/MyTemaH3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_page_off_2"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_11"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <View
+        android:id="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10" />
+
+    <View
+        android:id="@+id/view_page2"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page3"
+        app:layout_constraintStart_toEndOf="@+id/view_page1"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page3"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page4"
+        app:layout_constraintStart_toEndOf="@+id/view_page2"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page4"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page5"
+        app:layout_constraintStart_toEndOf="@+id/view_page3"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page5"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page6"
+        app:layout_constraintStart_toEndOf="@+id/view_page4"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page6"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_page5"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <ScrollView
+        android:id="@+id/isiContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_page1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnNextTwo"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/MyTemaH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="Identitas Penghuni Rumah"
+                    android:textSize="@dimen/text_size_16" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textNoRumah"
+                        style="@style/MyTemaH3"
+                        android:layout_height="50dp"
+                        android:hint="Nomor Urut Rumah"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textNmLengkap"
+                        style="@style/MyTemaH3"
+                        android:layout_height="50dp"
+                        android:hint="Nama Lengkap"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textUsia"
+                        style="@style/MyTemaH3"
+                        android:layout_height="50dp"
+                        android:hint="Usia (Tahun)"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Pendidikan Terakhir"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listPendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_pendidikan_terakhir" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Jenis Kelamin"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_pria"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Pria"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_wanita"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wanita"
+                        android:textAlignment="center" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textAlmtLengkap"
+                        style="@style/MyTemaH3"
+                        android:hint="Alamat Lengkap"
+                        android:inputType="textMultiLine"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Foto Kondisi Atap Rumah Yang Disurvey"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ambilFotoAtap"
+                    style="@style/MyTemaH2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:letterSpacing="0"
+                    android:text="Unggah Foto Atap"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:rippleColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/fotoAtap"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/no_image"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Foto Kondisi Dinding Rumah Yang Disurvey"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Button
+                    android:id="@+id/ambilFotoDinding"
+                    style="@style/MyTemaH2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:letterSpacing="0"
+                    android:text="Unggah Foto Dinding"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:rippleColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/fotoDinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/no_image"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Foto Kondisi Lantai Rumah Yang Disurvey"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Button
+                    android:id="@+id/ambilFotoLantai"
+                    style="@style/MyTemaH2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:letterSpacing="0"
+                    android:text="Unggah Foto Lantai"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:rippleColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/fotoLantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/no_image"
+                    android:visibility="gone" />
+
+                <!--            <com.google.android.material.textfield.TextInputLayout-->
+                <!--                style="@style/EditTextCustom"-->
+                <!--                android:layout_marginBottom="5dp">-->
+
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/textKoordinat"-->
+                <!--                    style="@style/MyTemaH3"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:hint="Titik Koordinat Lokasi Rumah"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:textSize="@dimen/text_size_14" />-->
+                <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textNoKTP"
+                        style="@style/MyTemaH3"
+                        android:layout_height="50dp"
+                        android:hint="Nomor KTP (NIK)"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textJumKK"
+                        style="@style/MyTemaH3"
+                        android:layout_height="50dp"
+                        android:hint="Jumlah KK dalam 1 Rumah"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Pekerjaan Utama"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listPekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_pekerjaan_utama" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Penghasilan atau Pengeluaran Perbulan"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listPenghasilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_penghasilan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Status Kepemilikan Tanah"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listStatusTanah"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_status_tanah" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Status Kepemilikan Rumah"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listStatusRumah"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_status_rumah" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Aset Rumah Ditempat Lain"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/rgAsetRumah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/rbAdaRumah"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ada"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/rbTidakAdaRumah"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Ada"
+                        android:textAlignment="center" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Aset Tanah Ditempat Lain"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/rgAsetTanah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/rbAdaTanah"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ada"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/rbTidakAdaTanah"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Ada"
+                        android:textAlignment="center" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Pernah Mendapatkan Bantuan Perumahan"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listBantuanPerumahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_bantuan_perumahan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Jenis Kawasan Lokasi Rumah yang Ditempati"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbRawanAir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Rawan Air"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbKEK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="KEK"
+
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbPerbatasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Perbatasan"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbPulauKecil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Pulau-pulau Kecil/Terluar"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbDaerahTertinggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Daerah Tertinggal dan Terpencil"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbKumuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Kumuh"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbKSPN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="KSPN"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbPesisir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Pesisir/Nelayan"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckBox
+                    android:id="@+id/cbTransmigrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:buttonTint="@color/bgBiru"
+                    android:text="Transmigrasi"
+                    android:textSize="@dimen/text_size_14" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNextTwo"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_right"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Selanjutnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:rippleColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrev"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_left"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Sebelumnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:rippleColor="@android:color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

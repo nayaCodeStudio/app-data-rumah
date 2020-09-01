@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#FFBF01</color>
+    <color name="colorPrimaryDark">#FFBF01</color>
+    <color name="colorAccent">@android:color/secondary_text_light</color>
+
+    <color name="bgKuningTua">#FFAA00</color>
+    <color name="bgKuningMuda">#FFBF01</color>
+    <color name="bgBiru">#01037C</color>
+    <color name="textColor">#272727</color>
+    <color name="bgOff">#C6C6C6</color>
 </resources>

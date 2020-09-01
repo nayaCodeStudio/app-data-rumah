@@ -9,6 +9,6 @@ data class FormData(
     var nameKec: String? = null,
     var nameKabKot: String? = null,
     var nameProv: String? = null,
+    var image: String? = null,
     var Coordinate: String? = null,
-    var image: String? = null
 ) : Parcelable

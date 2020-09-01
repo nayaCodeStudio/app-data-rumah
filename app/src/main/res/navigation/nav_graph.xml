@@ -7,22 +7,104 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.pendataanrtlh.FirstFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageOneFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_page_one">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.pendataanrtlh.SecondFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageTwoFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_page_two">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageThreeFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_page_three" >
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_FourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageFourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_page_four" >
+
+        <action
+            android:id="@+id/action_FourFragment_to_ThirdFragment"
+            app:destination="@id/thirdFragment" />
+
+        <action
+            android:id="@+id/action_FourFragment_to_FiveFragment"
+            app:destination="@id/fiveFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageFiveFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_page_five" >
+
+        <action
+            android:id="@+id/action_FiveFragment_to_FourFragment"
+            app:destination="@id/fourFragment" />
+
+        <action
+            android:id="@+id/action_FiveFragment_to_SixFragment"
+            app:destination="@id/sixFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sixFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageSixFragment"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_page_six" >
+
+        <action
+            android:id="@+id/action_SixFragment_to_FiveFragment"
+            app:destination="@id/fourFragment" />
+
+        <action
+            android:id="@+id/action_SixFragment_to_SevenFragment"
+            app:destination="@id/sevenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sevenFragment"
+        android:name="com.example.pendataanrtlh.addsurvey.PageSevenFragment"
+        android:label="fragment_seven"
+        tools:layout="@layout/fragment_page_seven" >
+
+        <action
+            android:id="@+id/action_SevenFragment_to_MainMenuActivity"
+            app:destination="@id/mainMenuActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainMenuActivity"
+        android:name="com.example.pendataanrtlh.MainMenuActivity"
+        android:label="activity_main_menu"
+        tools:layout="@layout/activity_main_menu" />
 </navigation>
