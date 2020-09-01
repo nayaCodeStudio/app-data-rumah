@@ -3,217 +3,336 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgKuningMuda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".addsurvey.PageFourFragment">
 
-    <View
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        app:layout_constraintGuide_percent="0.02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/MyTemaH2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/side_ovalbuttom" />
+        android:layout_height="wrap_content"
+        android:text="@string/title_page_off_4"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        app:layout_constraintGuide_percent="0.06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <View
+        android:id="@+id/view_page1"
+        app:layout_constraintEnd_toStartOf="@+id/view_page2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on" />
+
+    <View
+        android:id="@+id/view_page2"
+        app:layout_constraintEnd_toStartOf="@+id/view_page3"
+        app:layout_constraintStart_toEndOf="@+id/view_page1"
+        app:layout_constraintTop_toTopOf="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on" />
+
+    <View
+        android:id="@+id/view_page3"
+        app:layout_constraintEnd_toStartOf="@+id/view_page4"
+        app:layout_constraintStart_toEndOf="@+id/view_page2"
+        app:layout_constraintTop_toTopOf="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on" />
+
+    <View
+        android:id="@+id/view_page4"
+        app:layout_constraintEnd_toStartOf="@+id/view_page5"
+        app:layout_constraintStart_toEndOf="@+id/view_page3"
+        app:layout_constraintTop_toTopOf="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off" />
+
+    <View
+        android:id="@+id/view_page5"
+        app:layout_constraintEnd_toStartOf="@+id/view_page6"
+        app:layout_constraintStart_toEndOf="@+id/view_page4"
+        app:layout_constraintTop_toTopOf="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off" />
+
+    <View
+        android:id="@+id/view_page6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_page5"
+        app:layout_constraintTop_toTopOf="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off" />
 
     <ScrollView
+        android:id="@+id/isiContent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_page1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="37dp"
-        android:padding="20dp">
+        android:layout_height="0dp"
+        android:fillViewport="true">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/philosopher_bold"
-                android:gravity="center"
-                android:text="Kondisi Fisik Rumah Pada Aspek Kesehatan"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="1. Jendela/Lubang Cahaya"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <RadioGroup
-                android:id="@+id/rgJendela"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rbAdaJendela"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <RadioButton
-                    android:id="@+id/rbTidakAdaJendela"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Tidak Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="2. Ventilasi"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <RadioGroup
-                android:id="@+id/rgVentilasi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rbAdaVentilasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <RadioButton
-                    android:id="@+id/rbTidakAdaVentilasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Tidak Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="3. Kepemilikan Kamar Mandi dan Jamban"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/listKepemilikanKamarMandi"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:entries="@array/list_kepemilikan_kamar_mandi" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="4. Jarak Sumber Air Minum ke TPA Tinja"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <RadioGroup
-                android:id="@+id/rgSumberAir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rbLebih"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Lebih dari 10 Meter"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <RadioButton
-                    android:id="@+id/rbkurang"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Kurang dari 10 Meter"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="5. Sumber Air Minum"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/listSumberAirMinum"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:entries="@array/list_sumber_air_minum" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="6. Sumber Listrik"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/listSumberListik"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:entries="@array/list_sumber_listrik" />
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/content"
+                app:layout_constraintBottom_toTopOf="@+id/btnNextTwo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="spread_inside"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
 
-                <Button
-                    android:id="@+id/buttonSebelumnya"
-                    android:layout_width="120dp"
+                <TextView
+                    style="@style/MyTemaH2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="50dp"
-                    android:background="@drawable/bg_button_right"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Sebelumnya"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="Kondisi Fisik Rumah Pada Aspek Kesehatan"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
 
-                <Button
-                    android:id="@+id/buttonLanjut"
-                    android:layout_width="120dp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:background="@drawable/bg_button_right"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Lanjut"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Jendela/Lubang Cahaya"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupJendela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_ada_jendela"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ada"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_Tidak_ada_jendela"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Ada"
+                        android:textAlignment="center" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Ventilasi"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupVentilasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_ada_ventilasi"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ada"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_Tidak_ada_ventilasi"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Ada"
+                        android:textAlignment="center" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Kepemilikan Kamar Mandi dan Jamban"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listKepemilikanKamarMandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_kepemilikan_kamar_mandi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Jarak Sumber Air Minum ke TPA Tinja"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupJarak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_kurang"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="< 10 Meter>"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_lebih"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 10 Meter"
+                        android:textAlignment="center" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Sumber Air Minum"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listSumberAirMinum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_sumber_air_minum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Sumber Listrik"
+                    android:textSize="@dimen/text_size_14" />
+
+                <Spinner
+                    android:id="@+id/listSumberListik"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/list_sumber_listrik" />
             </LinearLayout>
-        </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNextTwo"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_right"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Selanjutnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:rippleColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrev"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_left"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Sebelumnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:rippleColor="@android:color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
