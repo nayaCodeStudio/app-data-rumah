@@ -3,54 +3,139 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgKuningMuda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".addsurvey.PageSixFragment">
 
-    <View
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/MyTemaH2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/side_ovalbuttom" />
+        android:layout_height="wrap_content"
+        android:text="@string/title_page_off_6"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <View
+        android:id="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10" />
+
+    <View
+        android:id="@+id/view_page2"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page3"
+        app:layout_constraintStart_toEndOf="@+id/view_page1"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page3"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page4"
+        app:layout_constraintStart_toEndOf="@+id/view_page2"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page4"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page5"
+        app:layout_constraintStart_toEndOf="@+id/view_page3"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page5"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page6"
+        app:layout_constraintStart_toEndOf="@+id/view_page4"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page6"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_page5"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
 
     <ScrollView
+        android:id="@+id/isiContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="37dp"
-        android:padding="20dp">
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_page1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnNextTwo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_chainStyle="spread_inside">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTemaH2"
                 android:layout_gravity="center"
-                android:fontFamily="@font/philosopher_bold"
-                android:gravity="center"
-                android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
                 android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="@dimen/separator_size_10"
+                android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_16" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="1. Material Atap Terluas"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="1. Material Atap Terluas" />
 
             <Spinner
                 android:id="@+id/listMaterialAtap"
                 android:layout_width="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_height="40dp"
                 android:entries="@array/list_material_atap" />
 
@@ -58,13 +143,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="2. Kondisi Atap"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="2. Kondisi Atap" />
 
             <Spinner
                 android:id="@+id/listKondisiAtap"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/list_kondisi_atap" />
@@ -73,93 +159,110 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="3. Material Dinding Terluas"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="3. Material Dinding Terluas" />
 
             <Spinner
                 android:id="@+id/listMaterialDinding"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:entries="@array/list_material_dinding" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="4. Kondisi Dinding"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="4. Kondisi Dinding" />
 
             <Spinner
                 android:id="@+id/listKondisiDinding"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:entries="@array/list_kondisi_dinding"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="5. Material Lantai Terluas"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="5. Material Lantai Terluas" />
 
             <Spinner
                 android:id="@+id/listMaterialLantai"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:entries="@array/list_material_lantai" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/philosopher_bold"
-                android:text="6. Kondisi Lantai"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="6. Kondisi Lantai" />
 
             <Spinner
                 android:id="@+id/listKondisiLantai"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:entries="@array/list_kondisi_lantai"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/buttonSebelumnya"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="50dp"
-                    android:background="@drawable/bg_button_right"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Sebelumnya"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/buttonSubmit"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:background="@drawable/bg_button_right"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Submit"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
-            </LinearLayout>
         </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNextTwo"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_right"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Selanjutnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:rippleColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrev"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_left"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0"
+                android:text="Sebelumnya"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:backgroundTint="@color/bgBiru"
+                app:layout_constraintBottom_toBottomOf="@+id/btnNextTwo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnNextTwo"
+                app:rippleColor="@android:color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

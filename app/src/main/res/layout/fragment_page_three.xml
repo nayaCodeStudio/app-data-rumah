@@ -115,10 +115,10 @@
 
                 <TextView
                     style="@style/MyTemaH2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_10"
                     android:text="Kondisi Fisik Rumah Pada Aspek Keselamatan"
                     android:textAlignment="center"
@@ -127,9 +127,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Pondasi"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -165,6 +166,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Kondisi Kolom dan Balok"
                     android:textSize="@dimen/text_size_14" />
@@ -181,6 +184,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Kondisi Konstruksi Atap"
                     android:textSize="@dimen/text_size_14" />
