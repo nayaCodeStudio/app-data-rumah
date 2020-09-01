@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/MyTemaH1"
+            style="@style/MyTemaH2"
             android:gravity="center"
             android:text="Pendataan Rumah Tidak Layak Huni"
             android:textSize="@dimen/text_size_13" />
@@ -54,277 +54,265 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:padding="15dp"
+                android:background="@drawable/side_ovalmid"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Nama Surveyor : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/side_ovalisi"
+                    android:gravity="center"
+                    android:text="Identitas Surveyor"
+                    style="@style/MyTemaH1"
+                    android:textSize="@dimen/text_size_16"/>
 
-                <TextView
-                    android:id="@+id/namaSurveyor"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Surveyor : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/namaSurveyor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/emailSurveyor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. HP : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/nomorHPSurveyor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. KTP : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/nomorKTPSurveyor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/alamatSurveyor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Email : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/emailSurveyor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="No. HP : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/nomorHPSurveyor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="No. KTP : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/nomorKTPSurveyor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Alamat : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/alamatSurveyor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/separator_size_10"
+                android:background="@drawable/side_ovalmid"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/side_ovalisi"
+                    android:gravity="center"
+                    android:text="Lokasi Tempat yang Disurvey"
+                    style="@style/MyTemaH1"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Nama Desa/Kelurahan : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/namaDesa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Nama Kecamatan : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/namaKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. Nama Kabupaten/Kota : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/namaKabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Nama Provinsi : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/namaProvinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Tanggal/Waktu Survey Tempat : "
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/waktuSurvey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:background="@drawable/side_ovalmid"
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
-                android:gravity="center"
-                android:text="Lokasi Tempat yang Disurvey"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="1. Nama Desa/Kelurahan : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/namaDesa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="2. Nama Kecamatan : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/namaKecamatan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="3. Nama Kabupaten/Kota : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/namaKabupaten"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="4. Nama Provinsi : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/namaProvinsi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="5. Tanggal/Waktu Survey Tempat : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/waktuSurvey"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="32dp"
+                android:background="@drawable/side_ovalisi"
                 android:gravity="center"
                 android:text="Identitas Penghuni Rumah"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
+                style="@style/MyTemaH1"
+                android:textSize="@dimen/text_size_16"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -335,19 +323,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="1. Nomor Urut Rumah : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/nomorRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -358,19 +344,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="2. Nama Lengkap : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
 
                 <TextView
                     android:id="@+id/namaLengkap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -381,19 +365,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="3. Usia (Tahun) : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/usia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -404,19 +386,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="4. Pendidikan Terakhir : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/pendidikanTerakhir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -427,19 +407,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="5. Jenis Kelamin : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jenisKelamin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -450,28 +428,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="6. Alamat Lengkap : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/alamatLengkap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
                 android:text="7. Foto Kondisi Atap Rumah Yang Disurvey : "
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                style="@style/MyTemaH3"
+                android:textSize="@dimen/text_size_12"/>
 
             <ImageView
                 android:id="@+id/fotoAtap"
@@ -482,10 +457,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
                 android:text="8. Foto Kondisi Dinding Rumah Yang Disurvey : "
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                style="@style/MyTemaH3"
+                android:textSize="@dimen/text_size_12"/>
 
             <ImageView
                 android:id="@+id/fotoDinding"
@@ -496,10 +470,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
                 android:text="9. Foto Kondisi Lantai Rumah Yang Disurvey : "
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                style="@style/MyTemaH3"
+                android:textSize="@dimen/text_size_12" />
 
             <ImageView
                 android:id="@+id/fotoLantai"
@@ -515,19 +488,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="10. Ttitik Koordinat Lokasi : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/titikKoordinat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -538,19 +509,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="11. Nomor KTP (NIK) : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/nomorKTP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -561,19 +530,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="12. Jumlah KK dalam 1 Rumah : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jumlahKK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -584,19 +551,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="13. Pekerjaan Utama : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/pekerjaanUtama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -607,19 +572,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="14. Penghasilan atau Pengeluaran Perbulan : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/penghasilanPengeluaran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -630,19 +593,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="15. Status Kepemilikan Tanah : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kepemilikanTanah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -653,19 +614,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="16. Status Kepemilikan Rumah : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kepemilikanRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -676,19 +635,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="17. Aset Rumah Ditempat Lain : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
 
                 <TextView
                     android:id="@+id/asetRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -699,19 +656,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="18. Aset Tanah Ditempat Lain : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/asetTanah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -722,19 +677,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="19. Pernah Mendapatkan Bantuan Perumahan : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/bantuanPerumahan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -745,42 +698,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="20. Jenis Kawasan Lokasi Rumah yang Ditempati : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jenisKawasanRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
+        </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:background="@drawable/side_ovalmid"
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="64dp"
+                android:background="@drawable/side_ovalisi"
                 android:gravity="center"
                 android:text="Kondisi Fisik Rumah Pada Aspek Keselamatan"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
+                style="@style/MyTemaH1"
+                android:textSize="@dimen/text_size_16"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -791,19 +738,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="1. Pondasi : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/pondasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -814,19 +759,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="2. Kondisi Kolom dan Balok : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kondisiKolom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -837,42 +780,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="3. Kondisi Konstruksi Atap : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kondisiKonstruksi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
+        </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:background="@drawable/side_ovalmid"
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="64dp"
+                android:background="@drawable/side_ovalisi"
                 android:gravity="center"
                 android:text="Kondisi Fisik Rumah Pada Aspek Kesehatan"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
+                style="@style/MyTemaH1"
+                android:textSize="@dimen/text_size_16"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -883,19 +820,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="1. Jendela/Lubang Cahaya : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jendela"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
             </LinearLayout>
 
             <LinearLayout
@@ -906,19 +841,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="2. Ventilasi : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/ventilasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -929,19 +862,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="3. Kepemilikan Kamar Mandi dan Jamban : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kepemilikanKamar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -952,19 +883,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="4. Jarak Sumber Air Minum ke TPA Tinja : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jarakSumberAirMinum"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -975,19 +904,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="5. Sumber Air Minum : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/sumberAirMinum"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -998,42 +925,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="6. Sumber Listrik : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/sumberListrik"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
+        </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:background="@drawable/side_ovalmid"
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="64dp"
+                android:background="@drawable/side_ovalisi"
                 android:gravity="center"
-                android:text="Kondisi Fisik Rumah Pada Aspek Kesehatan"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
+                android:text="Aspek Persyaratan Luas dan Kebutuhan Ruang"
+                style="@style/MyTemaH1"
+                android:textSize="@dimen/text_size_16"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1044,19 +965,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="1. Luas Rumah (Meter Kubik) : - "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/luasRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1067,42 +986,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="2. Jumlah Penghuni (Orang) : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/jumlahPenghuni"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
+        </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:background="@drawable/side_ovalmid"
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/philosopher_bold"
+                android:layout_height="64dp"
+                android:background="@drawable/side_ovalisi"
                 android:gravity="center"
                 android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
-
-            <View
-                android:layout_width="300dp"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
+                style="@style/MyTemaH1"
+                android:textSize="@dimen/text_size_16"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1113,19 +1026,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="1. Material Atap Terluas : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/materialAtap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1136,19 +1047,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="2. Kondisi Atap : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
 
                 <TextView
                     android:id="@+id/kondisiAtap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1159,19 +1068,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="3. Material Dinding Terluas : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/materialDinding"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1182,19 +1089,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="4. Kondisi Dinding : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/kondisiDinding"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1205,19 +1110,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="5. Material Lantai Terluas : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
 
                 <TextView
                     android:id="@+id/materialLantai"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1228,20 +1131,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="6. Kondisi Lantai : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12" />
 
                 <TextView
                     android:id="@+id/kondisiLantai"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
                     android:text="-"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    style="@style/MyTemaH3"
+                    android:textSize="@dimen/text_size_12"/>
             </LinearLayout>
+        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
