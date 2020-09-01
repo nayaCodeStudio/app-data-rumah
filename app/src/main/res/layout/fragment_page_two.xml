@@ -120,7 +120,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Identitas Penghuni Rumah"
+                    android:text="@string/title_identitas_penghuni_rumah"
                     android:textSize="@dimen/text_size_16" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -131,7 +131,7 @@
                         android:id="@+id/textNoRumah"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="Nomor Urut Rumah"
+                        android:hint="@string/text_nomor_urut_rumah"
                         android:inputType="text"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -144,7 +144,7 @@
                         android:id="@+id/textNmLengkap"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="Nama Lengkap"
+                        android:hint="@string/nama_lengkap"
                         android:inputType="text"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -157,7 +157,7 @@
                         android:id="@+id/textUsia"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="Usia (Tahun)"
+                        android:hint="@string/text_usia_tahun"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -168,7 +168,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Pendidikan Terakhir"
+                    android:text="@string/text_pendidikan_terakhir"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -185,7 +185,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Jenis Kelamin"
+                    android:text="@string/jenis_kelamin"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -204,7 +204,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Pria"
+                        android:text="@string/text_pria"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -212,7 +212,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Wanita"
+                        android:text="@string/text_wanita"
                         android:textAlignment="center" />
                 </com.google.android.material.chip.ChipGroup>
 
@@ -223,7 +223,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textAlmtLengkap"
                         style="@style/MyTemaH3"
-                        android:hint="Alamat Lengkap"
+                        android:hint="@string/text_alamat_lengkap"
                         android:inputType="textMultiLine"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -234,7 +234,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Foto Kondisi Atap Rumah Yang Disurvey"
+                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.button.MaterialButton
@@ -243,7 +243,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:letterSpacing="0"
-                    android:text="Unggah Foto Atap"
+                    android:text="@string/text_unggah_foto_atap"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -263,7 +263,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Foto Kondisi Dinding Rumah Yang Disurvey"
+                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"
                     android:textSize="@dimen/text_size_14" />
 
                 <Button
@@ -272,7 +272,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:letterSpacing="0"
-                    android:text="Unggah Foto Dinding"
+                    android:text="@string/text_unggah_foto_dinding"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -292,7 +292,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Foto Kondisi Lantai Rumah Yang Disurvey"
+                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"
                     android:textSize="@dimen/text_size_14" />
 
                 <Button
@@ -301,7 +301,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:letterSpacing="0"
-                    android:text="Unggah Foto Lantai"
+                    android:text="@string/text_unggah_foto_lantai"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -336,7 +336,7 @@
                         android:id="@+id/textNoKTP"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="Nomor KTP (NIK)"
+                        android:hint="@string/no_ktp"
                         android:inputType="text"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -349,7 +349,7 @@
                         android:id="@+id/textJumKK"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="Jumlah KK dalam 1 Rumah"
+                        android:hint="@string/text_jumlah_kk_dalam_1_rumah"
                         android:inputType="text"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -360,7 +360,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Pekerjaan Utama"
+                    android:text="@string/text_pekerjaan_utama"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -377,7 +377,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Penghasilan atau Pengeluaran Perbulan"
+                    android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -394,7 +394,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Status Kepemilikan Tanah"
+                    android:text="@string/text_status_kepemilikan_tanah"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -411,7 +411,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Status Kepemilikan Rumah"
+                    android:text="@string/text_status_kepemilikan_rumah"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -428,7 +428,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Aset Rumah Ditempat Lain"
+                    android:text="@string/text_aset_rumah_ditempat_lain"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -447,7 +447,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Ada"
+                        android:text="@string/text_ada"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -455,7 +455,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Tidak Ada"
+                        android:text="@string/text_tidak_ada"
                         android:textAlignment="center" />
 
                 </com.google.android.material.chip.ChipGroup>
@@ -466,7 +466,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Aset Tanah Ditempat Lain"
+                    android:text="@string/text_aset_tanah_ditempat_lain"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -485,7 +485,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Ada"
+                        android:text="@string/text_ada"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -493,7 +493,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Tidak Ada"
+                        android:text="@string/text_tidak_ada"
                         android:textAlignment="center" />
 
                 </com.google.android.material.chip.ChipGroup>
@@ -504,7 +504,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Pernah Mendapatkan Bantuan Perumahan"
+                    android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -521,7 +521,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Jenis Kawasan Lokasi Rumah yang Ditempati"
+                    android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -531,7 +531,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Rawan Air"
+                    android:text="@string/text_rawan_air"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -541,7 +541,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="KEK"
+                    android:text="@string/text_kek"
 
                     android:textSize="@dimen/text_size_14" />
 
@@ -552,7 +552,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Perbatasan"
+                    android:text="@string/text_perbatasan"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -562,7 +562,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Pulau-pulau Kecil/Terluar"
+                    android:text="@string/text_pulau_pulau_kecil_terluar"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -572,7 +572,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Daerah Tertinggal dan Terpencil"
+                    android:text="@string/text_daerah_tertinggal_dan_terpencil"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -582,7 +582,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Kumuh"
+                    android:text="@string/text_kumuh"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -592,7 +592,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="KSPN"
+                    android:text="@string/text_kspn"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -602,7 +602,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Pesisir/Nelayan"
+                    android:text="@string/text_pesisir_nelayan"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
@@ -612,7 +612,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:buttonTint="@color/bgBiru"
-                    android:text="Transmigrasi"
+                    android:text="@string/text_transmigrasi"
                     android:textSize="@dimen/text_size_14" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -636,7 +636,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selanjutnya"
+                android:text="@string/text_selanjutnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -657,7 +657,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Sebelumnya"
+                android:text="@string/text_sebelumnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"

@@ -120,7 +120,7 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_10"
-                    android:text="Kondisi Fisik Rumah Pada Aspek Keselamatan"
+                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_keselamatan"
                     android:textAlignment="center"
                     android:textSize="@dimen/text_size_16" />
 
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/philosopher_bold"
-                    android:text="Pondasi"
+                    android:text="@string/text_pondasi"
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="@dimen/text_size_14" />
@@ -149,7 +149,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Ada"
+                        android:text="@string/text_ada"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -157,7 +157,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Tidak Ada"
+                        android:text="@string/text_tidak_ada"
                         android:textAlignment="center" />
 
                 </com.google.android.material.chip.ChipGroup>
@@ -169,7 +169,7 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/philosopher_bold"
-                    android:text="Kondisi Kolom dan Balok"
+                    android:text="@string/text_kondisi_kolom_dan_balok"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -187,7 +187,7 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/philosopher_bold"
-                    android:text="Kondisi Konstruksi Atap"
+                    android:text="@string/text_kondisi_konstruksi_atap"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -212,7 +212,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selanjutnya"
+                android:text="@string/text_selanjutnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -233,7 +233,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Sebelumnya"
+                android:text="@string/text_sebelumnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"

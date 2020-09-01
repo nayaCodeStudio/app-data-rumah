@@ -121,7 +121,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="@dimen/separator_size_10"
-                    android:text="Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal"
+                    android:text="@string/title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal"
                     android:textAlignment="center"
                     android:textSize="@dimen/text_size_16" />
 
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="1. Material Atap Terluas" />
+                    android:text="@string/text_material_atap_terluas" />
 
                 <Spinner
                     android:id="@+id/listMaterialAtap"
@@ -146,7 +146,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="2. Kondisi Atap" />
+                    android:text="@string/text_kondisi_atap" />
 
                 <Spinner
                     android:id="@+id/listKondisiAtap"
@@ -162,7 +162,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="3. Material Dinding Terluas" />
+                    android:text="@string/text_material_dinding_terluas" />
 
                 <Spinner
                     android:id="@+id/listMaterialDinding"
@@ -178,7 +178,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="4. Kondisi Dinding" />
+                    android:text="@string/text_kondisi_dinding" />
 
                 <Spinner
                     android:id="@+id/listKondisiDinding"
@@ -194,7 +194,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="5. Material Lantai Terluas" />
+                    android:text="@string/text_material_lantai_terluas" />
 
                 <Spinner
                     android:id="@+id/listMaterialLantai"
@@ -210,7 +210,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="6. Kondisi Lantai" />
+                    android:text="@string/text_kondisi_lantai" />
 
                 <Spinner
                     android:id="@+id/listKondisiLantai"
@@ -233,7 +233,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selesai"
+                android:text="@string/text_selesai"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -254,7 +254,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Sebelumnya"
+                android:text="@string/text_sebelumnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"

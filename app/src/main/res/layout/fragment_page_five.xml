@@ -120,7 +120,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="@dimen/separator_size_10"
-                android:text="Aspek Persyaratan Luas dan Kebutuhan Ruang"
+                android:text="@string/title_aspek_persyaratan_luas_dan_kebutuhan_ruang"
                 android:textAlignment="center"
                 android:textSize="@dimen/text_size_16" />
 
@@ -132,7 +132,7 @@
                     android:id="@+id/textLuasRumah"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Luas Rumah (Meter Kubik)"
+                    android:hint="@string/text_luas_rumah_meter_kubik"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -145,7 +145,7 @@
                     android:id="@+id/textJumPenghuni"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Jumlah Penghuni (Orang)"
+                    android:hint="@string/text_jumlah_penghuni_orang"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -163,7 +163,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selanjutnya"
+                android:text="@string/text_selanjutnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -184,7 +184,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Sebelumnya"
+                android:text="@string/text_sebelumnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"

@@ -16,7 +16,7 @@
             android:id="@+id/textView"
             style="@style/MyTemaH2"
             android:layout_margin="@dimen/separator_size_10"
-            android:text="Halaman Register"
+            android:text="@string/title_halaman_register"
             android:textAlignment="center"
             android:textSize="22sp"
             app:layout_constraintBottom_toTopOf="@+id/viewSatu"
@@ -54,7 +54,7 @@
                     android:id="@+id/textNomorKTP"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="No. KTP"
+                    android:hint="@string/no_ktp"
                     android:layout_marginBottom="5dp"
                     android:inputType="number"
                     android:maxLength="16"
@@ -69,7 +69,7 @@
                     android:id="@+id/textPassword"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +80,7 @@
                     android:id="@+id/textFullName"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Nama Lengkap"
+                    android:hint="@string/nama_lengkap"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,7 +91,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:text="Jenis Kelamin"
+                android:text="@string/jenis_kelamin"
                 android:textSize="@dimen/text_size_12" />
 
             <com.google.android.material.chip.ChipGroup
@@ -110,7 +110,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="Pria"
+                    android:text="@string/jk_pria"
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
@@ -118,7 +118,7 @@
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Wanita"
+                    android:text="@string/jk_wanita"
                     android:textAlignment="center" />
 
 
@@ -130,7 +130,7 @@
                     android:id="@+id/textNomorHP"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="No. HP Aktif"
+                    android:hint="@string/no_hp_aktif"
                     android:inputType="phone"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -141,7 +141,7 @@
                     android:id="@+id/textEmail"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Email"
+                    android:hint="@string/text_email"
                     android:inputType="textEmailAddress"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -152,7 +152,7 @@
                     android:id="@+id/textAlamat"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="Alamat Tempat Tinggal"
+                    android:hint="@string/text_alamat_tempat_tinggal"
                     android:inputType="text"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/text_size_13" />

@@ -120,6 +120,19 @@
                 android:layout_marginBottom="5dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textNomorNIK"
+                    style="@style/MyTemaH3"
+                    android:layout_height="50dp"
+                    android:hint="@string/text_nomor_ktp_nik"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textDesKel"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
@@ -200,7 +213,7 @@
         android:focusable="true"
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
-        android:text="Selanjutnya"
+        android:text="@string/text_selanjutnya"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_14"

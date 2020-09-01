@@ -121,7 +121,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="@dimen/separator_size_10"
-                    android:text="Kondisi Fisik Rumah Pada Aspek Kesehatan"
+                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_kesehatan"
                     android:textAlignment="center"
                     android:textSize="@dimen/text_size_16" />
 
@@ -131,7 +131,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Jendela/Lubang Cahaya"
+                    android:text="@string/text_jendela_lubang_cahaya"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -150,7 +150,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Ada"
+                        android:text="@string/text_ada"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -158,7 +158,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Tidak Ada"
+                        android:text="@string/text_tidak_ada"
                         android:textAlignment="center" />
                 </com.google.android.material.chip.ChipGroup>
 
@@ -168,7 +168,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Ventilasi"
+                    android:text="@string/text_ventilasi"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -187,7 +187,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Ada"
+                        android:text="@string/text_ada"
                         android:textAlignment="center" />
 
                     <com.google.android.material.chip.Chip
@@ -195,7 +195,7 @@
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Tidak Ada"
+                        android:text="@string/text_tidak_ada"
                         android:textAlignment="center" />
                 </com.google.android.material.chip.ChipGroup>
 
@@ -205,7 +205,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Kepemilikan Kamar Mandi dan Jamban"
+                    android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -223,7 +223,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Jarak Sumber Air Minum ke TPA Tinja"
+                    android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -260,7 +260,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Sumber Air Minum"
+                    android:text="@string/text_sumber_air_minum"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -278,7 +278,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Sumber Listrik"
+                    android:text="@string/text_sumber_listrik"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -302,7 +302,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Selanjutnya"
+                android:text="@string/text_selanjutnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"
@@ -323,7 +323,7 @@
                 android:focusable="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:letterSpacing="0"
-                android:text="Sebelumnya"
+                android:text="@string/text_sebelumnya"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_14"

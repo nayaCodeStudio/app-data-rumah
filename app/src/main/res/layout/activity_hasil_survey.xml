@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             style="@style/MyTemaH1"
             android:gravity="center"
-            android:text="Hasil Survey "
+            android:text="@string/ttile_hasil_survey"
             android:textSize="18sp" />
 
         <TextView
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             style="@style/MyTemaH1"
             android:gravity="center"
-            android:text="Pendataan Rumah Tidak Layak Huni"
+            android:text="@string/sub_title_pendataan_rumah_tidak_layak_huni"
             android:textSize="@dimen/text_size_13" />
     </LinearLayout>
 
