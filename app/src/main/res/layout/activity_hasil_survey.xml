@@ -11,27 +11,40 @@
         android:id="@+id/viewUtama"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/side_ovalbuttom" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/philosopher_bold"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text="Hasil Survey Pendataan Rumah Tidak Layak Huni"
-        android:textColor="@android:color/white"
-        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/viewUtama"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTemaH1"
+            android:gravity="center"
+            android:text="Hasil Survey "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTemaH1"
+            android:gravity="center"
+            android:text="Pendataan Rumah Tidak Layak Huni"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvListSurvey"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

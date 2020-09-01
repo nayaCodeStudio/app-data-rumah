@@ -8,4 +8,5 @@
     <color name="bgKuningMuda">#FFBF01</color>
     <color name="bgBiru">#01037C</color>
     <color name="textColor">#272727</color>
+    <color name="textColorBlue">#01037C</color>
 </resources>
