@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".addsurvey.PageOneFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/MyTemaH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_page_off_1"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <View
+        android:id="@+id/view_page1"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_on"
+        app:layout_constraintEnd_toStartOf="@+id/view_page2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10" />
+
+    <View
+        android:id="@+id/view_page2"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page3"
+        app:layout_constraintStart_toEndOf="@+id/view_page1"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page3"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page4"
+        app:layout_constraintStart_toEndOf="@+id/view_page2"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page4"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page5"
+        app:layout_constraintStart_toEndOf="@+id/view_page3"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page5"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toStartOf="@+id/view_page6"
+        app:layout_constraintStart_toEndOf="@+id/view_page4"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <View
+        android:id="@+id/view_page6"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_separetor_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_page5"
+        app:layout_constraintTop_toTopOf="@+id/view_page1" />
+
+    <ScrollView
+        android:id="@+id/isiContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/view_page1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                style="@style/MyTemaH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/separator_size_10"
+                android:text="@string/title_lokasi_survey"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textDesKel"
+                    style="@style/MyTemaH3"
+                    android:layout_height="50dp"
+                    android:hint="@string/title_des_kel"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textKec"
+                    style="@style/MyTemaH3"
+                    android:layout_height="50dp"
+                    android:hint="@string/title_kec"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textKotKab"
+                    style="@style/MyTemaH3"
+                    android:layout_height="50dp"
+                    android:hint="@string/title_KotKab"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textProv"
+                    style="@style/MyTemaH3"
+                    android:layout_height="50dp"
+                    android:hint="@string/title_prov"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_right"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0"
+        android:text="Selanjutnya"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        app:backgroundTint="@color/bgBiru"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiContent"
+        app:rippleColor="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

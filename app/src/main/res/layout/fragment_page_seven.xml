@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgKuningMuda"
-    tools:context=".SevenFragment">
+    tools:context=".addsurvey.PageSevenFragment">
 
     <View
         android:id="@+id/view3"
@@ -57,7 +57,7 @@
         android:id="@+id/buttonMainMenu"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_button"
+        android:background="@drawable/bg_button_right"
         android:fontFamily="@font/philosopher_bold"
         android:text="Kembali ke Menu Utama"
         android:textAllCaps="false"

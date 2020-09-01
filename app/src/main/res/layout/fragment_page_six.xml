@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgKuningMuda"
-    tools:context=".SixFragment">
+    tools:context=".addsurvey.PageSixFragment">
 
     <View
         android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="50dp"
-                    android:background="@drawable/bg_button"
+                    android:background="@drawable/bg_button_right"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Sebelumnya"
                     android:textAllCaps="false"
@@ -153,7 +153,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:background="@drawable/bg_button"
+                    android:background="@drawable/bg_button_right"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Submit"
                     android:textAllCaps="false"

@@ -3,21 +3,21 @@ package com.example.pendataanrtlh
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.pendataanrtlh.addsurvey.AddSurveyActivity
+import com.example.pendataanrtlh.databinding.ActivityMainMenuBinding
 
 class MainMenuActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_new)
-        supportActionBar?.hide()
+        binding = ActivityMainMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-//        buttonSurvey.setOnClickListener {
-//            val intentLoginActivity =
-//                Intent(Intent(this, MainActivity::class.java))
-//            startActivity(intentLoginActivity)
-//            Toast.makeText(this@MainMenuActivity, "Survey data!", Toast.LENGTH_SHORT)
-//                .show()
-//        }
+        binding.btnSurvey.setOnClickListener {
+            val intentLoginActivity =
+                Intent(Intent(this, AddSurveyActivity::class.java))
+            startActivity(intentLoginActivity)
+        }
 //
 //        buttonHasilSurvey.setOnClickListener {
 //            val intentHasilSurveyActivity =

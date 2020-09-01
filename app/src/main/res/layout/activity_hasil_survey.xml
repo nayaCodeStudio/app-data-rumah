@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgKuningMuda"
-    tools:context=".HasilSurveyActivity">
+    tools:context=".surveyresult.HasilSurveyActivity">
 
     <View
         android:id="@+id/viewUtama"

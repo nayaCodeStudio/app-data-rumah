@@ -7,10 +7,9 @@ import android.widget.Toast
 import com.example.pendataanrtlh.databinding.ActivityLoginBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
     private var inNoKTP: String? = ""
@@ -21,13 +20,22 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        btnLogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             val intentLoginActivity =
-            Intent(Intent(this, MainMenuActivity::class.java))
+                Intent(Intent(this, MainMenuActivity::class.java))
             startActivity(intentLoginActivity)
             Toast.makeText(this@LoginActivity, "Login berhasil!", Toast.LENGTH_SHORT)
                 .show()
 //            finish()
+        }
+
+        binding.btnLogin.setOnLongClickListener {
+            val intentLoginActivity =
+                Intent(Intent(this, RegisterActivity::class.java))
+            startActivity(intentLoginActivity)
+            Toast.makeText(this@LoginActivity, "Login berhasil!", Toast.LENGTH_SHORT)
+                .show()
+            true
         }
     }
 }

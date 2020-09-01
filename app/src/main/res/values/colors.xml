@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#FFBF01</color>
     <color name="colorAccent">@android:color/secondary_text_light</color>
 
-    <color name="bgKuningTua">#FF9800</color>
+    <color name="bgKuningTua">#FFAA00</color>
     <color name="bgKuningMuda">#FFBF01</color>
     <color name="bgBiru">#01037C</color>
     <color name="textColor">#272727</color>
+    <color name="bgOff">#C6C6C6</color>
 </resources>

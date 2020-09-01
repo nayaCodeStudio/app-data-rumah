@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgKuningMuda"
-    tools:context=".ThirdFragment">
+    tools:context=".addsurvey.PageFiveFragment">
 
     <View
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/philosopher_bold"
                 android:gravity="center"
-                android:text="Kondisi Fisik Rumah Pada Aspek Keselamatan"
+                android:text="Aspek Persyaratan Luas dan Kebutuhan Ruang"
                 android:textColor="@android:color/black"
                 android:textSize="25sp" />
 
@@ -44,63 +44,42 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/philosopher_bold"
-                android:text="1. Pondasi "
+                android:text="1. Luas Rumah (Meter Kubik)"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <RadioGroup
-                android:id="@+id/rgPondasi"
+            <EditText
+                android:id="@+id/luasRumah"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rbAdaPondasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-                <RadioButton
-                    android:id="@+id/rbTidakAdaPondasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="Tidak Ada"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-            </RadioGroup>
+                android:layout_height="40dp"
+                android:background="@drawable/side_layout"
+                android:fontFamily="@font/philosopher_bold"
+                android:hint="Luas Rumah"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/philosopher_bold"
-                android:text="2. Kondisi Kolom dan Balok"
+                android:text="2. Jumlah Penghuni (Orang)"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <Spinner
-                android:id="@+id/listKondisiKolom"
+            <EditText
+                android:id="@+id/jumlahPenghuni"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:entries="@array/list_kondisi_kolom" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:background="@drawable/side_layout"
                 android:fontFamily="@font/philosopher_bold"
-                android:text="3. Kondisi Konstruksi Atap"
-                android:textColor="@android:color/black"
+                android:hint="Jumlah Penghuni"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
                 android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/listKondisiKonstruksi"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:entries="@array/list_kondisi_konstruksi" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -114,7 +93,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="50dp"
-                    android:background="@drawable/bg_button"
+                    android:background="@drawable/bg_button_right"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Sebelumnya"
                     android:textAllCaps="false"
@@ -126,7 +105,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:background="@drawable/bg_button"
+                    android:background="@drawable/bg_button_right"
                     android:fontFamily="@font/philosopher_bold"
                     android:text="Lanjut"
                     android:textAllCaps="false"
@@ -135,4 +114,5 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,13 +9,13 @@
         android:roundIcon="@drawable/ic_logo_rtlh"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailHasilSurveyActivity"/>
-        <activity android:name=".HasilSurveyActivity" />
+        <activity android:name=".surveyresult.DetailHasilSurveyActivity"/>
+        <activity android:name=".surveyresult.HasilSurveyActivity" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".addsurvey.AddSurveyActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreenActivity"

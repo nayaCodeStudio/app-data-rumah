@@ -11,6 +11,17 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="imageview">imageView</string>
     <string name="msg_error_empty">Wajib Diisi</string>
+    <string name="title_des_kel">Nama Desa / Kelurahan</string>
+    <string name="title_kec">Nama Kecamatan</string>
+    <string name="title_KotKab">Nama Kabupaten/Kota</string>
+    <string name="title_prov">Nama Provinsi</string>
+    <string name="title_lokasi_survey">Lokasi Tempat yang Disurvey</string>
+    <string name="title_page_off_1">1 dari 6 Halaman</string>
+    <string name="title_page_off_2">2 dari 6 Halaman</string>
+    <string name="title_page_off_3">3 dari 6 Halaman</string>
+    <string name="title_page_off_4">4 dari 6 Halaman</string>
+    <string name="title_page_off_5">5 dari 6 Halaman</string>
+    <string name="title_page_off_6">6 dari 6 Halaman</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>---Pilih---</item>
