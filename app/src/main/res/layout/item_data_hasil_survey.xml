@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
                         android:gravity="center_vertical"
-                        android:text="@string/text_pemilik_rumah"
+                        android:text="@string/text_hasil_pemilik_rumah"
                         android:textColor="@android:color/white"
                         android:textSize="16sp" />
 
@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
                         android:gravity="center_vertical"
-                        android:text="@string/text_alamat_pemilik_rumah"
+                        android:text="@string/text_hasil_alamat_pemilik_rumah"
                         android:textColor="@android:color/white"
                         android:textSize="16sp" />
 
@@ -110,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
                         android:gravity="center_vertical"
-                        android:text="@string/text_disurvey_oleh"
+                        android:text="@string/text_hasil_disurvey_oleh"
                         android:textColor="@android:color/white"
                         android:textSize="16sp" />
 
@@ -135,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
                         android:gravity="center_vertical"
-                        android:text="@string/text_tanggal_survey"
+                        android:text="@string/text_hasil_tanggal_survey"
                         android:textColor="@android:color/white"
                         android:textSize="16sp" />
 
