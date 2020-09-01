@@ -5,4 +5,5 @@ package com.example.pendataanrtlh.utils
  **/
 object Data {
     const val REGISTER_FORM = "registerForm"
+    const val TEMP_FORM = "temp"
 }

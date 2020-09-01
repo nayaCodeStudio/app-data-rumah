@@ -5,10 +5,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class FormData(
+    var noNIK: String? = null,
     var nameDesKel: String? = null,
     var nameKec: String? = null,
     var nameKabKot: String? = null,
     var nameProv: String? = null,
-    var image: String? = null,
-    var Coordinate: String? = null,
 ) : Parcelable

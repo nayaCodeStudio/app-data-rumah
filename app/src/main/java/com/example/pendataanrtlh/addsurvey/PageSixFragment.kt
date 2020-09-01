@@ -10,16 +10,13 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class PageSixFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page_six, container, false)
     }
 

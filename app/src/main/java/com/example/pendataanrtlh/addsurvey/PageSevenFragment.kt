@@ -9,16 +9,13 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class PageSevenFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page_seven, container, false)
     }
 

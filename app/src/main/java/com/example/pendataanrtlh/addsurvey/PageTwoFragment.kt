@@ -9,25 +9,22 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class PageTwoFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page_two, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        view.findViewById<Button>(R.id.btnNextTwo).setOnClickListener {
-//            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-//        }
+        view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
+            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        }
 
         view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
