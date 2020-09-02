@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
+import kotlinx.android.synthetic.*
 
 
 class PageSixFragment : Fragment() {
@@ -22,6 +24,8 @@ class PageSixFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val spinner: Spinner = requireActivity().findViewById(R.id.listMaterialAtap)
+
 
         view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_FiveFragment)
@@ -29,7 +33,7 @@ class PageSixFragment : Fragment() {
 
         view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
-            Toast.makeText(view.context, "Data berhasil disubmit!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(view.context, "Data berhasil disubmit!" + spinner.selectedItem.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 }
