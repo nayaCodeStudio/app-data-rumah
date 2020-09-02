@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
@@ -33,7 +34,7 @@ class PageSixFragment : Fragment() {
 
         view.findViewById<Button>(R.id.btnNext).setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
-            Toast.makeText(view.context, "Data berhasil disubmit!" + spinner.selectedItem.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(view.context, "Material Atap Terluas : " + spinner.selectedItem.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 }
