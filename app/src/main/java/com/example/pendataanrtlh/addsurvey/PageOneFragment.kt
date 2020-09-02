@@ -9,7 +9,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageOneBinding
 import com.example.pendataanrtlh.model.FormData
+import com.example.pendataanrtlh.utils.Data.NIK_SURVEYOR
 import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -17,7 +19,6 @@ class PageOneFragment : Fragment() {
     private lateinit var binding: FragmentPageOneBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
-    private var user = "andi"
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,7 +38,6 @@ class PageOneFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference(TEMP_FORM)
 
         binding.btnNext.setOnClickListener {
             val inNoKTP = binding.textNomorNIK.text.toString().trim { it <= ' ' }
@@ -70,9 +70,13 @@ class PageOneFragment : Fragment() {
                 }
             }
             if (!inputKosong) {
-                myRef.child("$user/$inNoKTP")
+                myRef = database.getReference("$TEMP_FORM/$NIK_SURVEYOR/$inNoKTP")
+                myRef
+//                myRef.child(NIK_SURVEYOR).child(inNoKTP)
+//                myRef.child("$NIK_SURVEYOR/$inNoKTP")
                     .setValue(FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv))
                     .addOnCompleteListener {
+                        nikPeserta = inNoKTP
                         findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
                     }
             }
