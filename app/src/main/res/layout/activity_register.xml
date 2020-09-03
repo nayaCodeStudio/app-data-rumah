@@ -81,7 +81,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/nama_lengkap"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,7 +124,10 @@
 
             </com.google.android.material.chip.ChipGroup>
 
-            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                app:counterEnabled="true"
+                app:counterMaxLength="12">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textNomorHP"
@@ -153,7 +156,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/text_alamat_tempat_tinggal"
-                    android:inputType="text"
+                    android:inputType="textMultiLine"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/text_size_13" />
             </com.google.android.material.textfield.TextInputLayout>

@@ -20,8 +20,7 @@ class PageThreeFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_page_three, container, false)
-    }
+        return inflater.inflate(R.layout.fragment_page_three, container, false) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

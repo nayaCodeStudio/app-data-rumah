@@ -133,7 +133,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/text_luas_rumah_meter_kubik"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,7 +146,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/text_jumlah_penghuni_orang"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 

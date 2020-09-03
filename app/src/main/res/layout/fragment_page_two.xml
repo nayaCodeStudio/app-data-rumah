@@ -132,7 +132,7 @@
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
                         android:hint="@string/text_nomor_urut_rumah"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +145,7 @@
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
                         android:hint="@string/nama_lengkap"
-                        android:inputType="text"
+                        android:inputType="textPersonName"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -330,7 +330,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
-                    android:layout_marginBottom="5dp">
+                    android:layout_marginBottom="5dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="16">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoKTP"
@@ -350,7 +352,7 @@
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
                         android:hint="@string/text_jumlah_kk_dalam_1_rumah"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 
