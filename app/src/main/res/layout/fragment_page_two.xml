@@ -18,9 +18,9 @@
         style="@style/MyTemaH2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/title_page_off_2"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_12"
-        android:text="@string/title_page_off_2"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -228,92 +228,92 @@
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_14" />
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_14" />-->
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/ambilFotoAtap"
-                    style="@style/MyTemaH2"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:letterSpacing="0"
-                    android:text="@string/text_unggah_foto_atap"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/text_size_16"
-                    android:textStyle="bold"
-                    app:rippleColor="@android:color/white" />
+                <!--                <com.google.android.material.button.MaterialButton-->
+                <!--                    android:id="@+id/ambilFotoAtap"-->
+                <!--                    style="@style/MyTemaH2"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:letterSpacing="0"-->
+                <!--                    android:text="@string/text_unggah_foto_atap"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="@dimen/text_size_16"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:rippleColor="@android:color/white" />-->
 
-                <ImageView
-                    android:id="@+id/fotoAtap"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/no_image"
-                    android:visibility="gone" />
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoAtap"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="150dp"-->
+                <!--                    android:src="@drawable/no_image"-->
+                <!--                    android:visibility="gone" />-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_14" />
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_14" />-->
 
-                <Button
-                    android:id="@+id/ambilFotoDinding"
-                    style="@style/MyTemaH2"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:letterSpacing="0"
-                    android:text="@string/text_unggah_foto_dinding"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/text_size_16"
-                    android:textStyle="bold"
-                    app:rippleColor="@android:color/white" />
+                <!--                <Button-->
+                <!--                    android:id="@+id/ambilFotoDinding"-->
+                <!--                    style="@style/MyTemaH2"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:letterSpacing="0"-->
+                <!--                    android:text="@string/text_unggah_foto_dinding"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="@dimen/text_size_16"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:rippleColor="@android:color/white" />-->
 
-                <ImageView
-                    android:id="@+id/fotoDinding"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/no_image"
-                    android:visibility="gone" />
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoDinding"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="150dp"-->
+                <!--                    android:src="@drawable/no_image"-->
+                <!--                    android:visibility="gone" />-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_14" />
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_14" />-->
 
-                <Button
-                    android:id="@+id/ambilFotoLantai"
-                    style="@style/MyTemaH2"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:letterSpacing="0"
-                    android:text="@string/text_unggah_foto_lantai"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/text_size_16"
-                    android:textStyle="bold"
-                    app:rippleColor="@android:color/white" />
+                <!--                <Button-->
+                <!--                    android:id="@+id/ambilFotoLantai"-->
+                <!--                    style="@style/MyTemaH2"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginEnd="5dp"-->
+                <!--                    android:letterSpacing="0"-->
+                <!--                    android:text="@string/text_unggah_foto_lantai"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="@dimen/text_size_16"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:rippleColor="@android:color/white" />-->
 
-                <ImageView
-                    android:id="@+id/fotoLantai"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/no_image"
-                    android:visibility="gone" />
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoLantai"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="150dp"-->
+                <!--                    android:src="@drawable/no_image"-->
+                <!--                    android:visibility="gone" />-->
 
                 <!--            <com.google.android.material.textfield.TextInputLayout-->
                 <!--                style="@style/EditTextCustom"-->
