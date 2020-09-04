@@ -14,6 +14,4 @@ class AspekKesehatan(
     var jarakKamarMandi: String? = null,
     var sumberAirMinum: String? = null,
     var sumberListrik: String? = null,
-    var luasRumah: String? = null,
-    var jumPenghuni: String? = null,
 ) : Parcelable

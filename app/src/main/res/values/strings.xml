@@ -143,7 +143,7 @@
     <string name="text_hasil_tanggal_survey">Tanggal Survey :</string>
 
     <string-array name="list_pendidikan_terakhir">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Tidak Punya Ijazah</item>
         <item>SD/Sederajat</item>
         <item>SMP/Sederajat</item>
@@ -154,7 +154,7 @@
     </string-array>
 
     <string-array name="list_pekerjaan_utama">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>PNS</item>
         <item>TNI/POLRI</item>
         <item>BUMN/D</item>
@@ -174,39 +174,39 @@
     </string-array>
 
     <string-array name="list_penghasilan">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Kurang dari 1,2 juta</item>
-        <item>1,9 - 2,1 juta</item>
-        <item>2,2 - 2,6 juta</item>
-        <item>2,7 - 3,1 juta</item>
-        <item>3,2 - 3,6 juta</item>
-        <item>3,7 - 4,2 juta</item>
+        <item>1,9 – 2,1 juta</item>
+        <item>2,2 – 2,6 juta</item>
+        <item>2,7 – 3,1 juta</item>
+        <item>3,2 – 3,6 juta</item>
+        <item>3,7 – 4,2 juta</item>
         <item>Lebih dari 4,2 juta</item>
     </string-array>
 
     <string-array name="list_status_tanah">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Milik Sendiri</item>
         <item>Bukan Milik Sendiri</item>
         <item>Tanah Negara</item>
     </string-array>
 
     <string-array name="list_status_rumah">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Milik Sendiri</item>
         <item>Kontrak/Sewa</item>
         <item>Bukan Milik Sendiri</item>
     </string-array>
 
     <string-array name="list_bantuan_perumahan">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Ya, Lebih dari 5 Tahun yang Lalu</item>
         <item>Ya, Kurang dari 5 Tahun yang Lalu</item>
         <item>Belum Pernah</item>
     </string-array>
 
     <string-array name="list_kondisi_kolom">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Kondisi Baik</item>
         <item>Rusak Ringan</item>
         <item>Rusak Sedang/Sebagian</item>
@@ -214,7 +214,7 @@
     </string-array>
 
     <string-array name="list_kondisi_konstruksi">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Kondisi Baik</item>
         <item>Rusak Ringan</item>
         <item>Rusak Sedang/Sebagian</item>
@@ -222,14 +222,14 @@
     </string-array>
 
     <string-array name="list_kepemilikan_kamar_mandi">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Sendiri</item>
         <item>Bersama/MCK Komunal</item>
         <item>Tidak Ada</item>
     </string-array>
 
     <string-array name="list_sumber_air_minum">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>PDAM</item>
         <item>Air Kemasan/Isi Ulang</item>
         <item>Sumur</item>
@@ -239,7 +239,7 @@
     </string-array>
 
     <string-array name="list_sumber_listrik">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>PLN dengan Meteran</item>
         <item>PLN tanpa Meteran</item>
         <item>Listrik Non PLN</item>
@@ -247,7 +247,7 @@
     </string-array>
 
     <string-array name="list_material_atap">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Genteng</item>
         <item>Asbes</item>
         <item>Seng</item>
@@ -258,7 +258,7 @@
     </string-array>
 
     <string-array name="list_kondisi_atap">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Baik</item>
         <item>Rusak Ringan</item>
         <item>Rusak Sedang/Sebagian</item>
@@ -266,7 +266,7 @@
     </string-array>
 
     <string-array name="list_material_dinding">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Tembok</item>
         <item>GRC (Asbes)</item>
         <item>Kayu/Papan</item>
@@ -278,7 +278,7 @@
     </string-array>
 
     <string-array name="list_kondisi_dinding">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Baik</item>
         <item>Rusak Ringan</item>
         <item>Rusak Sedang/Sebagian</item>
@@ -286,7 +286,7 @@
     </string-array>
 
     <string-array name="list_material_lantai">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Marmer/Granit</item>
         <item>Keramik</item>
         <item>Ubin/Tegel</item>
@@ -298,7 +298,7 @@
     </string-array>
 
     <string-array name="list_kondisi_lantai">
-        <item>---Pilih---</item>
+        <item>pilih</item>
         <item>Baik</item>
         <item>Rusak Ringan</item>
         <item>Rusak Sedang/Sebagian</item>

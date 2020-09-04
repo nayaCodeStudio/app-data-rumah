@@ -13,8 +13,8 @@ import com.example.pendataanrtlh.R
 class PageSevenFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_page_seven, container, false)
     }
@@ -24,6 +24,7 @@ class PageSevenFragment : Fragment() {
 
         view.findViewById<Button>(R.id.buttonMainMenu).setOnClickListener {
             findNavController().navigate(R.id.action_SevenFragment_to_MainMenuActivity)
+            requireActivity().finish()
         }
     }
 }

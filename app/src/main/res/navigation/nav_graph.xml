@@ -3,28 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/firstFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/firstFragment"
         android:name="com.example.pendataanrtlh.addsurvey.PageOneFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_page_one">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/secondFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/secondFragment"
         android:name="com.example.pendataanrtlh.addsurvey.PageTwoFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_page_two">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/firstFragment" />
 
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
@@ -39,7 +39,7 @@
 
         <action
             android:id="@+id/action_ThirdFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/secondFragment" />
 
         <action
             android:id="@+id/action_ThirdFragment_to_FourFragment"

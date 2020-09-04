@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pendataanrtlh">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo_rtlh"
@@ -9,7 +15,8 @@
         android:roundIcon="@drawable/ic_logo_rtlh"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".surveyresult.DetailHasilSurveyActivity"/>
+        <activity android:name=".UploadPhotoActivity"></activity>
+        <activity android:name=".surveyresult.DetailHasilSurveyActivity" />
         <activity android:name=".surveyresult.HasilSurveyActivity" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".RegisterActivity" />

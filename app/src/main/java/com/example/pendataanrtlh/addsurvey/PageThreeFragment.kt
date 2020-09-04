@@ -5,39 +5,66 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
-import com.google.android.material.chip.Chip
+import com.example.pendataanrtlh.databinding.FragmentPageThreeBinding
+import com.example.pendataanrtlh.model.AspekKeselamatan
+import com.example.pendataanrtlh.utils.Data.ASPEK_KESELAMATAN
+import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.nikPeserta
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_page_three.*
 
 
 class PageThreeFragment : Fragment() {
+    private lateinit var binding: FragmentPageThreeBinding
+    private lateinit var database: FirebaseDatabase
+    private lateinit var myRef: DatabaseReference
+
+    private var pondasi: String? = ""
+    private var balok: String? = ""
+    private var atap: String? = ""
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_page_three, container, false) }
+        binding = FragmentPageThreeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val chip1 = "Ada"
-        val chip2 = "Tidak Ada"
 
-        view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        database = FirebaseDatabase.getInstance()
+        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$ASPEK_KESELAMATAN")
+
+        binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_SecondFragment)
         }
 
-        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
-            findNavController().navigate(R.id.action_ThirdFragment_to_FourFragment)
-            if (chip_ada.isChecked){
-                Toast.makeText(view.context, "Pondasi : "  + chip1, Toast.LENGTH_SHORT).show()
+        binding.btnNext.setOnClickListener {
+            pondasi = if (chip_ada.isChecked) {
+                "Ada"
             } else {
-                Toast.makeText(view.context, "Pondasi : "  + chip2, Toast.LENGTH_SHORT).show()
+                "Tidak Ada"
             }
+            balok = binding.listKondisiKolom.selectedItem.toString()
+            atap = binding.listKondisiKonstruksi.selectedItem.toString()
+
+            if (!pondasi.isNullOrEmpty() &&  balok != "pilih" && atap != "pilih") {
+                myRef.setValue(AspekKeselamatan(pondasi, balok, atap))
+                    .addOnCompleteListener {
+                        findNavController().navigate(R.id.action_ThirdFragment_to_FourFragment)
+                    }
+            } else {
+                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+            }
+
         }
+
+
     }
 }

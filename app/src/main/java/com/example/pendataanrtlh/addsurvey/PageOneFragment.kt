@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageOneBinding
 import com.example.pendataanrtlh.model.FormData
-import com.example.pendataanrtlh.utils.Data.NIK_SURVEYOR
+import com.example.pendataanrtlh.utils.Data.FORM_DATA
 import com.example.pendataanrtlh.utils.Data.TEMP_FORM
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
@@ -70,11 +70,9 @@ class PageOneFragment : Fragment() {
                 }
             }
             if (!inputKosong) {
-                myRef = database.getReference("$TEMP_FORM/$NIK_SURVEYOR/$inNoKTP")
-                myRef
-//                myRef.child(NIK_SURVEYOR).child(inNoKTP)
-//                myRef.child("$NIK_SURVEYOR/$inNoKTP")
-                    .setValue(FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv))
+//                myRef = database.getReference("$TEMP_FORM/$NIK_SURVEYOR/$inNoKTP")
+                myRef = database.getReference("$TEMP_FORM/$inNoKTP/$FORM_DATA")
+                myRef.setValue(FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv))
                     .addOnCompleteListener {
                         nikPeserta = inNoKTP
                         findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)

@@ -5,29 +5,63 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
+import com.example.pendataanrtlh.databinding.FragmentPageTwoBinding
+import com.example.pendataanrtlh.model.IdentitasPenghuniRmh
+import com.example.pendataanrtlh.utils.Data.IDENTITAS_PENGHUNI_RMH
+import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.nikPeserta
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 
 class PageTwoFragment : Fragment() {
+    private lateinit var binding: FragmentPageTwoBinding
+    private lateinit var database: FirebaseDatabase
+    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_page_two, container, false)
+        binding = FragmentPageTwoBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        database = FirebaseDatabase.getInstance()
+        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
 
-        view.findViewById<Button>(R.id.btnPrev).setOnClickListener {
+        binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
 
-        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
+        binding.btnNext.setOnClickListener {
+            myRef.setValue(
+                IdentitasPenghuniRmh(
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                )
+            )
+                .addOnCompleteListener {
+                    findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
+                }
         }
     }
 }

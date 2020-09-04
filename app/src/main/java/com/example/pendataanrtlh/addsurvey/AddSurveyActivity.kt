@@ -8,11 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.model.FormData
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.FirebaseFirestore
+//import com.google.firebase.firestore.FirebaseFirestore
 
 
 class AddSurveyActivity : AppCompatActivity() {
-    var db = FirebaseFirestore.getInstance()
+//    var db = FirebaseFirestore.getInstance()
     private var inDesKel = "Cilendek Timur"
     private var inKec = "Bogor Barat"
     private var inkabKot = "Kota Bogor"
@@ -38,25 +38,25 @@ class AddSurveyActivity : AppCompatActivity() {
         }
     }
 
-    private fun fireStoreDB() {
-        val user: MutableMap<String, Any> = HashMap()
-        user["first"] = "Ada"
-        user["last"] = "Lovelace"
-        user["born"] = 1815
-
-
-        db.collection("users")
-            .add(user)
-            .addOnSuccessListener { documentReference ->
-                Toast.makeText(
-                    this,
-                    "DocumentSnapshot added with ID: ${documentReference.id}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-            .addOnFailureListener { e ->
-                Toast.makeText(this, "Error adding document $e", Toast.LENGTH_SHORT).show()
-            }
-    }
+//    private fun fireStoreDB() {
+//        val user: MutableMap<String, Any> = HashMap()
+//        user["first"] = "Ada"
+//        user["last"] = "Lovelace"
+//        user["born"] = 1815
+//
+//
+//        db.collection("users")
+//            .add(user)
+//            .addOnSuccessListener { documentReference ->
+//                Toast.makeText(
+//                    this,
+//                    "DocumentSnapshot added with ID: ${documentReference.id}",
+//                    Toast.LENGTH_SHORT
+//                ).show()
+//            }
+//            .addOnFailureListener { e ->
+//                Toast.makeText(this, "Error adding document $e", Toast.LENGTH_SHORT).show()
+//            }
+//    }
 
 }

@@ -20,6 +20,12 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.logoApp.setOnClickListener {
+            val intentLoginActivity =
+                Intent(Intent(this, UploadPhotoActivity::class.java))
+            startActivity(intentLoginActivity)
+        }
+
         binding.btnLogin.setOnClickListener {
             val intentLoginActivity =
                 Intent(Intent(this, MainMenuActivity::class.java))

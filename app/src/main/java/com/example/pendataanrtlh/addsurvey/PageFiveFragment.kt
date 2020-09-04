@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageFiveBinding
 import com.example.pendataanrtlh.model.AspekLuasRuang
-import com.example.pendataanrtlh.utils.Data.NIK_SURVEYOR
+import com.example.pendataanrtlh.utils.Data.ASPEK_LUAS_RUANG
 import com.example.pendataanrtlh.utils.Data.TEMP_FORM
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
@@ -32,7 +32,7 @@ class PageFiveFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference(TEMP_FORM)
+        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$ASPEK_LUAS_RUANG")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)
@@ -55,10 +55,7 @@ class PageFiveFragment : Fragment() {
             }
 
             if (!inputKosong) {
-                myRef = database.getReference("$TEMP_FORM/$NIK_SURVEYOR/$nikPeserta")
-                myRef
-//                myRef.child(NIK_SURVEYOR).child(nikPeserta.toString())
-                    .setValue(AspekLuasRuang(inLuasRumah, inJumPenghuni))
+                myRef.setValue(AspekLuasRuang(inLuasRumah, inJumPenghuni))
                     .addOnCompleteListener {
                         findNavController().navigate(R.id.action_FiveFragment_to_SixFragment)
                     }
