@@ -62,9 +62,6 @@ class PageThreeFragment : Fragment() {
             } else {
                 Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
             }
-
         }
-
-
     }
 }
