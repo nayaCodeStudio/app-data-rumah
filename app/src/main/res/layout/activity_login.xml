@@ -12,18 +12,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/logoApp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_marginBottom="@dimen/separator_size_8"
-            android:contentDescription="@string/imageview"
-            android:scaleType="fitXY"
-            android:src="@drawable/logo_pu"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="5dp"
             app:layout_constraintBottom_toTopOf="@+id/nameApp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintVertical_chainStyle="packed" >
+
+            <ImageView
+                android:id="@+id/logoApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/imageview"
+                android:src="@drawable/logo_app" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/nameApp"

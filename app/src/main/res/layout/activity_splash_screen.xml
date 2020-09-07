@@ -4,20 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/bgKuningMuda"
     tools:context=".SplashScreenActivity">
 
-    <ImageView
-        android:id="@+id/logoApp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:contentDescription="@string/imageview"
-        android:scaleType="fitXY"
-        android:src="@drawable/logo_pu"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/logoApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/imageview"
+            android:src="@drawable/logo_app" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/nameApp"
@@ -30,7 +37,7 @@
         android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoApp" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TextView
         android:id="@+id/nameInstansi"

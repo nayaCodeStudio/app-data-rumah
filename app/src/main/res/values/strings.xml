@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pendataan RTLH</string>
+    <string name="app_name">SI RUTLAH</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -28,9 +28,9 @@
     <string name="subtitle_success_survey">Tanggapan Anda telah kami rekam dan berhasil masuk database.</string>
     <string name="title_back_to_menu">Kembali ke Menu Utama</string>
     <string name="title_page_survey">Survey</string>
-    <string name="sub_title_page_survey">Pendataan Rumah Tidak Layak Huni</string>
+    <string name="sub_title_page_survey">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_detail_page_hasil_survey">Detail Hasil Survey</string>
-    <string name="sub_title_detail_page_hasil_survey">Pendataan Rumah Tidak Layak Huni</string>
+    <string name="sub_title_detail_page_hasil_survey">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_identitas_surveyor">Identitas Surveyor</string>
     <string name="text_nama_surveyor">Nama Surveyor</string>
     <string name="isi_nama_surveyor">-</string>
@@ -91,15 +91,15 @@
     <string name="text_material_lantai_terluas">Material Lantai Terluas :</string>
     <string name="text_kondisi_lantai">Kondisi Lantai :</string>
     <string name="ttile_hasil_survey">Hasil Survey</string>
-    <string name="sub_title_pendataan_rumah_tidak_layak_huni">Pendataan Rumah Tidak Layak Huni</string>
-    <string name="title_aplikasi_pendataan_nrumah_tidak_layak_huni">Aplikasi Pendataan\nRumah Tidak Layak Huni</string>
+    <string name="sub_title_pendataan_rumah_tidak_layak_huni">Identifikasi Rumah Tidak Layak Huni</string>
+    <string name="title_aplikasi_pendataan_nrumah_tidak_layak_huni">SI RUTLAH\nSurvey Identifikasi Rumah Tidak Layak Huni</string>
     <string name="text_button_login">Login</string>
     <string name="title_kementrian_pekerjaan_umum_dan_perumahan_rakyat_ndirektorat_jendral_penyediaan_rumah_ndirektorat_rumah_swadaya">Kementrian Pekerjaan Umum dan Perumahan Rakyat\nDirektorat Jendral Penyediaan Rumah\nDirektorat Rumah Swadaya</string>
     <string name="text_selamat_datang">Selamat Datang</string>
     <string name="text_panggilan">Bapak</string>
     <string name="text_nama">Andi Chairunnas</string>
     <string name="title_halaman_utama">Halaman Utama</string>
-    <string name="text_aplikasi_pendataan_rumah_tidak_layak_huni">Aplikasi Pendataan Rumah Tidak Layak Huni</string>
+    <string name="text_aplikasi_pendataan_rumah_tidak_layak_huni">Aplikasi Survey Identifikasi Rumah Tidak Layak Huni</string>
     <string name="text_button_survey">Survey\nSekarang</string>
     <string name="text_button_hasil_survey">Hasil\nSurvey</string>
     <string name="text_kementrian_pekerjaan_umum_dan_perumahan_rakyat_ndirektorat_jendral_penyediaan_rumah_ndirektorat_rumah_swadaya">Kementrian Pekerjaan Umum dan Perumahan Rakyat\nDirektorat Jendral Penyediaan Rumah\nDirektorat Rumah Swadaya</string>

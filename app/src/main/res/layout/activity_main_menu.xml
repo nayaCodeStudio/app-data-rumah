@@ -71,9 +71,9 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <View
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/logo_pu"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="@drawable/logo_ruhui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="1.0"
