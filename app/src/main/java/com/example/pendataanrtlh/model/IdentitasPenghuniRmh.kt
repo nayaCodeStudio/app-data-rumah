@@ -10,7 +10,6 @@ import kotlinx.android.parcel.Parcelize
 data class IdentitasPenghuniRmh(
     var noUrutRumah: String? = null,
     var nmLengkap: String? = null,
-    var tahun: String? = null,
     var pendTerakhir: String? = null,
     var jnsKelamin: String? = null,
     var almtLengkap: String? = null,

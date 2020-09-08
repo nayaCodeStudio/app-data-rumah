@@ -109,7 +109,7 @@
         style="@style/MyTemaH4"
         android:layout_width="wrap_content"
         android:layout_marginStart="@dimen/separator_size_4"
-        android:text="@string/text_nama"
+        android:text="dan Ibu"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/txtSebutan"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />

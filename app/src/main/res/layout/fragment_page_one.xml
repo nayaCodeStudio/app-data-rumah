@@ -143,7 +143,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/title_des_kel"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -158,7 +158,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/title_kec"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -173,7 +173,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/title_KotKab"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -188,7 +188,7 @@
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
                     android:hint="@string/title_prov"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>

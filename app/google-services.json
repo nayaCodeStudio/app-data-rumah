@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "794200253483-690aq11fgic8dof8eoespkhvk0r3nha5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pendataanrtlh",
+            "certificate_hash": "127224d979f81c4cef0e3dd24cad4ac0918fcf8b"
+          }
+        },
+        {
           "client_id": "794200253483-agj3p3ilvaglrhjq3jf8cfmi6onok5cn.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -116,7 +116,6 @@ class PageTwoFragment : Fragment() {
                         IdentitasPenghuniRmh(
                             inNomorRumah,
                             inNamaLengkap,
-                            "",
                             pendidikan,
                             jenisKelamin,
                             inAlmLengkp,

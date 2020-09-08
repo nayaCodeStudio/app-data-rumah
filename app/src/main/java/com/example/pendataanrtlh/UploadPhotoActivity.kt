@@ -9,10 +9,8 @@ import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_upload_photo.*
 import java.util.*
 
@@ -25,8 +23,8 @@ class UploadPhotoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload_photo)
 
-        val storage = Firebase.storage
-        var storageRef = storage.reference
+//        val storage = Firebase.storage
+//        var storageRef = storage.reference
 //        storageRef = FirebaseStorage.getInstance().reference
 
 
@@ -38,8 +36,6 @@ class UploadPhotoActivity : AppCompatActivity() {
         btn_text_configuration.setOnClickListener {
             uploadImageDua()
         }
-
-        includesForCreateReference()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -87,87 +83,5 @@ class UploadPhotoActivity : AppCompatActivity() {
                 val progress = 100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount
                 progressBar.progress = progress.toInt()
             }
-    }
-
-    private fun includesForCreateReference() {
-        val storage = Firebase.storage
-
-        // ## Create a Reference
-
-        // [START create_storage_reference]
-        // Create a storage reference from our app
-        var storageRef = storage.reference
-        // [END create_storage_reference]
-
-        // [START create_child_reference]
-        // Create a child reference
-        // imagesRef now points to "images"
-        var imagesRef: StorageReference? = storageRef.child("images")
-
-        // Child references can also take paths
-        // spaceRef now points to "images/space.jpg
-        // imagesRef still points to "images"
-        var spaceRef = storageRef.child("images/space.jpg")
-        // [END create_child_reference]
-
-        // ## Navigate with References
-
-        // [START navigate_references]
-        // parent allows us to move our reference to a parent node
-        // imagesRef now points to 'images'
-        imagesRef = spaceRef.parent
-
-        // root allows us to move all the way back to the top of our bucket
-        // rootRef now points to the root
-        val rootRef = spaceRef.root
-        // [END navigate_references]
-
-        // [START chain_navigation]
-        // References can be chained together multiple times
-        // earthRef points to 'images/earth.jpg'
-        val earthRef = spaceRef.parent?.child("earth.jpg")
-
-        // nullRef is null, since the parent of root is null
-        val nullRef = spaceRef.root.parent
-        // [END chain_navigation]
-
-        // ## Reference Properties
-
-        // [START reference_properties]
-        // Reference's path is: "images/space.jpg"
-        // This is analogous to a file path on disk
-        spaceRef.path
-
-        // Reference's name is the last segment of the full path: "space.jpg"
-        // This is analogous to the file name
-        spaceRef.name
-
-        // Reference's bucket is the name of the storage bucket that the files are stored in
-        spaceRef.bucket
-        // [END reference_properties]
-
-        // ## Full Example
-
-        // [START reference_full_example]
-        // Points to the root reference
-        storageRef = storage.reference
-
-        // Points to "images"
-        imagesRef = storageRef.child("images")
-
-        // Points to "images/space.jpg"
-        // Note that you can use variables to create child values
-        val fileName = "space.jpg"
-        spaceRef = imagesRef.child(fileName)
-
-        // File path is "images/space.jpg"
-        val path = spaceRef.path
-
-        // File name is "space.jpg"
-        val name = spaceRef.name
-
-        // Points to "images"
-        imagesRef = spaceRef.parent
-        // [END reference_full_example]
     }
 }
