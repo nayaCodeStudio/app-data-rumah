@@ -64,32 +64,27 @@ class RegisterActivity : AppCompatActivity() {
                 myRef.child(inNoKTP).addValueEventListener(object : ValueEventListener {
                     override fun onDataChange(dataSnapshot: DataSnapshot) {
                         val value = dataSnapshot.getValue(RegisterForm::class.java)
-                        Toast.makeText(this@RegisterActivity, "${value?.noKTP}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@RegisterActivity, "${value?.noKTP}", Toast.LENGTH_SHORT)
+                            .show()
                     }
 
                     override fun onCancelled(error: DatabaseError) {
                     }
                 })
 
-
-
-//                realTimeDB(
-//                    inNoKTP,
-//                    RegisterForm(
-//                        inNoKTP,
-//                        inPassword,
-//                        inFullName,
-//                        inEmailAddress,
-//                        inNoHp,
-//                        inAddress
-//                    )
-//                )
-
+                realTimeDB(
+                    inNoKTP,
+                    RegisterForm(
+                        inNoKTP,
+                        inPassword,
+                        inFullName,
+                        inEmailAddress,
+                        inNoHp,
+                        inAddress
+                    )
+                )
             }
         }
-
-
-
     }
 
     // bug data sudah ada

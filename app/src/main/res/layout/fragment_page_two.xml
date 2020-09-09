@@ -349,7 +349,7 @@
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
                         android:hint="@string/no_ktp"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 

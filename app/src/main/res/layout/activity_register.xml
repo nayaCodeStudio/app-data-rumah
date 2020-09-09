@@ -48,6 +48,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
                 app:counterEnabled="true"
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
                 app:counterMaxLength="16">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -63,6 +65,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +78,10 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextCustom"
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textFullName"
@@ -126,8 +133,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
-                app:counterEnabled="true"
-                app:counterMaxLength="12">
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textNomorHP"
@@ -138,7 +145,10 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                style="@style/EditTextCustom">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textEmail"
@@ -149,7 +159,10 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout style="@style/EditTextCustom">
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                style="@style/EditTextCustom">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textAlamat"
