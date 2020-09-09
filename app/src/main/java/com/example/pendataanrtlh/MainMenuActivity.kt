@@ -32,20 +32,18 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         binding.btnSurveyResult.setOnClickListener {
-            realTimeDB(FormData(noKTP, inDesKel, inKec, inkabKot, inProv))
+//            realTimeDB(FormData(noKTP, inDesKel, inKec, inkabKot, inProv))
         }
     }
 
     private fun realTimeDB(formData: FormData) {
-//        val database = Firebase.database
-//        val myRef = database.getReference("message")
-//
-//        myRef.setValue("Hello, World!")
-
-        val database = FirebaseDatabase.getInstance()
+        val database = Firebase.database
         val myRef = database.getReference("message")
 
-        myRef.setValue("Hello, World!")
+//        val database = FirebaseDatabase.getInstance()
+//        val myRef = database.getReference("message")
+//
+        myRef.setValue(formData)
 
 
 //        myRef.setValue(formData).addOnCompleteListener {
