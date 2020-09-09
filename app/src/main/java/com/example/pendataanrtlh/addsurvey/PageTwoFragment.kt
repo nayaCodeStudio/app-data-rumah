@@ -1,11 +1,11 @@
 package com.example.pendataanrtlh.addsurvey
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageTwoBinding
@@ -110,8 +110,37 @@ class PageTwoFragment : Fragment() {
                 "Tidak Ada"
             }
 
+            val result = StringBuilder()
+            if (binding.cbRawanAir.isChecked) {
+                result.append("Rawan Air,")
+            }
+            if (binding.cbKEK.isChecked) {
+                result.append("KEK, ")
+            }
+            if (binding.cbPerbatasan.isChecked) {
+                result.append("Perbatasan, ")
+            }
+            if (binding.cbPulauKecil.isChecked) {
+                result.append("PulauKecil, ")
+            }
+            if (binding.cbDaerahTertinggal.isChecked) {
+                result.append("DaerahTertinggal, ")
+            }
+            if (binding.cbKumuh.isChecked) {
+                result.append("Kumuh, ")
+            }
+            if (binding.cbKSPN.isChecked) {
+                result.append("KSPN, ")
+            }
+            if (binding.cbPesisir.isChecked) {
+                result.append("Pesisir, ")
+            }
+            if (binding.cbTransmigrasi.isChecked) {
+                result.append("Transmigrasi")
+            }
+
             if (!inputKosong) {
-                if (!jenisKelamin.isNullOrEmpty() && pendidikan != "pilih") {
+                if (!jenisKelamin.isNullOrEmpty() && pendidikan != "pilih" && result.isNotEmpty()) {
                     myRef.setValue(
                         IdentitasPenghuniRmh(
                             inNomorRumah,
@@ -128,7 +157,7 @@ class PageTwoFragment : Fragment() {
                             assetRumah,
                             assetTanah,
                             bantuanRumah,
-                            ""
+                            result.toString()
                         )
                     )
                         .addOnCompleteListener {
