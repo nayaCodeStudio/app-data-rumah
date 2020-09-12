@@ -1,147 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="@dimen/separator_size_10"
+    card_view:cardUseCompatPadding="true"
+    card_view:rippleColor="@color/colorPrimary">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvMain"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        card_view:cardBackgroundColor="@android:color/transparent"
-        card_view:cardElevation="0dp"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_yellow_oval">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/imageview"
+            android:src="@drawable/ic_list_ii"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/view3"
-                android:layout_width="120dp"
-                android:layout_height="0dp"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintStart_toStartOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/namaLengkap"
+            style="@style/MyTemaH1"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/separator_size_10"
+            android:layout_marginEnd="@dimen/separator_size_10"
+            android:text="Name"
+            android:textSize="@dimen/text_size_14"
+            card_view:layout_constraintBottom_toTopOf="@+id/nomorKTP"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/imageView"
+            card_view:layout_constraintTop_toTopOf="@+id/imageView"
+            card_view:layout_constraintVertical_chainStyle="packed" />
 
-            <ImageView
-                android:id="@+id/icon"
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:contentDescription="TODO"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintStart_toStartOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/no_image" />
+        <TextView
+            android:id="@+id/nomorKTP"
+            style="@style/MyTemaH4"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/separator_size_10"
+            android:layout_marginEnd="@dimen/separator_size_10"
+            android:text="0123456789"
+            android:textSize="@dimen/text_size_12"
+            card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/imageView"
+            card_view:layout_constraintTop_toBottomOf="@+id/namaLengkap" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical"
-                card_view:layout_constraintBottom_toBottomOf="@+id/view3"
-                card_view:layout_constraintStart_toEndOf="@+id/view3"
-                card_view:layout_constraintTop_toTopOf="@+id/view3">
+        <TextView
+            android:id="@+id/txtTgl"
+            style="@style/MyTemaH4"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/separator_size_10"
+            android:text="dibuat Tanggal:"
+            android:textSize="@dimen/text_size_10"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline12"
+            card_view:layout_constraintStart_toStartOf="@+id/imageView"
+            card_view:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tglInput"
+            style="@style/MyTemaH2"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/separator_size_10"
+            android:text="13 September 2020"
+            android:textSize="@dimen/text_size_11"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline12"
+            card_view:layout_constraintStart_toStartOf="@+id/imageView"
+            card_view:layout_constraintTop_toBottomOf="@+id/txtTgl" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:id="@+id/tvPemilikRumah"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:text="@string/isi_data"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-                </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:layout_constraintGuide_percent="0.5" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtSurveyor"
+            style="@style/MyTemaH4"
+            android:layout_width="0dp"
+            android:text="di Survey Oleh:"
+            android:textSize="@dimen/text_size_10"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline12"
+            card_view:layout_constraintTop_toTopOf="@+id/txtTgl" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/text_hasil_alamat_pemilik_rumah"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/namaSurveyor"
+            style="@style/MyTemaH2"
+            android:layout_width="0dp"
+            android:text="Andi Chairunnas"
+            android:textSize="@dimen/text_size_11"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline12"
+            card_view:layout_constraintTop_toBottomOf="@+id/txtSurveyor" />
 
-                    <TextView
-                        android:id="@+id/tvAlamatPemilikRumah"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/isi_data"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-                </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/text_hasil_disurvey_oleh"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tvSurveyor"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/isi_data"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/text_hasil_tanggal_survey"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tvTanggalSurvey"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/isi_data"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

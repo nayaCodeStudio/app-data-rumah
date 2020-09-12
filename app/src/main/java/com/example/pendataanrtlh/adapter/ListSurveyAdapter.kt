@@ -31,7 +31,7 @@ class ListSurveyAdapter(private var dataList: ArrayList<IdentitasPenghuniRmh>) :
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(dataSurvey: IdentitasPenghuniRmh) {
             with(itemView){
-                tvPemilikRumah.text = dataSurvey.nmLengkap
+                namaLengkap.text = dataSurvey.nmLengkap
             }
         }
     }
