@@ -150,9 +150,14 @@ class PageTwoFragment : Fragment() {
             }
 
             if (!inputKosong) {
-                if (inJenisKelamin.isNotEmpty() && inPendidikan != "pilih" && inKawasanLokasi.isNotEmpty()) {
-
-                    // cara kedua
+                if (inPendidikan != "pilih" &&
+                    inPekerjaan != "pilih" &&
+                    inPenghasilan != "pilih" &&
+                    inStatusRumah != "pilih" &&
+                    inStatusTanah != "pilih" &&
+                    inBantuanRumah != "pilih" &&
+                    inKawasanLokasi.isNotEmpty()) {
+                    //One Push Methode
                     nomorRumah = inNomorRumah
                     namaLengkap = inNamaLengkap
                     pendidikan = inPendidikan
@@ -168,13 +173,12 @@ class PageTwoFragment : Fragment() {
                     assetTanah = inAssetTanah
                     bantuanRumah = inBantuanRumah
                     kawasanLokasi = inKawasanLokasi.toString()
+
                     findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
                 }
             } else {
-                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
-
-
         }
     }
 }

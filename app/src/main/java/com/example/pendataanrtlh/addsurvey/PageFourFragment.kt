@@ -65,16 +65,20 @@ class PageFourFragment : Fragment() {
             val inSumListrik = binding.listSumberListik.selectedItem.toString()
             val inKmrMandi = binding.listKepemilikanKamarMandi.selectedItem.toString()
 
-            if (inJendela.isEmpty() && inVentilasi.isEmpty() && inJrkKmrMandi.isEmpty() && inKmrMandi != "pilih" && inSumAirMinum != "pilih" && inSumListrik != "pilih") {
+            if (inKmrMandi != "pilih" &&
+                inSumAirMinum != "pilih" &&
+                inSumListrik != "pilih") {
+                //One Push Methode
                 ventilasi = inVentilasi
                 kmrMandi = inKmrMandi
                 sumAirMinum = inSumAirMinum
                 sumListrik = inSumListrik
                 jendela = inJendela
                 jrkKmrMandi = inJrkKmrMandi
+
                 findNavController().navigate(R.id.action_FourFragment_to_FiveFragment)
             } else {
-                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
         }
     }

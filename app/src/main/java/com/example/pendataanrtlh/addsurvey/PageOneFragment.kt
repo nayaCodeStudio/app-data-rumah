@@ -75,16 +75,16 @@ class PageOneFragment : Fragment() {
                 }
             }
             if (!inputKosong) {
-                // cara kedua
+                //One Push Methode
                 nikPeserta = inNoKTP
                 nameDesaKel = inNameDesKel
                 nameKec = inNameKec
                 nameKotaKab = inNameKotKab
                 nameProv = inNameProv
-
+                
                 findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
             } else {
-                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
         }
     }

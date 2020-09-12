@@ -12,22 +12,22 @@ import com.example.pendataanrtlh.databinding.FragmentPageSixBinding
 import com.example.pendataanrtlh.model.AspekBangunan
 import com.example.pendataanrtlh.utils.Data.ASPEK_BANGUNAN
 import com.example.pendataanrtlh.utils.Data.USER_DATA
+import com.example.pendataanrtlh.utils.Data.konAtap
+import com.example.pendataanrtlh.utils.Data.konDinding
+import com.example.pendataanrtlh.utils.Data.konLantai
+import com.example.pendataanrtlh.utils.Data.matAtap
+import com.example.pendataanrtlh.utils.Data.matDinding
+import com.example.pendataanrtlh.utils.Data.matLantai
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_detail_hasil_survey.*
 
 
 class PageSixFragment : Fragment() {
     private lateinit var binding: FragmentPageSixBinding
-    private lateinit var database: FirebaseDatabase
-    private lateinit var myRef: DatabaseReference
-
-    private var matAtap: String? = ""
-    private var konAtap: String? = ""
-    private var matDinding: String? = ""
-    private var konDinding: String? = ""
-    private var matLantai: String? = ""
-    private var konLantai: String? = ""
+//    private lateinit var database: FirebaseDatabase
+//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,40 +40,40 @@ class PageSixFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_BANGUNAN")
+//        database = FirebaseDatabase.getInstance()
+//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_BANGUNAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_FiveFragment)
         }
 
         binding.btnNext.setOnClickListener {
-            matAtap = binding.listMaterialAtap.selectedItem.toString()
-            konAtap = binding.listKondisiAtap.selectedItem.toString()
-            matDinding = binding.listMaterialDinding.selectedItem.toString()
-            konDinding = binding.listKondisiDinding.selectedItem.toString()
-            matLantai = binding.listMaterialLantai.selectedItem.toString()
-            konLantai = binding.listKondisiLantai.selectedItem.toString()
+            val inMatAtap = binding.listMaterialAtap.selectedItem.toString()
+            val inKonAtap = binding.listKondisiAtap.selectedItem.toString()
+            val inMatDinding = binding.listMaterialDinding.selectedItem.toString()
+            val inKonDinding = binding.listKondisiDinding.selectedItem.toString()
+            val inMatLantai = binding.listMaterialLantai.selectedItem.toString()
+            val inKonLantai = binding.listKondisiLantai.selectedItem.toString()
 
-            if (matAtap != "pilih" && konAtap != "pilih" && matDinding != "pilih" && konDinding != "pilih" && matLantai != "pilih" && konLantai != "pilih") {
-                myRef.setValue(
-                    AspekBangunan(
-                        matAtap,
-                        konAtap,
-                        matDinding,
-                        konDinding,
-                        matLantai,
-                        konLantai
-                    )
-                )
-                    .addOnCompleteListener {
-                        findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
-                    }
+            if (inMatAtap != "pilih" &&
+                inKonAtap != "pilih" &&
+                inMatDinding != "pilih" &&
+                inKonDinding != "pilih" &&
+                inMatLantai != "pilih" &&
+                inKonLantai != "pilih"
+            ) {
+                //One Push Method
+                matAtap = inMatAtap
+                konAtap = inKonAtap
+                matDinding = inMatDinding
+                konDinding = inKonDinding
+                matLantai = inMatLantai
+                konLantai = inKonLantai
+
+                findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
             } else {
-                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
-
-
         }
     }
 }

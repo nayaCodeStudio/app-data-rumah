@@ -53,14 +53,17 @@ class PageThreeFragment : Fragment() {
             val inBalok = binding.listKondisiKolom.selectedItem.toString()
             val inAtap = binding.listKondisiKonstruksi.selectedItem.toString()
 
-            if (!inPondasi.isEmpty() && inBalok != "pilih" && inAtap != "pilih") {
+            if (!inPondasi.isEmpty() &&
+                inBalok != "pilih" &&
+                inAtap != "pilih") {
+                //One Push Methode
                 pondasi = inPondasi
                 balok = inBalok
                 atap = inAtap
 
                 findNavController().navigate(R.id.action_ThirdFragment_to_FourFragment)
             } else {
-                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
         }
     }
