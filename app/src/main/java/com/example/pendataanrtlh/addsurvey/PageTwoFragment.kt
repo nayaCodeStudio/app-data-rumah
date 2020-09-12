@@ -11,7 +11,7 @@ import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageTwoBinding
 import com.example.pendataanrtlh.model.IdentitasPenghuniRmh
 import com.example.pendataanrtlh.utils.Data.IDENTITAS_PENGHUNI_RMH
-import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -21,16 +21,7 @@ class PageTwoFragment : Fragment() {
     private lateinit var binding: FragmentPageTwoBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
-
-    private var jenisKelamin: String? = ""
-    private var pendidikan: String? = ""
-    private var pekerjaan: String? = ""
-    private var penghasilan: String? = ""
-    private var statusTanah: String? = ""
-    private var statusRumah: String? = ""
-    private var assetRumah: String? = ""
-    private var assetTanah: String? = ""
-    private var bantuanRumah: String? = ""
+    private lateinit var myRef1: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +34,9 @@ class PageTwoFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
+        myRef = database.getReference("$USER_DATA/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
+        myRef1 = database.getReference("IdentitasPenghuniRmh/$nikPeserta")
+        binding.textNoKTP.setText(nikPeserta)
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
@@ -85,84 +78,120 @@ class PageTwoFragment : Fragment() {
                 }
             }
 
-            pendidikan = binding.listPendidikan.selectedItem.toString()
-            pekerjaan = binding.listPekerjaan.selectedItem.toString()
-            penghasilan = binding.listPenghasilan.selectedItem.toString()
-            statusTanah = binding.listStatusTanah.selectedItem.toString()
-            statusRumah = binding.listStatusRumah.selectedItem.toString()
-            bantuanRumah = binding.listBantuanPerumahan.selectedItem.toString()
+            val inPendidikan = binding.listPendidikan.selectedItem.toString()
+            val inPekerjaan = binding.listPekerjaan.selectedItem.toString()
+            val inPenghasilan = binding.listPenghasilan.selectedItem.toString()
+            val inStatusTanah = binding.listStatusTanah.selectedItem.toString()
+            val inStatusRumah = binding.listStatusRumah.selectedItem.toString()
+            val inBantuanRumah = binding.listBantuanPerumahan.selectedItem.toString()
 
-            jenisKelamin = if (binding.chipPria.isChecked) {
+            val inJenisKelamin = if (binding.chipPria.isChecked) {
                 "Pria"
             } else {
                 "Wanita"
             }
 
-            assetRumah = if (binding.rbAdaRumah.isChecked) {
+            val inAssetRumah = if (binding.rbAdaRumah.isChecked) {
                 "Ada"
             } else {
                 "Tidak Ada"
             }
 
-            assetTanah = if (binding.rbAdaTanah.isChecked) {
+            val inAssetTanah = if (binding.rbAdaTanah.isChecked) {
                 "Ada"
             } else {
                 "Tidak Ada"
             }
 
-            val result = StringBuilder()
+            val inKawasanLokasi = StringBuilder()
             if (binding.cbRawanAir.isChecked) {
-                result.append("Rawan Air,")
+                inKawasanLokasi.append("Rawan Air,")
             }
             if (binding.cbKEK.isChecked) {
-                result.append("KEK, ")
+                inKawasanLokasi.append("KEK, ")
             }
             if (binding.cbPerbatasan.isChecked) {
-                result.append("Perbatasan, ")
+                inKawasanLokasi.append("Perbatasan, ")
             }
             if (binding.cbPulauKecil.isChecked) {
-                result.append("PulauKecil, ")
+                inKawasanLokasi.append("PulauKecil, ")
             }
             if (binding.cbDaerahTertinggal.isChecked) {
-                result.append("DaerahTertinggal, ")
+                inKawasanLokasi.append("DaerahTertinggal, ")
             }
             if (binding.cbKumuh.isChecked) {
-                result.append("Kumuh, ")
+                inKawasanLokasi.append("Kumuh, ")
             }
             if (binding.cbKSPN.isChecked) {
-                result.append("KSPN, ")
+                inKawasanLokasi.append("KSPN, ")
             }
             if (binding.cbPesisir.isChecked) {
-                result.append("Pesisir, ")
+                inKawasanLokasi.append("Pesisir, ")
             }
             if (binding.cbTransmigrasi.isChecked) {
-                result.append("Transmigrasi")
+                inKawasanLokasi.append("Transmigrasi")
             }
 
             if (!inputKosong) {
-                if (!jenisKelamin.isNullOrEmpty() && pendidikan != "pilih" && result.isNotEmpty()) {
+                if (inJenisKelamin.isNotEmpty() && inPendidikan != "pilih" && inKawasanLokasi.isNotEmpty()) {
                     myRef.setValue(
                         IdentitasPenghuniRmh(
                             inNomorRumah,
                             inNamaLengkap,
-                            pendidikan,
-                            jenisKelamin,
+                            inPendidikan,
+                            inJenisKelamin,
                             inAlmLengkp,
                             inNoKtp,
                             inJumlhKK,
-                            pekerjaan,
-                            penghasilan,
-                            statusTanah,
-                            statusRumah,
-                            assetRumah,
-                            assetTanah,
-                            bantuanRumah,
-                            result.toString()
+                            inPekerjaan,
+                            inPenghasilan,
+                            inStatusTanah,
+                            inStatusRumah,
+                            inAssetRumah,
+                            inAssetTanah,
+                            inBantuanRumah,
+                            inKawasanLokasi.toString()
                         )
                     )
                         .addOnCompleteListener {
+                            myRef1.setValue(
+                                IdentitasPenghuniRmh(
+                                    inNomorRumah,
+                                    inNamaLengkap,
+                                    inPendidikan,
+                                    inJenisKelamin,
+                                    inAlmLengkp,
+                                    inNoKtp,
+                                    inJumlhKK,
+                                    inPekerjaan,
+                                    inPenghasilan,
+                                    inStatusTanah,
+                                    inStatusRumah,
+                                    inAssetRumah,
+                                    inAssetTanah,
+                                    inBantuanRumah,
+                                    inKawasanLokasi.toString()
+                                )
+                            )
                             findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
                         }
+
+//                    // cara kedua
+//                    nomorRumah = inNomorRumah
+//                    namaLengkap = inNamaLengkap
+//                    pendidikan = inPendidikan
+//                    jenisKelamin = inJenisKelamin
+//                    almLengkp = inAlmLengkp
+//                    noKTP = inNoKtp
+//                    jumlhKK = inJumlhKK
+//                    pekerjaan = inPekerjaan
+//                    penghasilan = inPenghasilan
+//                    statusTanah = inStatusTanah
+//                    statusRumah = inStatusRumah
+//                    assetRumah = inAssetRumah
+//                    assetTanah = inAssetTanah
+//                    bantuanRumah = inBantuanRumah
+//                    kawasanLokasi = inKawasanLokasi.toString()
                 }
             } else {
                 Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()

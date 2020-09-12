@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -24,7 +24,6 @@
                 android:id="@+id/view3"
                 android:layout_width="120dp"
                 android:layout_height="0dp"
-                android:background="@drawable/bg_separetor_on"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent" />
@@ -55,15 +54,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/philosopher_bold"
-                        android:gravity="center_vertical"
-                        android:text="@string/text_hasil_pemilik_rumah"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"

@@ -10,9 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageSixBinding
 import com.example.pendataanrtlh.model.AspekBangunan
-import com.example.pendataanrtlh.model.AspekKeselamatan
 import com.example.pendataanrtlh.utils.Data.ASPEK_BANGUNAN
-import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -42,7 +41,7 @@ class PageSixFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$ASPEK_BANGUNAN")
+        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_BANGUNAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_FiveFragment)

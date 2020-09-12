@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.pendataanrtlh.addsurvey.AddSurveyActivity
 import com.example.pendataanrtlh.databinding.ActivityMainMenuBinding
 import com.example.pendataanrtlh.model.FormData
+import com.example.pendataanrtlh.surveyresult.HasilSurveyActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -32,6 +33,9 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         binding.btnSurveyResult.setOnClickListener {
+            val intentLoginActivity =
+                Intent(Intent(this, HasilSurveyActivity::class.java))
+            startActivity(intentLoginActivity)
 //            realTimeDB(FormData(noKTP, inDesKel, inKec, inkabKot, inProv))
         }
     }

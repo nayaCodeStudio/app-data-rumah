@@ -10,7 +10,7 @@ import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageFiveBinding
 import com.example.pendataanrtlh.model.AspekLuasRuang
 import com.example.pendataanrtlh.utils.Data.ASPEK_LUAS_RUANG
-import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -32,7 +32,7 @@ class PageFiveFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$ASPEK_LUAS_RUANG")
+        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_LUAS_RUANG")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)

@@ -11,7 +11,7 @@ import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageOneBinding
 import com.example.pendataanrtlh.model.FormData
 import com.example.pendataanrtlh.utils.Data.FORM_DATA
-import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -71,13 +71,27 @@ class PageOneFragment : Fragment() {
                 }
             }
             if (!inputKosong) {
-//                myRef = database.getReference("$TEMP_FORM/$NIK_SURVEYOR/$inNoKTP")
-                myRef = database.getReference("$TEMP_FORM/$inNoKTP/$FORM_DATA")
+                myRef = database.getReference("$USER_DATA/$inNoKTP/$FORM_DATA")
                 myRef.setValue(FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv))
                     .addOnCompleteListener {
                         nikPeserta = inNoKTP
                         findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
                     }
+
+//                // cara kedua
+//                nikPeserta = inNoKTP
+//                nameDesaKel = inNameDesKel
+//                nameKec = inNameKec
+//                nameKotaKab = inNameKotKab
+//                nameProv = inNameProv
+//
+//                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+//
+//                val formData = FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv)
+//                val bundle = bundleOf(FORM_DATA to formData)
+//                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
+            } else {
+                Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
             }
         }
     }

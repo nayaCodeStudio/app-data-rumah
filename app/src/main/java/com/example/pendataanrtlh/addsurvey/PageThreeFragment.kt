@@ -11,7 +11,7 @@ import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageThreeBinding
 import com.example.pendataanrtlh.model.AspekKeselamatan
 import com.example.pendataanrtlh.utils.Data.ASPEK_KESELAMATAN
-import com.example.pendataanrtlh.utils.Data.TEMP_FORM
+import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -39,7 +39,7 @@ class PageThreeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$TEMP_FORM/$nikPeserta/$ASPEK_KESELAMATAN")
+        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_KESELAMATAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_SecondFragment)

@@ -125,9 +125,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    android:layout_marginBottom="5dp">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoRumah"
@@ -140,9 +140,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    android:layout_marginBottom="5dp">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNmLengkap"
@@ -155,9 +155,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    android:layout_marginBottom="5dp">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textUsia"
@@ -224,9 +224,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    android:layout_marginBottom="5dp">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textAlmtLengkap"
@@ -340,14 +340,16 @@
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="16">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoKTP"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
                         android:hint="@string/no_ktp"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
@@ -355,9 +357,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
+                    android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                    android:layout_marginBottom="5dp">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textJumKK"
