@@ -12,21 +12,20 @@ import com.example.pendataanrtlh.databinding.FragmentPageFourBinding
 import com.example.pendataanrtlh.model.AspekKesehatan
 import com.example.pendataanrtlh.utils.Data.ASPEK_KESEHATAN
 import com.example.pendataanrtlh.utils.Data.USER_DATA
+import com.example.pendataanrtlh.utils.Data.jendela
+import com.example.pendataanrtlh.utils.Data.jrkKmrMandi
+import com.example.pendataanrtlh.utils.Data.kmrMandi
 import com.example.pendataanrtlh.utils.Data.nikPeserta
+import com.example.pendataanrtlh.utils.Data.sumAirMinum
+import com.example.pendataanrtlh.utils.Data.sumListrik
+import com.example.pendataanrtlh.utils.Data.ventilasi
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class PageFourFragment : Fragment() {
     private lateinit var binding: FragmentPageFourBinding
-    private lateinit var database: FirebaseDatabase
-    private lateinit var myRef: DatabaseReference
-
-    private var jendela: String? = ""
-    private var ventilasi: String? = ""
-    private var kmrMandi: String? = ""
-    private var jrkKmrMandi: String? = ""
-    private var sumAirMinum: String? = ""
-    private var sumListrik: String? = ""
+//    private lateinit var database: FirebaseDatabase
+//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,48 +37,42 @@ class PageFourFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_KESEHATAN")
+//        database = FirebaseDatabase.getInstance()
+//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_KESEHATAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FourFragment_to_ThirdFragment)
         }
 
         binding.btnNext.setOnClickListener {
-
-            jendela = if (binding.chipAdaJendela.isChecked) {
+            val inJendela = if (binding.chipAdaJendela.isChecked) {
                 "Ada"
             } else {
                 "Tidak Ada"
             }
-            ventilasi = if (binding.chipAdaVentilasi.isChecked) {
+            val inVentilasi = if (binding.chipAdaVentilasi.isChecked) {
                 "Ada"
             } else {
                 "Tidak Ada"
             }
-            kmrMandi = binding.listKepemilikanKamarMandi.selectedItem.toString()
-            jrkKmrMandi = if (binding.chipKurang.isChecked) {
+            val inJrkKmrMandi = if (binding.chipKurang.isChecked) {
                 "Kurang dari 10 Meter"
             } else {
                 "Lebih dari 10 Meter"
             }
-            sumAirMinum = binding.listSumberAirMinum.selectedItem.toString()
-            sumListrik = binding.listSumberListik.selectedItem.toString()
 
-            if (ventilasi != "pilih" && kmrMandi != "pilih" && sumAirMinum != "pilih" && sumListrik != "pilih") {
-                myRef.setValue(
-                    AspekKesehatan(
-                        jendela,
-                        ventilasi,
-                        kmrMandi,
-                        jrkKmrMandi,
-                        sumAirMinum,
-                        sumListrik,
-                    )
-                )
-                    .addOnCompleteListener {
-                        findNavController().navigate(R.id.action_FourFragment_to_FiveFragment)
-                    }
+            val inSumAirMinum = binding.listSumberAirMinum.selectedItem.toString()
+            val inSumListrik = binding.listSumberListik.selectedItem.toString()
+            val inKmrMandi = binding.listKepemilikanKamarMandi.selectedItem.toString()
+
+            if (inJendela.isEmpty() && inVentilasi.isEmpty() && inJrkKmrMandi.isEmpty() && inKmrMandi != "pilih" && inSumAirMinum != "pilih" && inSumListrik != "pilih") {
+                ventilasi = inVentilasi
+                kmrMandi = inKmrMandi
+                sumAirMinum = inSumAirMinum
+                sumListrik = inSumListrik
+                jendela = inJendela
+                jrkKmrMandi = inJrkKmrMandi
+                findNavController().navigate(R.id.action_FourFragment_to_FiveFragment)
             } else {
                 Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
             }
