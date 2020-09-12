@@ -37,4 +37,8 @@ object Data {
     var assetTanah: String? = null
     var bantuanRumah: String? = null
     var kawasanLokasi: String? = null
+
+    var pondasi: String? = null
+    var balok: String? = null
+    var atap: String? = null
 }

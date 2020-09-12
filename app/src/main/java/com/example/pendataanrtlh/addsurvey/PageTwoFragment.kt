@@ -9,19 +9,35 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageTwoBinding
+import com.example.pendataanrtlh.model.FormData
 import com.example.pendataanrtlh.model.IdentitasPenghuniRmh
 import com.example.pendataanrtlh.utils.Data.IDENTITAS_PENGHUNI_RMH
 import com.example.pendataanrtlh.utils.Data.USER_DATA
+import com.example.pendataanrtlh.utils.Data.almLengkp
+import com.example.pendataanrtlh.utils.Data.assetRumah
+import com.example.pendataanrtlh.utils.Data.assetTanah
+import com.example.pendataanrtlh.utils.Data.bantuanRumah
+import com.example.pendataanrtlh.utils.Data.jenisKelamin
+import com.example.pendataanrtlh.utils.Data.jumlhKK
+import com.example.pendataanrtlh.utils.Data.kawasanLokasi
+import com.example.pendataanrtlh.utils.Data.namaLengkap
 import com.example.pendataanrtlh.utils.Data.nikPeserta
+import com.example.pendataanrtlh.utils.Data.noKTP
+import com.example.pendataanrtlh.utils.Data.nomorRumah
+import com.example.pendataanrtlh.utils.Data.pekerjaan
+import com.example.pendataanrtlh.utils.Data.pendidikan
+import com.example.pendataanrtlh.utils.Data.penghasilan
+import com.example.pendataanrtlh.utils.Data.statusRumah
+import com.example.pendataanrtlh.utils.Data.statusTanah
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
 class PageTwoFragment : Fragment() {
     private lateinit var binding: FragmentPageTwoBinding
-    private lateinit var database: FirebaseDatabase
-    private lateinit var myRef: DatabaseReference
-    private lateinit var myRef1: DatabaseReference
+//    private lateinit var database: FirebaseDatabase
+//    private lateinit var myRef: DatabaseReference
+//    private lateinit var myRef1: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,13 +49,14 @@ class PageTwoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        database = FirebaseDatabase.getInstance()
-        myRef = database.getReference("$USER_DATA/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
-        myRef1 = database.getReference("IdentitasPenghuniRmh/$nikPeserta")
+//        database = FirebaseDatabase.getInstance()
+//        myRef = database.getReference("$USER_DATA/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
+//        myRef1 = database.getReference("IdentitasPenghuniRmh/$nikPeserta")
         binding.textNoKTP.setText(nikPeserta)
 
         binding.btnPrev.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            Toast.makeText(requireContext(), "${FormData()}", Toast.LENGTH_SHORT).show()
+//            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
 
         binding.btnNext.setOnClickListener {
@@ -134,64 +151,24 @@ class PageTwoFragment : Fragment() {
 
             if (!inputKosong) {
                 if (inJenisKelamin.isNotEmpty() && inPendidikan != "pilih" && inKawasanLokasi.isNotEmpty()) {
-                    myRef.setValue(
-                        IdentitasPenghuniRmh(
-                            inNomorRumah,
-                            inNamaLengkap,
-                            inPendidikan,
-                            inJenisKelamin,
-                            inAlmLengkp,
-                            inNoKtp,
-                            inJumlhKK,
-                            inPekerjaan,
-                            inPenghasilan,
-                            inStatusTanah,
-                            inStatusRumah,
-                            inAssetRumah,
-                            inAssetTanah,
-                            inBantuanRumah,
-                            inKawasanLokasi.toString()
-                        )
-                    )
-                        .addOnCompleteListener {
-                            myRef1.setValue(
-                                IdentitasPenghuniRmh(
-                                    inNomorRumah,
-                                    inNamaLengkap,
-                                    inPendidikan,
-                                    inJenisKelamin,
-                                    inAlmLengkp,
-                                    inNoKtp,
-                                    inJumlhKK,
-                                    inPekerjaan,
-                                    inPenghasilan,
-                                    inStatusTanah,
-                                    inStatusRumah,
-                                    inAssetRumah,
-                                    inAssetTanah,
-                                    inBantuanRumah,
-                                    inKawasanLokasi.toString()
-                                )
-                            )
-                            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
-                        }
 
-//                    // cara kedua
-//                    nomorRumah = inNomorRumah
-//                    namaLengkap = inNamaLengkap
-//                    pendidikan = inPendidikan
-//                    jenisKelamin = inJenisKelamin
-//                    almLengkp = inAlmLengkp
-//                    noKTP = inNoKtp
-//                    jumlhKK = inJumlhKK
-//                    pekerjaan = inPekerjaan
-//                    penghasilan = inPenghasilan
-//                    statusTanah = inStatusTanah
-//                    statusRumah = inStatusRumah
-//                    assetRumah = inAssetRumah
-//                    assetTanah = inAssetTanah
-//                    bantuanRumah = inBantuanRumah
-//                    kawasanLokasi = inKawasanLokasi.toString()
+                    // cara kedua
+                    nomorRumah = inNomorRumah
+                    namaLengkap = inNamaLengkap
+                    pendidikan = inPendidikan
+                    jenisKelamin = inJenisKelamin
+                    almLengkp = inAlmLengkp
+                    noKTP = inNoKtp
+                    jumlhKK = inJumlhKK
+                    pekerjaan = inPekerjaan
+                    penghasilan = inPenghasilan
+                    statusTanah = inStatusTanah
+                    statusRumah = inStatusRumah
+                    assetRumah = inAssetRumah
+                    assetTanah = inAssetTanah
+                    bantuanRumah = inBantuanRumah
+                    kawasanLokasi = inKawasanLokasi.toString()
+                    findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
                 }
             } else {
                 Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()

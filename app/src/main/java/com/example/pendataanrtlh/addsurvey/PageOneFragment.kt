@@ -12,14 +12,18 @@ import com.example.pendataanrtlh.databinding.FragmentPageOneBinding
 import com.example.pendataanrtlh.model.FormData
 import com.example.pendataanrtlh.utils.Data.FORM_DATA
 import com.example.pendataanrtlh.utils.Data.USER_DATA
+import com.example.pendataanrtlh.utils.Data.nameDesaKel
+import com.example.pendataanrtlh.utils.Data.nameKec
+import com.example.pendataanrtlh.utils.Data.nameKotaKab
+import com.example.pendataanrtlh.utils.Data.nameProv
 import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class PageOneFragment : Fragment() {
     private lateinit var binding: FragmentPageOneBinding
-    private lateinit var database: FirebaseDatabase
-    private lateinit var myRef: DatabaseReference
+//    private lateinit var database: FirebaseDatabase
+//    private lateinit var myRef: DatabaseReference
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,7 +42,7 @@ class PageOneFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        database = FirebaseDatabase.getInstance()
+//        database = FirebaseDatabase.getInstance()
 
         binding.btnNext.setOnClickListener {
             val inNoKTP = binding.textNomorNIK.text.toString().trim { it <= ' ' }
@@ -71,25 +75,14 @@ class PageOneFragment : Fragment() {
                 }
             }
             if (!inputKosong) {
-                myRef = database.getReference("$USER_DATA/$inNoKTP/$FORM_DATA")
-                myRef.setValue(FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv))
-                    .addOnCompleteListener {
-                        nikPeserta = inNoKTP
-                        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-                    }
+                // cara kedua
+                nikPeserta = inNoKTP
+                nameDesaKel = inNameDesKel
+                nameKec = inNameKec
+                nameKotaKab = inNameKotKab
+                nameProv = inNameProv
 
-//                // cara kedua
-//                nikPeserta = inNoKTP
-//                nameDesaKel = inNameDesKel
-//                nameKec = inNameKec
-//                nameKotaKab = inNameKotKab
-//                nameProv = inNameProv
-//
-//                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-//
-//                val formData = FormData(inNoKTP, inNameDesKel, inNameKec, inNameKotKab, inNameProv)
-//                val bundle = bundleOf(FORM_DATA to formData)
-//                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
+                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
             } else {
                 Toast.makeText(context, "Harap Diisi dahulu", Toast.LENGTH_SHORT).show()
             }
