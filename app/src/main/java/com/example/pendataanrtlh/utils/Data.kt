@@ -41,4 +41,11 @@ object Data {
     var pondasi: String? = null
     var balok: String? = null
     var atap: String? = null
+
+    var jendela: String? = null
+    var ventilasi: String? = null
+    var kmrMandi: String? = null
+    var jrkKmrMandi: String? = null
+    var sumAirMinum: String? = null
+    var sumListrik: String? = null
 }
