@@ -33,6 +33,12 @@ class RegisterActivity : AppCompatActivity() {
             val inNoHp = binding.textNomorHP.text.toString().trim { it <= ' ' }
             val inAddress = binding.textAlamat.text.toString().trim { it <= ' ' }
 
+            val inJenisKelamin = if (binding.chipPria.isChecked) {
+                "Pria"
+            } else {
+                "Wanita"
+            }
+
             var inputKosong = false
             when {
                 inEmailAddress.isEmpty() -> {
@@ -80,7 +86,8 @@ class RegisterActivity : AppCompatActivity() {
                         inFullName,
                         inEmailAddress,
                         inNoHp,
-                        inAddress
+                        inAddress,
+                        inJenisKelamin
                     )
                 )
             }

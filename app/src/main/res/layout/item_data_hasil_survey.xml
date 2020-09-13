@@ -6,8 +6,13 @@
     android:clickable="true"
     android:focusable="true"
     card_view:cardCornerRadius="@dimen/separator_size_10"
-    card_view:cardUseCompatPadding="true"
-    card_view:rippleColor="@color/colorPrimary">
+    card_view:cardElevation="4dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="3dp"
+    card_view:rippleColor="@color/colorPrimary"
+    card_view:strokeWidth="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,8 +20,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="20dp"
             android:contentDescription="@string/imageview"
             android:src="@drawable/ic_list_ii"
@@ -30,7 +35,7 @@
             android:layout_marginStart="@dimen/separator_size_10"
             android:layout_marginEnd="@dimen/separator_size_10"
             android:text="Name"
-            android:textSize="@dimen/text_size_14"
+            android:textSize="@dimen/text_size_15"
             card_view:layout_constraintBottom_toTopOf="@+id/nomorKTP"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/imageView"
@@ -44,7 +49,7 @@
             android:layout_marginStart="@dimen/separator_size_10"
             android:layout_marginEnd="@dimen/separator_size_10"
             android:text="0123456789"
-            android:textSize="@dimen/text_size_12"
+            android:textSize="@dimen/text_size_13"
             card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/imageView"
@@ -54,9 +59,10 @@
             android:id="@+id/txtTgl"
             style="@style/MyTemaH4"
             android:layout_width="0dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="@dimen/separator_size_10"
             android:text="dibuat Tanggal:"
-            android:textSize="@dimen/text_size_10"
+            android:textSize="@dimen/text_size_11"
             card_view:layout_constraintEnd_toStartOf="@+id/guideline12"
             card_view:layout_constraintStart_toStartOf="@+id/imageView"
             card_view:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -65,9 +71,10 @@
             android:id="@+id/tglInput"
             style="@style/MyTemaH2"
             android:layout_width="0dp"
+            android:layout_marginStart="8dp"
             android:layout_marginBottom="@dimen/separator_size_10"
             android:text="13 September 2020"
-            android:textSize="@dimen/text_size_11"
+            android:textSize="@dimen/text_size_12"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toStartOf="@+id/guideline12"
             card_view:layout_constraintStart_toStartOf="@+id/imageView"
@@ -85,7 +92,8 @@
             style="@style/MyTemaH4"
             android:layout_width="0dp"
             android:text="di Survey Oleh:"
-            android:textSize="@dimen/text_size_10"
+            android:textSize="@dimen/text_size_11"
+            card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/guideline12"
             card_view:layout_constraintTop_toTopOf="@+id/txtTgl" />
 
@@ -94,9 +102,20 @@
             style="@style/MyTemaH2"
             android:layout_width="0dp"
             android:text="Andi Chairunnas"
-            android:textSize="@dimen/text_size_11"
+            android:textSize="@dimen/text_size_12"
+            card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/guideline12"
             card_view:layout_constraintTop_toBottomOf="@+id/txtSurveyor" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_arrow"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -9,19 +9,12 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageSixBinding
-import com.example.pendataanrtlh.model.AspekBangunan
-import com.example.pendataanrtlh.utils.Data.ASPEK_BANGUNAN
-import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.konAtap
 import com.example.pendataanrtlh.utils.Data.konDinding
 import com.example.pendataanrtlh.utils.Data.konLantai
 import com.example.pendataanrtlh.utils.Data.matAtap
 import com.example.pendataanrtlh.utils.Data.matDinding
 import com.example.pendataanrtlh.utils.Data.matLantai
-import com.example.pendataanrtlh.utils.Data.nikPeserta
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_detail_hasil_survey.*
 
 
 class PageSixFragment : Fragment() {
@@ -48,6 +41,8 @@ class PageSixFragment : Fragment() {
         }
 
         binding.btnNext.setOnClickListener {
+//            findNavController().navigate(R.id.action_sixFragment_to_firstFragment)
+
             val inMatAtap = binding.listMaterialAtap.selectedItem.toString()
             val inKonAtap = binding.listKondisiAtap.selectedItem.toString()
             val inMatDinding = binding.listMaterialDinding.selectedItem.toString()
@@ -70,7 +65,7 @@ class PageSixFragment : Fragment() {
                 matLantai = inMatLantai
                 konLantai = inKonLantai
 
-                findNavController().navigate(R.id.action_SixFragment_to_SevenFragment)
+                findNavController().navigate(R.id.action_sixFragment_to_firstFragment)
             } else {
                 Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }

@@ -3,14 +3,12 @@ package com.example.pendataanrtlh.surveyresult
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.adapter.ListSurveyAdapter
 import com.example.pendataanrtlh.databinding.ActivityHasilSurveyBinding
-import com.example.pendataanrtlh.model.IdentitasPenghuniRmh
+import com.example.pendataanrtlh.model.FormSurveyor
 import com.example.pendataanrtlh.utils.Data
-import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.google.firebase.database.*
 
 class HasilSurveyActivity : AppCompatActivity() {
@@ -41,12 +39,12 @@ class HasilSurveyActivity : AppCompatActivity() {
     }
 
     private fun onGetData() {
-        myRef = database.getReference("IdentitasPenghuniRmh")
+        myRef = database.getReference(Data.DATA_SURVEYOR)
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val dataSurvey: ArrayList<IdentitasPenghuniRmh> = arrayListOf()
+                val dataSurvey: ArrayList<FormSurveyor> = arrayListOf()
                 for (dataSnapshot1 in snapshot.children) {
-                    val dataReseller = dataSnapshot1.getValue(IdentitasPenghuniRmh::class.java)
+                    val dataReseller = dataSnapshot1.getValue(FormSurveyor::class.java)
                     dataReseller?.let { dataSurvey.add(it) }
 
                 }
@@ -60,7 +58,7 @@ class HasilSurveyActivity : AppCompatActivity() {
         })
     }
 
-    private fun onShowData(listData : ArrayList<IdentitasPenghuniRmh>) {
+    private fun onShowData(listData : ArrayList<FormSurveyor>) {
         listSurveyAdapter = ListSurveyAdapter(listData)
         binding.rvListSurvey.adapter = listSurveyAdapter
     }

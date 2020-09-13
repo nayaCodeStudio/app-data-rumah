@@ -9,15 +9,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageThreeBinding
-import com.example.pendataanrtlh.model.AspekKeselamatan
-import com.example.pendataanrtlh.utils.Data.ASPEK_KESELAMATAN
-import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.atap
 import com.example.pendataanrtlh.utils.Data.balok
-import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.example.pendataanrtlh.utils.Data.pondasi
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_page_three.*
 
 
@@ -45,6 +39,8 @@ class PageThreeFragment : Fragment() {
         }
 
         binding.btnNext.setOnClickListener {
+//            findNavController().navigate(R.id.action_ThirdFragment_to_FourFragment)
+
             val inPondasi = if (chip_ada.isChecked) {
                 "Ada"
             } else {

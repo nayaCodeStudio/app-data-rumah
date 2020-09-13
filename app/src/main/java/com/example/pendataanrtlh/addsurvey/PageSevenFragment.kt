@@ -1,5 +1,6 @@
 package com.example.pendataanrtlh.addsurvey
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.example.pendataanrtlh.MainMenuActivity
 import com.example.pendataanrtlh.R
 
 
@@ -23,7 +25,9 @@ class PageSevenFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.buttonMainMenu).setOnClickListener {
-            findNavController().navigate(R.id.action_SevenFragment_to_MainMenuActivity)
+//            findNavController().navigate(R.id.action_SevenFragment_to_MainMenuActivity)
+            val intent = Intent(requireContext(), MainMenuActivity::class.java)
+            startActivity(intent)
             requireActivity().finish()
         }
     }

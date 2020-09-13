@@ -19,9 +19,9 @@
         style="@style/MyTemaH2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/title_page_off_6"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_12"
-        android:text="@string/title_page_off_1"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
         android:id="@+id/view_page2"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_off"
+        android:background="@drawable/bg_separetor_on"
         app:layout_constraintEnd_toStartOf="@+id/view_page3"
         app:layout_constraintStart_toEndOf="@+id/view_page1"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -57,7 +57,7 @@
         android:id="@+id/view_page3"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_off"
+        android:background="@drawable/bg_separetor_on"
         app:layout_constraintEnd_toStartOf="@+id/view_page4"
         app:layout_constraintStart_toEndOf="@+id/view_page2"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -66,7 +66,7 @@
         android:id="@+id/view_page4"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_off"
+        android:background="@drawable/bg_separetor_on"
         app:layout_constraintEnd_toStartOf="@+id/view_page5"
         app:layout_constraintStart_toEndOf="@+id/view_page3"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -75,7 +75,7 @@
         android:id="@+id/view_page5"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_off"
+        android:background="@drawable/bg_separetor_on"
         app:layout_constraintEnd_toStartOf="@+id/view_page6"
         app:layout_constraintStart_toEndOf="@+id/view_page4"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -84,7 +84,7 @@
         android:id="@+id/view_page6"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_off"
+        android:background="@drawable/bg_separetor_on"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/view_page5"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -118,25 +118,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
                 android:layout_marginBottom="5dp"
-                app:counterEnabled="true"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                app:counterMaxLength="16">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textNomorNIK"
-                    style="@style/MyTemaH3"
-                    android:layout_height="50dp"
-                    android:hint="@string/text_nomor_ktp_nik"
-                    android:inputType="number"
-                    android:textSize="@dimen/text_size_14" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/EditTextCustom"
-                app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                android:layout_marginBottom="5dp">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textDesKel"
@@ -149,9 +132,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                android:layout_marginBottom="5dp">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textKec"
@@ -164,9 +147,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                android:layout_marginBottom="5dp">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textKotKab"
@@ -179,9 +162,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
+                android:layout_marginBottom="5dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
-                android:layout_marginBottom="5dp">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textProv"
@@ -225,7 +208,7 @@
         android:focusable="true"
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
-        android:text="@string/text_selanjutnya"
+        android:text="Selesai"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_14"
@@ -236,4 +219,24 @@
         app:layout_constraintTop_toBottomOf="@+id/isiContent"
         app:rippleColor="@android:color/white" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrev"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0"
+        android:text="@string/text_sebelumnya"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        app:backgroundTint="@color/bgBiru"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNext"
+        app:rippleColor="@android:color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>

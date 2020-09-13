@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/secondFragment">
 
     <fragment
         android:id="@+id/firstFragment"
@@ -12,8 +12,11 @@
         tools:layout="@layout/fragment_page_one">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/secondFragment" />
+            android:id="@+id/action_firstFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_sixFragment"
+            app:destination="@id/sixFragment" />
     </fragment>
 
     <fragment
@@ -21,10 +24,6 @@
         android:name="com.example.pendataanrtlh.addsurvey.PageTwoFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_page_two">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/firstFragment" />
 
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
@@ -85,10 +84,10 @@
         <action
             android:id="@+id/action_SixFragment_to_FiveFragment"
             app:destination="@id/fourFragment" />
-
         <action
-            android:id="@+id/action_SixFragment_to_SevenFragment"
-            app:destination="@id/sevenFragment" />
+            android:id="@+id/action_sixFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+
     </fragment>
 
     <fragment

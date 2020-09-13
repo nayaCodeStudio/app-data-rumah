@@ -18,7 +18,7 @@
         style="@style/MyTemaH2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_page_off_2"
+        android:text="@string/title_page_off_1"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_12"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -47,7 +47,7 @@
         android:id="@+id/view_page2"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_on"
+        android:background="@drawable/bg_separetor_off"
         app:layout_constraintEnd_toStartOf="@+id/view_page3"
         app:layout_constraintStart_toEndOf="@+id/view_page1"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />
@@ -340,16 +340,18 @@
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="16">
 
+                    <!--                    android:clickable="false"-->
+                    <!--                    android:cursorVisible="false"-->
+                    <!--                    android:focusable="false"-->
+                    <!--                    android:focusableInTouchMode="false"-->
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoKTP"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:clickable="false"
-                        android:cursorVisible="false"
-                        android:focusable="false"
-                        android:focusableInTouchMode="false"
                         android:hint="@string/no_ktp"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
@@ -663,26 +665,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/content"
                 app:rippleColor="@android:color/white" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnPrev"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_button_left"
-                android:clickable="true"
-                android:focusable="true"
-                android:fontFamily="@font/poppins_semibold"
-                android:letterSpacing="0"
-                android:text="@string/text_sebelumnya"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_14"
-                android:textStyle="bold"
-                app:backgroundTint="@color/bgBiru"
-                app:layout_constraintBottom_toBottomOf="@+id/btnNext"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btnNext"
-                app:rippleColor="@android:color/white" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

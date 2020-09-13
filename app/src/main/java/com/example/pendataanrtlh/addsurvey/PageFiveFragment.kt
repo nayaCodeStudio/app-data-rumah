@@ -9,14 +9,8 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageFiveBinding
-import com.example.pendataanrtlh.model.AspekLuasRuang
-import com.example.pendataanrtlh.utils.Data.ASPEK_LUAS_RUANG
-import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.jumPenghuni
 import com.example.pendataanrtlh.utils.Data.luasRumah
-import com.example.pendataanrtlh.utils.Data.nikPeserta
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 
 class PageFiveFragment : Fragment() {
@@ -42,6 +36,8 @@ class PageFiveFragment : Fragment() {
         }
 
         binding.btnNext.setOnClickListener {
+//            findNavController().navigate(R.id.action_FiveFragment_to_SixFragment)
+
             val inLuasRumah = binding.textLuasRumah.text.toString().trim { it <= ' ' }
             val inJumPenghuni = binding.textJumPenghuni.text.toString().trim { it <= ' ' }
             var inputKosong = false

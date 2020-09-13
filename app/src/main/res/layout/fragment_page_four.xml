@@ -18,7 +18,7 @@
         style="@style/MyTemaH2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_page_off_4"
+        android:text="@string/title_page_off_3"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_12"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -65,7 +65,7 @@
         android:id="@+id/view_page4"
         android:layout_width="50dp"
         android:layout_height="3dp"
-        android:background="@drawable/bg_separetor_on"
+        android:background="@drawable/bg_separetor_off"
         app:layout_constraintEnd_toStartOf="@+id/view_page5"
         app:layout_constraintStart_toEndOf="@+id/view_page3"
         app:layout_constraintTop_toTopOf="@+id/view_page1" />

@@ -5,14 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pendataanrtlh.R
-import com.example.pendataanrtlh.model.IdentitasPenghuniRmh
+import com.example.pendataanrtlh.model.FormSurveyor
 import kotlinx.android.synthetic.main.item_data_hasil_survey.view.*
 
 /**
  ** Written by @JoeFachrizal 10/09/2020 08.52
  **/
 
-class ListSurveyAdapter(private var dataList: ArrayList<IdentitasPenghuniRmh>) :
+class ListSurveyAdapter(private var dataList: ArrayList<FormSurveyor>) :
     RecyclerView.Adapter<ListSurveyAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,9 +29,12 @@ class ListSurveyAdapter(private var dataList: ArrayList<IdentitasPenghuniRmh>) :
 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(dataSurvey: IdentitasPenghuniRmh) {
+        fun bind(dataSurvey: FormSurveyor) {
             with(itemView){
-                namaLengkap.text = dataSurvey.nmLengkap
+                namaLengkap.text = dataSurvey.namaLengkap
+                nomorKTP.text = dataSurvey.noKTPPeserta
+                tglInput.text = dataSurvey.tglInput
+                namaSurveyor.text = dataSurvey.nameSurveyor
             }
         }
     }

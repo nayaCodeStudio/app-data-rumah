@@ -9,18 +9,12 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.FragmentPageFourBinding
-import com.example.pendataanrtlh.model.AspekKesehatan
-import com.example.pendataanrtlh.utils.Data.ASPEK_KESEHATAN
-import com.example.pendataanrtlh.utils.Data.USER_DATA
 import com.example.pendataanrtlh.utils.Data.jendela
 import com.example.pendataanrtlh.utils.Data.jrkKmrMandi
 import com.example.pendataanrtlh.utils.Data.kmrMandi
-import com.example.pendataanrtlh.utils.Data.nikPeserta
 import com.example.pendataanrtlh.utils.Data.sumAirMinum
 import com.example.pendataanrtlh.utils.Data.sumListrik
 import com.example.pendataanrtlh.utils.Data.ventilasi
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 class PageFourFragment : Fragment() {
     private lateinit var binding: FragmentPageFourBinding
@@ -45,6 +39,8 @@ class PageFourFragment : Fragment() {
         }
 
         binding.btnNext.setOnClickListener {
+//            findNavController().navigate(R.id.action_FourFragment_to_FiveFragment)
+
             val inJendela = if (binding.chipAdaJendela.isChecked) {
                 "Ada"
             } else {
