@@ -15,6 +15,13 @@ import kotlinx.android.synthetic.main.item_data_hasil_survey.view.*
 class ListSurveyAdapter(private var dataList: ArrayList<FormSurveyor>) :
     RecyclerView.Adapter<ListSurveyAdapter.ViewHolder>() {
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.item_data_hasil_survey, parent, false)
@@ -36,6 +43,13 @@ class ListSurveyAdapter(private var dataList: ArrayList<FormSurveyor>) :
                 tglInput.text = dataSurvey.tglInput
                 namaSurveyor.text = dataSurvey.nameSurveyor
             }
+            itemView.setOnClickListener {
+                onItemClickCallback.onClicked(dataSurvey)
+            }
         }
+    }
+
+    interface OnItemClickCallback {
+        fun onClicked(data: FormSurveyor)
     }
 }

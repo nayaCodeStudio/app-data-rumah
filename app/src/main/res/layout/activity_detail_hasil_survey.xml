@@ -87,15 +87,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView2"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separator_size_8"
+                android:layout_marginEnd="@dimen/separator_size_8"
                 app:cardCornerRadius="@dimen/separator_size_10"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameApp"
-                app:strokeColor="@color/colorPrimary"
                 app:strokeWidth="2dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -204,262 +206,241 @@
                         android:layout_width="0dp"
                         android:layout_height="25dp"
                         android:layout_marginStart="100dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="100dp"
                         android:background="@drawable/ic_bottom_arrow"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tglInput" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
+            <!--                        <LinearLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:background="@drawable/side_ovalmid"-->
+            <!--                            android:orientation="vertical"-->
+            <!--                            android:padding="15dp">-->
 
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="32dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_identitas_surveyor"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
+            <!--                            <TextView-->
+            <!--                                style="@style/MyTemaH1"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="32dp"-->
+            <!--                                android:background="@drawable/side_ovalisi"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:text="@string/title_identitas_surveyor"-->
+            <!--                                android:textSize="@dimen/text_size_16" />-->
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:orientation="horizontal">-->
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+            <!--                                <TextView-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/text_nama_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaSurveyor"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_nama_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/namaSurveyor"-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/isi_nama_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
+            <!--                            </LinearLayout>-->
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:orientation="horizontal">-->
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_email_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+            <!--                                <TextView-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/text_email_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/emailSurveyor"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_email_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/emailSurveyor"-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/isi_email_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
+            <!--                            </LinearLayout>-->
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:orientation="horizontal">-->
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_no_hp_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+            <!--                                <TextView-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/text_no_hp_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/nomorHPSurveyor"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_no_hp_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/nomorHPSurveyor"-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/isi_no_hp_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
+            <!--                            </LinearLayout>-->
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:orientation="horizontal">-->
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_no_ktp"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+            <!--                                <TextView-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/text_no_ktp"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/nomorKTPSurveyor"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_no_ktp"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/nomorKTPSurveyor"-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/isi_no_ktp"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
+            <!--                            </LinearLayout>-->
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:orientation="horizontal">-->
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_alamat_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+            <!--                                <TextView-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/text_alamat_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/alamatSurveyor"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_alamat_surveyor"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/alamatSurveyor"-->
+            <!--                                    style="@style/MyTemaH3"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:text="@string/isi_alamat_surveyor"-->
+            <!--                                    android:textSize="@dimen/text_size_12" />-->
+            <!--                            </LinearLayout>-->
+            <!--                        </LinearLayout>-->
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
 
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="32dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/text_lokasi_tempat_yang_disurvey"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="@dimen/separator_size_10"
+                android:paddingEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
+                <TextView
+                    style="@style/MyTemaH2"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/text_lokasi_tempat_yang_disurvey"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_desa_kelurahan"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nama_desa_kelurahan"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size_12" />
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaDesa"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+                <TextView
+                    android:id="@+id/namaDesa"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nama_kecamatan"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size_12" />
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_kecamatan"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+                <TextView
+                    android:id="@+id/namaKecamatan"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaKecamatan"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nama_kabupaten_kota"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size_12" />
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+                <TextView
+                    android:id="@+id/namaKabupaten"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_kabupaten_kota"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nama_provinsi"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size_12" />
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaKabupaten"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
+                <TextView
+                    android:id="@+id/namaProvinsi"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_tanggal_waktu_survey_tempat"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size_12" />
 
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_provinsi"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
+                <TextView
+                    android:id="@+id/waktuSurvey"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaProvinsi"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_tanggal_waktu_survey_tempat"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/waktuSurvey"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
+            </LinearLayout>
 
             <!--            <LinearLayout-->
             <!--                android:layout_width="match_parent"-->

@@ -1,5 +1,6 @@
 package com.example.pendataanrtlh.surveyresult
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
@@ -61,9 +62,22 @@ class HasilSurveyActivity : AppCompatActivity() {
         })
     }
 
-    private fun onShowData(listData : ArrayList<FormSurveyor>) {
+    private fun onShowData(listData: ArrayList<FormSurveyor>) {
         listSurveyAdapter = ListSurveyAdapter(listData)
         binding.rvListSurvey.adapter = listSurveyAdapter
+
+        listSurveyAdapter.setOnItemClickCallback(object : ListSurveyAdapter.OnItemClickCallback {
+            override fun onClicked(data: FormSurveyor) {
+                val intent = Intent(this@HasilSurveyActivity, DetailHasilSurveyActivity::class.java)
+                intent.putExtra(DetailHasilSurveyActivity.NAMA_USER, data.namaLengkap)
+                intent.putExtra(DetailHasilSurveyActivity.NIK_USER, data.noKTPPeserta)
+                intent.putExtra(DetailHasilSurveyActivity.NAMA_SURVEYOR, data.nameSurveyor)
+                intent.putExtra(DetailHasilSurveyActivity.NIK_SURVEYOR, data.noKTPSurveyor)
+                intent.putExtra(DetailHasilSurveyActivity.TGL_INPUT, data.tglInput)
+                startActivity(intent)
+            }
+
+        })
     }
 
     private fun onShowTime() {
