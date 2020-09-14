@@ -59,6 +59,8 @@
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -341,7 +343,6 @@
             <!--                            </LinearLayout>-->
             <!--                        </LinearLayout>-->
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -350,12 +351,596 @@
                 android:paddingTop="@dimen/separator_size_10"
                 android:paddingEnd="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+                <TextView
+                    style="@style/MyTemaH1"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="@string/title_identitas_penghuni_rumah"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nomor_urut_rumah"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/nomorRumah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nama_lengkap"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/namaLengkapPenghuni"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_usia_tahun"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/usia"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pendidikan_terakhir"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/pendidikanTerakhir"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jenis_kelamin"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/jenisKelamin"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_alamat_lengkap"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/alamatLengkap"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:id="@+id/fotoAtap"
+                    android:layout_width="170dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:id="@+id/fotoDinding"
+                    android:layout_width="170dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:id="@+id/fotoLantai"
+                    android:layout_width="170dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nomor_ktp_nik"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/nomorKTPDetail"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jumlah_kk_dalam_1_rumah"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/jumlahKK"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pekerjaan_utama"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/pekerjaanUtama"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/penghasilanPengeluaran"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_status_kepemilikan_tanah"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kepemilikanTanah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_status_kepemilikan_rumah"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kepemilikanRumah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_aset_rumah_ditempat_lain"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/asetRumah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_aset_tanah_ditempat_lain"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/asetTanah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/bantuanPerumahan"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/jenisKawasanRumah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_keselamatan"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pondasi"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/pondasi"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kondisi_kolom_dan_balok"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kondisiKolom"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kondisi_konstruksi_atap"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kondisiKonstruksi"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_kesehatan"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jendela_lubang_cahaya"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/jendela"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ventilasi"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/ventilasi"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kepemilikanKamar"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/jarakSumberAirMinum"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_sumber_air_minum"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/sumberAirMinum"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_sumber_listrik"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/sumberListrik"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="@string/title_aspek_persyaratan_luas_dan_kebutuhan_ruang"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_luas_rumah_meter_kubik"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/luasRumah"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jumlah_penghuni_orang"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/jumlahPenghuni"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_10"
+                    android:text="@string/title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_material_atap_terluas"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/materialAtap"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kondisi_atap"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kondisiAtap"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_material_dinding_terluas"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/materialDinding"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kondisi_dinding"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kondisiDinding"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_material_lantai_terluas"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/materialLantai"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_kondisi_lantai"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/kondisiLantai"
+                    style="@style/MyTemaH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_data"
+                    android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH2"
                     android:layout_width="match_parent"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_10"
                     android:text="@string/text_lokasi_tempat_yang_disurvey"
                     android:textAlignment="center"
                     android:textSize="@dimen/text_size_16" />
@@ -439,859 +1024,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
-
             </LinearLayout>
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="32dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_identitas_penghuni_rumah"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nomor_urut_rumah"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/nomorRumah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nama_lengkap"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/namaLengkap"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_usia_tahun"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/usia"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_pendidikan_terakhir"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/pendidikanTerakhir"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jenis_kelamin"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jenisKelamin"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_alamat_lengkap"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/alamatLengkap"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH3"-->
-            <!--                    android:layout_width="wrap_content"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"-->
-            <!--                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                <ImageView-->
-            <!--                    android:id="@+id/fotoAtap"-->
-            <!--                    android:layout_width="170dp"-->
-            <!--                    android:layout_height="110dp"-->
-            <!--                    android:scaleType="fitXY"-->
-            <!--                    android:src="@drawable/no_image" />-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH3"-->
-            <!--                    android:layout_width="wrap_content"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"-->
-            <!--                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                <ImageView-->
-            <!--                    android:id="@+id/fotoDinding"-->
-            <!--                    android:layout_width="170dp"-->
-            <!--                    android:layout_height="110dp"-->
-            <!--                    android:scaleType="fitXY"-->
-            <!--                    android:src="@drawable/no_image" />-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH3"-->
-            <!--                    android:layout_width="wrap_content"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"-->
-            <!--                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                <ImageView-->
-            <!--                    android:id="@+id/fotoLantai"-->
-            <!--                    android:layout_width="170dp"-->
-            <!--                    android:layout_height="110dp"-->
-            <!--                    android:scaleType="fitXY"-->
-            <!--                    android:src="@drawable/no_image" />-->
-
-            <!--                &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
-            <!--                &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                android:orientation="horizontal">&ndash;&gt;-->
-
-            <!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:text="10. Ttitik Koordinat Lokasi : "&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    style="@style/MyTemaH3"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:textSize="@dimen/text_size_12"/>&ndash;&gt;-->
-
-            <!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:id="@+id/titikKoordinat"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:text="-"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    style="@style/MyTemaH3"&ndash;&gt;-->
-            <!--                &lt;!&ndash;                    android:textSize="@dimen/text_size_12" />&ndash;&gt;-->
-            <!--                &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_nomor_ktp_nik"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/nomorKTP"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jumlah_kk_dalam_1_rumah"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jumlahKK"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_pekerjaan_utama"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/pekerjaanUtama"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/penghasilanPengeluaran"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_status_kepemilikan_tanah"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kepemilikanTanah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_status_kepemilikan_rumah"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kepemilikanRumah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_aset_rumah_ditempat_lain"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/asetRumah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_aset_tanah_ditempat_lain"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/asetTanah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/bantuanPerumahan"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jenisKawasanRumah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="64dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_keselamatan"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_pondasi"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/pondasi"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kondisi_kolom_dan_balok"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kondisiKolom"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kondisi_konstruksi_atap"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kondisiKonstruksi"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="64dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_kondisi_fisik_rumah_pada_aspek_kesehatan"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jendela_lubang_cahaya"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jendela"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_ventilasi"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/ventilasi"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kepemilikanKamar"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jarakSumberAirMinum"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_sumber_air_minum"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/sumberAirMinum"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_sumber_listrik"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/sumberListrik"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="64dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_aspek_persyaratan_luas_dan_kebutuhan_ruang"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_luas_rumah_meter_kubik"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/luasRumah"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_jumlah_penghuni_orang"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/jumlahPenghuni"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/separator_size_10"-->
-            <!--                android:background="@drawable/side_ovalmid"-->
-            <!--                android:orientation="vertical"-->
-            <!--                android:padding="15dp">-->
-
-            <!--                <TextView-->
-            <!--                    style="@style/MyTemaH1"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="64dp"-->
-            <!--                    android:background="@drawable/side_ovalisi"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:text="@string/title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal"-->
-            <!--                    android:textSize="@dimen/text_size_16" />-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_marginTop="10dp"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_material_atap_terluas"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/materialAtap"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kondisi_atap"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kondisiAtap"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_material_dinding_terluas"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/materialDinding"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kondisi_dinding"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kondisiDinding"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_material_lantai_terluas"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/materialLantai"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-
-            <!--                <LinearLayout-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:orientation="horizontal">-->
-
-            <!--                    <TextView-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/text_kondisi_lantai"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-
-            <!--                    <TextView-->
-            <!--                        android:id="@+id/kondisiLantai"-->
-            <!--                        style="@style/MyTemaH3"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="@string/isi_data"-->
-            <!--                        android:textSize="@dimen/text_size_12" />-->
-            <!--                </LinearLayout>-->
-            <!--            </LinearLayout>-->
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
