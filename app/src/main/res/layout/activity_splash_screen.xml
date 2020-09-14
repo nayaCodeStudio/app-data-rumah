@@ -4,40 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgKuningMuda"
     tools:context=".SplashScreenActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="5dp"
-        app:cardCornerRadius="10dp"
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="50dp"
+        android:contentDescription="@string/imageview"
+        android:src="@drawable/logo_sirutlah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
-        <ImageView
-            android:id="@+id/logoApp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/imageview"
-            android:src="@drawable/logo_app" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nameApp"
-        style="@style/MyTemaH2"
+        style="@style/MyTemaH3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/title_aplikasi_pendataan_nrumah_tidak_layak_huni"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoApp" />
 
     <TextView
         android:id="@+id/nameInstansi"

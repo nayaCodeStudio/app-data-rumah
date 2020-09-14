@@ -100,7 +100,7 @@ class MainMenuActivity : AppCompatActivity() {
                         sleep(1000)
                         runOnUiThread {
                             val date = System.currentTimeMillis()
-                            val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+                            val sdf = SimpleDateFormat("dd MMM yyyy, h:mm a", Locale.getDefault())
                             val dateString = sdf.format(date)
                             tglInput = dateString
                         }

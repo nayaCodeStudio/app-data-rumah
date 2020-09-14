@@ -10,6 +10,9 @@ import com.example.pendataanrtlh.databinding.ActivityHasilSurveyBinding
 import com.example.pendataanrtlh.model.FormSurveyor
 import com.example.pendataanrtlh.utils.Data
 import com.google.firebase.database.*
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class HasilSurveyActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHasilSurveyBinding
@@ -61,6 +64,26 @@ class HasilSurveyActivity : AppCompatActivity() {
     private fun onShowData(listData : ArrayList<FormSurveyor>) {
         listSurveyAdapter = ListSurveyAdapter(listData)
         binding.rvListSurvey.adapter = listSurveyAdapter
+    }
+
+    private fun onShowTime() {
+        val thread = object : Thread() {
+            override fun run() {
+                try {
+                    while (!isInterrupted) {
+                        sleep(1000)
+                        runOnUiThread {
+                            val date = System.currentTimeMillis()
+                            val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+                            val dateString = sdf.format(date)
+//                            Data.tglInput = dateString
+                        }
+                    }
+                } catch (e: InterruptedException) {
+                }
+            }
+        }
+        thread.start()
     }
 
 }

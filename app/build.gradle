@@ -89,6 +89,6 @@ dependencies {
 
     /*buat UI/UX*/
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-    implementation 'com.airbnb.android:lottie:3.4.1'
+    implementation 'com.airbnb.android:lottie:3.4.2'
 
 }

@@ -133,8 +133,6 @@
         android:id="@+id/rvListSurvey"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:paddingStart="@dimen/separator_size_8"
-        android:paddingEnd="@dimen/separator_size_8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
