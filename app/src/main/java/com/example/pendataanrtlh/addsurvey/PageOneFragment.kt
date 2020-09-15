@@ -90,6 +90,7 @@ class PageOneFragment : Fragment() {
                     FormDataSurvey(
                         Data.nomorRumah,
                         Data.namaLengkap,
+                        Data.usia,
                         Data.pendidikan,
                         Data.jenisKelamin,
                         Data.almLengkp,

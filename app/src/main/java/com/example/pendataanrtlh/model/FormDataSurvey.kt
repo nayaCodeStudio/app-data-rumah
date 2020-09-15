@@ -12,6 +12,7 @@ class FormDataSurvey (
     //Fragment One
     var nomorRumah: String? = null,
     var namaLengkap: String? = null,
+    var usia: String? = null,
     var pendidikan: String? = null,
     var jenisKelamin: String? = null,
     var almLengkp: String? = null,

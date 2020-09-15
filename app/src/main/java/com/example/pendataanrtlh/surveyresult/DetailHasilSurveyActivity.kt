@@ -2,11 +2,10 @@ package com.example.pendataanrtlh.surveyresult
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.ActivityDetailHasilSurveyBinding
-import com.example.pendataanrtlh.model.FormSurveyor
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.example.pendataanrtlh.model.FormDataSurvey
+import com.example.pendataanrtlh.utils.Data
+import com.google.firebase.database.*
 
 class DetailHasilSurveyActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailHasilSurveyBinding
@@ -27,15 +26,72 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         database = FirebaseDatabase.getInstance()
-        val namaUser = intent.getStringExtra(NAMA_USER)
-        val nikUser = intent.getStringExtra(NIK_USER)
-        val tglInput = intent.getStringExtra(TGL_INPUT)
-        val namaSurveyor = intent.getStringExtra(NAMA_SURVEYOR)
-        val nikSurveyor = intent.getStringExtra(NIK_SURVEYOR)
+        val namaUser = intent.getStringExtra(NAMA_USER).toString()
+        val nikUser = intent.getStringExtra(NIK_USER).toString()
+        val tglInput = intent.getStringExtra(TGL_INPUT).toString()
+        val namaSurveyor = intent.getStringExtra(NAMA_SURVEYOR).toString()
+        val nikSurveyor = intent.getStringExtra(NIK_SURVEYOR).toString()
 
         binding.namaLengkap.text = namaUser
         binding.nomorKTP.text = nikUser
         binding.tglInput.text = tglInput
         binding.namaSurveyor.text = namaSurveyor
+
+        onGetData(nikUser)
+    }
+
+    private fun onGetData(nikUser: String) {
+        myRef = database.getReference("${Data.DATA_SURVEY}/$nikUser")
+        myRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val dataSurvey = snapshot.getValue(FormDataSurvey::class.java)
+                dataSurvey?.let { onShowData(it) }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+
+            }
+
+        })
+    }
+
+    private fun onShowData(dataSurvey: FormDataSurvey) {
+        binding.nomorRumah.text = dataSurvey.nomorRumah
+        binding.namaLengkapPenghuni.text = dataSurvey.namaLengkap
+        binding.usia.text = dataSurvey.usia
+        binding.pendidikanTerakhir.text = dataSurvey.pendidikan
+        binding.jenisKelamin.text = dataSurvey.jenisKelamin
+        binding.alamatLengkap.text = dataSurvey.almLengkp
+        binding.nomorKTPDetail.text = dataSurvey.noKTP
+        binding.jumlahKK.text = dataSurvey.jumlhKK
+        binding.pekerjaanUtama.text = dataSurvey.pekerjaan
+        binding.penghasilanPengeluaran.text = dataSurvey.penghasilan
+        binding.kepemilikanTanah.text = dataSurvey.statusTanah
+        binding.kepemilikanRumah.text = dataSurvey.statusRumah
+        binding.asetRumah.text = dataSurvey.assetRumah
+        binding.asetTanah.text = dataSurvey.assetTanah
+        binding.bantuanPerumahan.text = dataSurvey.bantuanRumah
+        binding.jenisKawasanRumah.text = dataSurvey.kawasanLokasi
+        binding.pondasi.text = dataSurvey.pondasi
+        binding.kondisiKolom.text = dataSurvey.balok
+        binding.kondisiKonstruksi.text = dataSurvey.atap
+        binding.jendela.text = dataSurvey.jendela
+        binding.ventilasi.text = dataSurvey.ventilasi
+        binding.kepemilikanKamar.text = dataSurvey.kmrMandi
+        binding.jarakSumberAirMinum.text = dataSurvey.jrkKmrMandi
+        binding.sumberAirMinum.text = dataSurvey.sumAirMinum
+        binding.sumberListrik.text = dataSurvey.sumListrik
+        binding.luasRumah.text = dataSurvey.luasRumah
+        binding.jumlahPenghuni.text = dataSurvey.jumPenghuni
+        binding.materialAtap.text = dataSurvey.matAtap
+        binding.kondisiAtap.text = dataSurvey.konAtap
+        binding.materialDinding.text = dataSurvey.matDinding
+        binding.kondisiDinding.text = dataSurvey.konDinding
+        binding.materialLantai.text = dataSurvey.matLantai
+        binding.kondisiLantai.text = dataSurvey.konLantai
+        binding.namaDesa.text = dataSurvey.nameDesaKel
+        binding.namaKecamatan.text = dataSurvey.nameKec
+        binding.namaKabupaten.text = dataSurvey.nameKotaKab
+        binding.namaProvinsi.text = dataSurvey.nameProv
     }
 }

@@ -55,6 +55,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
+        android:id="@+id/isiContent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -97,6 +98,7 @@
                 app:cardCornerRadius="@dimen/separator_size_10"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameApp"
@@ -221,135 +223,15 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!--                        <LinearLayout-->
-            <!--                            android:layout_width="match_parent"-->
-            <!--                            android:layout_height="wrap_content"-->
-            <!--                            android:background="@drawable/side_ovalmid"-->
-            <!--                            android:orientation="vertical"-->
-            <!--                            android:padding="15dp">-->
-
-            <!--                            <TextView-->
-            <!--                                style="@style/MyTemaH1"-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="32dp"-->
-            <!--                                android:background="@drawable/side_ovalisi"-->
-            <!--                                android:gravity="center"-->
-            <!--                                android:text="@string/title_identitas_surveyor"-->
-            <!--                                android:textSize="@dimen/text_size_16" />-->
-
-            <!--                            <LinearLayout-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="wrap_content"-->
-            <!--                                android:orientation="horizontal">-->
-
-            <!--                                <TextView-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="wrap_content"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/text_nama_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                                <TextView-->
-            <!--                                    android:id="@+id/namaSurveyor"-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="match_parent"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/isi_nama_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-            <!--                            </LinearLayout>-->
-
-            <!--                            <LinearLayout-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="wrap_content"-->
-            <!--                                android:orientation="horizontal">-->
-
-            <!--                                <TextView-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="wrap_content"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/text_email_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                                <TextView-->
-            <!--                                    android:id="@+id/emailSurveyor"-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="match_parent"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/isi_email_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-            <!--                            </LinearLayout>-->
-
-            <!--                            <LinearLayout-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="wrap_content"-->
-            <!--                                android:orientation="horizontal">-->
-
-            <!--                                <TextView-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="wrap_content"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/text_no_hp_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                                <TextView-->
-            <!--                                    android:id="@+id/nomorHPSurveyor"-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="match_parent"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/isi_no_hp_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-            <!--                            </LinearLayout>-->
-
-            <!--                            <LinearLayout-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="wrap_content"-->
-            <!--                                android:orientation="horizontal">-->
-
-            <!--                                <TextView-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="wrap_content"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/text_no_ktp"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                                <TextView-->
-            <!--                                    android:id="@+id/nomorKTPSurveyor"-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="match_parent"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/isi_no_ktp"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-            <!--                            </LinearLayout>-->
-
-            <!--                            <LinearLayout-->
-            <!--                                android:layout_width="match_parent"-->
-            <!--                                android:layout_height="wrap_content"-->
-            <!--                                android:orientation="horizontal">-->
-
-            <!--                                <TextView-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="wrap_content"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/text_alamat_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-
-            <!--                                <TextView-->
-            <!--                                    android:id="@+id/alamatSurveyor"-->
-            <!--                                    style="@style/MyTemaH3"-->
-            <!--                                    android:layout_width="match_parent"-->
-            <!--                                    android:layout_height="wrap_content"-->
-            <!--                                    android:text="@string/isi_alamat_surveyor"-->
-            <!--                                    android:textSize="@dimen/text_size_12" />-->
-            <!--                            </LinearLayout>-->
-            <!--                        </LinearLayout>-->
-
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingStart="20dp"
                 android:paddingTop="@dimen/separator_size_10"
                 android:paddingEnd="20dp"
+                android:paddingBottom="@dimen/separator_size_10"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -365,6 +247,7 @@
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_nomor_urut_rumah"
@@ -372,14 +255,17 @@
 
                 <TextView
                     android:id="@+id/nomorRumah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_nama_lengkap"
@@ -387,14 +273,17 @@
 
                 <TextView
                     android:id="@+id/namaLengkapPenghuni"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_8"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_usia_tahun"
@@ -402,14 +291,17 @@
 
                 <TextView
                     android:id="@+id/usia"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_pendidikan_terakhir"
@@ -417,14 +309,17 @@
 
                 <TextView
                     android:id="@+id/pendidikanTerakhir"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jenis_kelamin"
@@ -432,14 +327,17 @@
 
                 <TextView
                     android:id="@+id/jenisKelamin"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_alamat_lengkap"
@@ -447,56 +345,59 @@
 
                 <TextView
                     android:id="@+id/alamatLengkap"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
+                <!--                <TextView-->
+                <!--                    style="@style/MyTemaH3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_12" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoAtap"-->
+                <!--                    android:layout_width="170dp"-->
+                <!--                    android:layout_height="110dp"-->
+                <!--                    android:scaleType="fitXY"-->
+                <!--                    android:src="@drawable/no_image" />-->
+
+                <!--                <TextView-->
+                <!--                    style="@style/MyTemaH3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_12" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoDinding"-->
+                <!--                    android:layout_width="170dp"-->
+                <!--                    android:layout_height="110dp"-->
+                <!--                    android:scaleType="fitXY"-->
+                <!--                    android:src="@drawable/no_image" />-->
+
+                <!--                <TextView-->
+                <!--                    style="@style/MyTemaH3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"-->
+                <!--                    android:textSize="@dimen/text_size_12" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/fotoLantai"-->
+                <!--                    android:layout_width="170dp"-->
+                <!--                    android:layout_height="110dp"-->
+                <!--                    android:scaleType="fitXY"-->
+                <!--                    android:src="@drawable/no_image" />-->
+
                 <TextView
                     style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_12" />
-
-                <ImageView
-                    android:id="@+id/fotoAtap"
-                    android:layout_width="170dp"
-                    android:layout_height="110dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/no_image" />
-
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_12" />
-
-                <ImageView
-                    android:id="@+id/fotoDinding"
-                    android:layout_width="170dp"
-                    android:layout_height="110dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/no_image" />
-
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"
-                    android:textSize="@dimen/text_size_12" />
-
-                <ImageView
-                    android:id="@+id/fotoLantai"
-                    android:layout_width="170dp"
-                    android:layout_height="110dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/no_image" />
-
-                <TextView
-                    style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_nomor_ktp_nik"
@@ -504,14 +405,17 @@
 
                 <TextView
                     android:id="@+id/nomorKTPDetail"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jumlah_kk_dalam_1_rumah"
@@ -519,14 +423,17 @@
 
                 <TextView
                     android:id="@+id/jumlahKK"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_pekerjaan_utama"
@@ -534,14 +441,17 @@
 
                 <TextView
                     android:id="@+id/pekerjaanUtama"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
@@ -549,14 +459,17 @@
 
                 <TextView
                     android:id="@+id/penghasilanPengeluaran"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_status_kepemilikan_tanah"
@@ -564,14 +477,17 @@
 
                 <TextView
                     android:id="@+id/kepemilikanTanah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_status_kepemilikan_rumah"
@@ -579,14 +495,17 @@
 
                 <TextView
                     android:id="@+id/kepemilikanRumah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_aset_rumah_ditempat_lain"
@@ -594,14 +513,17 @@
 
                 <TextView
                     android:id="@+id/asetRumah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_aset_tanah_ditempat_lain"
@@ -609,14 +531,17 @@
 
                 <TextView
                     android:id="@+id/asetTanah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
@@ -624,14 +549,17 @@
 
                 <TextView
                     android:id="@+id/bantuanPerumahan"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
@@ -639,9 +567,11 @@
 
                 <TextView
                     android:id="@+id/jenisKawasanRumah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -656,6 +586,7 @@
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_pondasi"
@@ -663,14 +594,17 @@
 
                 <TextView
                     android:id="@+id/pondasi"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kondisi_kolom_dan_balok"
@@ -678,14 +612,17 @@
 
                 <TextView
                     android:id="@+id/kondisiKolom"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kondisi_konstruksi_atap"
@@ -693,9 +630,11 @@
 
                 <TextView
                     android:id="@+id/kondisiKonstruksi"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -710,6 +649,7 @@
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jendela_lubang_cahaya"
@@ -717,14 +657,17 @@
 
                 <TextView
                     android:id="@+id/jendela"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ventilasi"
@@ -732,14 +675,17 @@
 
                 <TextView
                     android:id="@+id/ventilasi"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
@@ -747,14 +693,17 @@
 
                 <TextView
                     android:id="@+id/kepemilikanKamar"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
@@ -762,14 +711,17 @@
 
                 <TextView
                     android:id="@+id/jarakSumberAirMinum"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_sumber_air_minum"
@@ -777,14 +729,17 @@
 
                 <TextView
                     android:id="@+id/sumberAirMinum"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_sumber_listrik"
@@ -792,9 +747,11 @@
 
                 <TextView
                     android:id="@+id/sumberListrik"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -809,6 +766,7 @@
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_luas_rumah_meter_kubik"
@@ -816,14 +774,17 @@
 
                 <TextView
                     android:id="@+id/luasRumah"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_jumlah_penghuni_orang"
@@ -831,9 +792,11 @@
 
                 <TextView
                     android:id="@+id/jumlahPenghuni"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -848,6 +811,7 @@
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_material_atap_terluas"
@@ -855,14 +819,17 @@
 
                 <TextView
                     android:id="@+id/materialAtap"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kondisi_atap"
@@ -870,14 +837,17 @@
 
                 <TextView
                     android:id="@+id/kondisiAtap"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_material_dinding_terluas"
@@ -885,14 +855,17 @@
 
                 <TextView
                     android:id="@+id/materialDinding"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kondisi_dinding"
@@ -900,14 +873,17 @@
 
                 <TextView
                     android:id="@+id/kondisiDinding"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_material_lantai_terluas"
@@ -915,14 +891,17 @@
 
                 <TextView
                     android:id="@+id/materialLantai"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
                     style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_kondisi_lantai"
@@ -930,14 +909,16 @@
 
                 <TextView
                     android:id="@+id/kondisiLantai"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
-                    style="@style/MyTemaH2"
+                    style="@style/MyTemaH1"
                     android:layout_width="match_parent"
                     android:layout_marginTop="@dimen/separator_size_10"
                     android:layout_marginBottom="@dimen/separator_size_10"
@@ -955,9 +936,11 @@
 
                 <TextView
                     android:id="@+id/namaDesa"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -971,9 +954,11 @@
 
                 <TextView
                     android:id="@+id/namaKecamatan"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -987,9 +972,11 @@
 
                 <TextView
                     android:id="@+id/namaKabupaten"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
@@ -1003,25 +990,11 @@
 
                 <TextView
                     android:id="@+id/namaProvinsi"
-                    style="@style/MyTemaH3"
+                    style="@style/MyTemaH2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/isi_data"
-                    android:textSize="@dimen/text_size_14" />
-
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_tanggal_waktu_survey_tempat"
-                    android:textColor="@color/textColor2"
-                    android:textSize="@dimen/text_size_12" />
-
-                <TextView
-                    android:id="@+id/waktuSurvey"
-                    style="@style/MyTemaH3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/separator_size_10"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
             </LinearLayout>

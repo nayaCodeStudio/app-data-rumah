@@ -48,8 +48,8 @@ class HasilSurveyActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val dataSurvey: ArrayList<FormSurveyor> = arrayListOf()
                 for (dataSnapshot1 in snapshot.children) {
-                    val dataReseller = dataSnapshot1.getValue(FormSurveyor::class.java)
-                    dataReseller?.let { dataSurvey.add(it) }
+                    val surveyor = dataSnapshot1.getValue(FormSurveyor::class.java)
+                    surveyor?.let { dataSurvey.add(it) }
 
                 }
                 onShowData(dataSurvey)

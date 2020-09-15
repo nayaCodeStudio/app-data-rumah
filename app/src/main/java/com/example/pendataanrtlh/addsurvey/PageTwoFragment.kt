@@ -24,6 +24,7 @@ import com.example.pendataanrtlh.utils.Data.pendidikan
 import com.example.pendataanrtlh.utils.Data.penghasilan
 import com.example.pendataanrtlh.utils.Data.statusRumah
 import com.example.pendataanrtlh.utils.Data.statusTanah
+import com.example.pendataanrtlh.utils.Data.usia
 
 
 class PageTwoFragment : Fragment() {
@@ -148,6 +149,7 @@ class PageTwoFragment : Fragment() {
                     //One Push Methode
                     nomorRumah = inNomorRumah
                     namaLengkap = inNamaLengkap
+                    usia = inUsia
                     pendidikan = inPendidikan
                     jenisKelamin = inJenisKelamin
                     almLengkp = inAlmLengkp
