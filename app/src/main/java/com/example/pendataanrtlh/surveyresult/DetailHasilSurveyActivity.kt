@@ -38,6 +38,10 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding.namaSurveyor.text = namaSurveyor
 
         onGetData(nikUser)
+
+        binding.backArrow.setOnClickListener {
+            finish()
+        }
     }
 
     private fun onGetData(nikUser: String) {
