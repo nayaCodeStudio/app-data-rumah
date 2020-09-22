@@ -153,9 +153,37 @@
                     android:id="@+id/listKondisiAtap"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:entries="@array/list_kondisi_atap" />
+
+                <ImageView
+                    android:id="@+id/fotoAtap"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFotoAtap"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0"
+                    android:text="Ambil Foto Atap"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bgBiru"
+                    app:cornerRadius="@dimen/separator_size_10"
+                    app:rippleColor="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,6 +217,33 @@
                     android:layout_marginEnd="5dp"
                     android:entries="@array/list_kondisi_dinding" />
 
+                <ImageView
+                    android:id="@+id/fotoDinding"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFotoDinding"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0"
+                    android:text="Ambil Foto Dinding"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bgBiru"
+                    app:cornerRadius="@dimen/separator_size_10"
+                    app:rippleColor="@android:color/white" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -220,6 +275,33 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:entries="@array/list_kondisi_lantai" />
+
+                <ImageView
+                    android:id="@+id/fotoLantai"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFotoLantai"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0"
+                    android:text="Ambil Foto Atap"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bgBiru"
+                    app:cornerRadius="@dimen/separator_size_10"
+                    app:rippleColor="@android:color/white" />
 
             </LinearLayout>
 

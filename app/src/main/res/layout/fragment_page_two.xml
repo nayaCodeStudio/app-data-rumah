@@ -172,7 +172,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:text="@string/text_pendidikan_terakhir"
                     android:textSize="@dimen/text_size_14" />
@@ -235,6 +234,50 @@
                         android:inputType="textMultiLine"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titik koordinat lokasi rumah."
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_14"
+                        android:id="@+id/titikKoordinat"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnKoordinatKoordinat"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0"
+                    android:text="Tentukan Koordinat Lokasi"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bgBiru"
+                    app:cornerRadius="@dimen/separator_size_10"
+                    app:rippleColor="@android:color/white" />
 
                 <!--                <TextView-->
                 <!--                    android:layout_width="match_parent"-->
@@ -664,7 +707,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/content"
                 app:rippleColor="@android:color/white" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
