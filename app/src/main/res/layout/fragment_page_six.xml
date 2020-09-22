@@ -158,6 +158,14 @@
                     android:layout_marginEnd="5dp"
                     android:entries="@array/list_kondisi_atap" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/foto_kondisi_atap" />
+
                 <ImageView
                     android:id="@+id/fotoAtap"
                     android:layout_width="300dp"
@@ -176,7 +184,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="Ambil Foto Atap"
+                    android:text="@string/ambil_foto_atap"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -215,7 +223,16 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_dinding" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/foto_kondisi_dinding" />
 
                 <ImageView
                     android:id="@+id/fotoDinding"
@@ -235,7 +252,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="Ambil Foto Dinding"
+                    android:text="@string/ambil_foto_dinding"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -274,7 +291,16 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_lantai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/foto_kondisi_lantai" />
 
                 <ImageView
                     android:id="@+id/fotoLantai"
@@ -294,7 +320,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="Ambil Foto Atap"
+                    android:text="@string/ambil_foto_atap"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"

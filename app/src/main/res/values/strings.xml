@@ -141,6 +141,12 @@
     <string name="text_hasil_alamat_pemilik_rumah">Alamat Pemilik Rumah :</string>
     <string name="text_hasil_disurvey_oleh">Disurvey Oleh :</string>
     <string name="text_hasil_tanggal_survey">Tanggal Survey :</string>
+    <string name="foto_kondisi_atap">Foto Kondisi Atap :</string>
+    <string name="ambil_foto_atap">Ambil Foto Atap</string>
+    <string name="foto_kondisi_dinding">Foto Kondisi Dinding :</string>
+    <string name="ambil_foto_dinding">Ambil Foto Dinding</string>
+    <string name="foto_kondisi_lantai">Foto Kondisi Lantai :</string>
+    <string name="titik_koordinat_lokasi">Titik Koordinat Lokasi :</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>pilih</item>

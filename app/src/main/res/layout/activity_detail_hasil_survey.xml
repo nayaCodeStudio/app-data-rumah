@@ -353,6 +353,39 @@
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
 
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:textColor="@color/textColor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titik_koordinat_lokasi"
+                    android:textSize="@dimen/text_size_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/isi_data"
+                        style="@style/MyTemaH3"
+                        android:textSize="@dimen/text_size_14"
+                        android:id="@+id/titikKoordinat"/>
+                </LinearLayout>
+
                 <!--                <TextView-->
                 <!--                    style="@style/MyTemaH3"-->
                 <!--                    android:layout_width="wrap_content"-->
@@ -846,6 +879,22 @@
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="@string/foto_kondisi_atap" />
+
+                <ImageView
+                    android:id="@+id/fotoAtap"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
+
+                <TextView
                     style="@style/MyTemaH3"
                     android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
@@ -882,6 +931,22 @@
                     android:textSize="@dimen/text_size_14" />
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="@string/foto_kondisi_dinding" />
+
+                <ImageView
+                    android:id="@+id/fotoDinding"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
+
+                <TextView
                     style="@style/MyTemaH3"
                     android:textColor="@color/textColor2"
                     android:layout_width="wrap_content"
@@ -916,6 +981,22 @@
                     android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/isi_data"
                     android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="@string/foto_kondisi_lantai" />
+
+                <ImageView
+                    android:id="@+id/fotoLantai"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/no_image" />
 
                 <TextView
                     style="@style/MyTemaH1"
