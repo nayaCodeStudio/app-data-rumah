@@ -19,8 +19,6 @@ import com.example.pendataanrtlh.utils.Data.matLantai
 
 class PageSixFragment : Fragment() {
     private lateinit var binding: FragmentPageSixBinding
-//    private lateinit var database: FirebaseDatabase
-//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,8 +31,6 @@ class PageSixFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        database = FirebaseDatabase.getInstance()
-//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_BANGUNAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SixFragment_to_FiveFragment)

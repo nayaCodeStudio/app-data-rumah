@@ -248,35 +248,35 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
-                    android:orientation="horizontal" >
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="25dp"
-                        android:textAlignment="textStart"
                         android:layout_height="25dp"
                         android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_baseline_location_on_24" />
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        android:textAlignment="textStart" />
 
                     <TextView
+                        android:id="@+id/titikKoordinat"
+                        style="@style/MyTemaH3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/isi_data"
-                        style="@style/MyTemaH3"
-                        android:textSize="@dimen/text_size_14"
-                        android:id="@+id/titikKoordinat"/>
+                        android:textSize="@dimen/text_size_14" />
                 </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnKoordinatKoordinat"
+                    android:id="@+id/btnKoordinat"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
                     android:text="Tentukan Koordinat Lokasi"
@@ -287,106 +287,6 @@
                     app:backgroundTint="@color/bgBiru"
                     app:cornerRadius="@dimen/separator_size_10"
                     app:rippleColor="@android:color/white" />
-
-                <!--                <TextView-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginTop="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:text="@string/text_foto_kondisi_atap_rumah_yang_disurvey"-->
-                <!--                    android:textSize="@dimen/text_size_14" />-->
-
-                <!--                <com.google.android.material.button.MaterialButton-->
-                <!--                    android:id="@+id/ambilFotoAtap"-->
-                <!--                    style="@style/MyTemaH2"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:letterSpacing="0"-->
-                <!--                    android:text="@string/text_unggah_foto_atap"-->
-                <!--                    android:textAllCaps="false"-->
-                <!--                    android:textColor="@android:color/white"-->
-                <!--                    android:textSize="@dimen/text_size_16"-->
-                <!--                    android:textStyle="bold"-->
-                <!--                    app:rippleColor="@android:color/white" />-->
-
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/fotoAtap"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="150dp"-->
-                <!--                    android:src="@drawable/no_image"-->
-                <!--                    android:visibility="gone" />-->
-
-                <!--                <TextView-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginTop="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:text="@string/text_foto_kondisi_dinding_rumah_yang_disurvey"-->
-                <!--                    android:textSize="@dimen/text_size_14" />-->
-
-                <!--                <Button-->
-                <!--                    android:id="@+id/ambilFotoDinding"-->
-                <!--                    style="@style/MyTemaH2"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:letterSpacing="0"-->
-                <!--                    android:text="@string/text_unggah_foto_dinding"-->
-                <!--                    android:textAllCaps="false"-->
-                <!--                    android:textColor="@android:color/white"-->
-                <!--                    android:textSize="@dimen/text_size_16"-->
-                <!--                    android:textStyle="bold"-->
-                <!--                    app:rippleColor="@android:color/white" />-->
-
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/fotoDinding"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="150dp"-->
-                <!--                    android:src="@drawable/no_image"-->
-                <!--                    android:visibility="gone" />-->
-
-                <!--                <TextView-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginTop="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:text="@string/text_foto_kondisi_lantai_rumah_yang_disurvey"-->
-                <!--                    android:textSize="@dimen/text_size_14" />-->
-
-                <!--                <Button-->
-                <!--                    android:id="@+id/ambilFotoLantai"-->
-                <!--                    style="@style/MyTemaH2"-->
-                <!--                    android:layout_marginStart="5dp"-->
-                <!--                    android:layout_marginEnd="5dp"-->
-                <!--                    android:letterSpacing="0"-->
-                <!--                    android:text="@string/text_unggah_foto_lantai"-->
-                <!--                    android:textAllCaps="false"-->
-                <!--                    android:textColor="@android:color/white"-->
-                <!--                    android:textSize="@dimen/text_size_16"-->
-                <!--                    android:textStyle="bold"-->
-                <!--                    app:rippleColor="@android:color/white" />-->
-
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/fotoLantai"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="150dp"-->
-                <!--                    android:src="@drawable/no_image"-->
-                <!--                    android:visibility="gone" />-->
-
-                <!--            <com.google.android.material.textfield.TextInputLayout-->
-                <!--                style="@style/EditTextCustom"-->
-                <!--                android:layout_marginBottom="5dp">-->
-
-                <!--                <com.google.android.material.textfield.TextInputEditText-->
-                <!--                    android:id="@+id/textKoordinat"-->
-                <!--                    style="@style/MyTemaH3"-->
-                <!--                    android:layout_height="50dp"-->
-                <!--                    android:hint="Titik Koordinat Lokasi Rumah"-->
-                <!--                    android:inputType="text"-->
-                <!--                    android:textSize="@dimen/text_size_14" />-->
-                <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"

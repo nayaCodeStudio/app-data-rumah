@@ -15,8 +15,6 @@ import com.example.pendataanrtlh.utils.Data.luasRumah
 
 class PageFiveFragment : Fragment() {
     private lateinit var binding: FragmentPageFiveBinding
-//    private lateinit var database: FirebaseDatabase
-//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,9 +26,7 @@ class PageFiveFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        database = FirebaseDatabase.getInstance()
-//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_LUAS_RUANG")
-
+        
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)
         }

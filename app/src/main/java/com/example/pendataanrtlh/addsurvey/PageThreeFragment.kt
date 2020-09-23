@@ -17,8 +17,6 @@ import kotlinx.android.synthetic.main.fragment_page_three.*
 
 class PageThreeFragment : Fragment() {
     private lateinit var binding: FragmentPageThreeBinding
-//    private lateinit var database: FirebaseDatabase
-//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,8 +29,6 @@ class PageThreeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        database = FirebaseDatabase.getInstance()
-//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_KESELAMATAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_SecondFragment)

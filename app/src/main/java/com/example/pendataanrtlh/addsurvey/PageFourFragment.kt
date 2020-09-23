@@ -18,8 +18,6 @@ import com.example.pendataanrtlh.utils.Data.ventilasi
 
 class PageFourFragment : Fragment() {
     private lateinit var binding: FragmentPageFourBinding
-//    private lateinit var database: FirebaseDatabase
-//    private lateinit var myRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,8 +29,6 @@ class PageFourFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        database = FirebaseDatabase.getInstance()
-//        myRef = database.getReference("$USER_DATA/$nikPeserta/$ASPEK_KESEHATAN")
 
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FourFragment_to_ThirdFragment)

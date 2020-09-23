@@ -34,14 +34,6 @@ class PageOneFragment : Fragment() {
         return binding.root
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        view.findViewById<Button>(R.id.btnNext).setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-//        }
-//    }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         database = FirebaseDatabase.getInstance()

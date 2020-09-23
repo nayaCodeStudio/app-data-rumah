@@ -29,9 +29,6 @@ import com.example.pendataanrtlh.utils.Data.usia
 
 class PageTwoFragment : Fragment() {
     private lateinit var binding: FragmentPageTwoBinding
-//    private lateinit var database: FirebaseDatabase
-//    private lateinit var myRef: DatabaseReference
-//    private lateinit var myRef1: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,9 +40,6 @@ class PageTwoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        database = FirebaseDatabase.getInstance()
-//        myRef = database.getReference("$USER_DATA/$nikPeserta/$IDENTITAS_PENGHUNI_RMH")
-//        myRef1 = database.getReference("IdentitasPenghuniRmh/$nikPeserta")
         binding.btnNext.setOnClickListener {
 //            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
 
