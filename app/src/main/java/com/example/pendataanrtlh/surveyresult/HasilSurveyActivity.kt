@@ -1,10 +1,12 @@
 package com.example.pendataanrtlh.surveyresult
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.animation.AnimationUtils
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.adapter.ListSurveyAdapter
 import com.example.pendataanrtlh.databinding.ActivityHasilSurveyBinding
@@ -13,19 +15,19 @@ import com.example.pendataanrtlh.utils.Data
 import com.google.firebase.database.*
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 class HasilSurveyActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHasilSurveyBinding
-    private lateinit var listSurveyAdapter: ListSurveyAdapter
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
+    lateinit var listSurveyAdapter: ListSurveyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHasilSurveyBinding.inflate(layoutInflater)
         setContentView(binding.root)
         database = FirebaseDatabase.getInstance()
+        setSupportActionBar(binding.toolbar)
 
         initData()
         onGetData()
@@ -34,12 +36,12 @@ class HasilSurveyActivity : AppCompatActivity() {
     private fun initData() {
         val animationType = R.anim.layout_animation_fall_down
         val animation = AnimationUtils.loadLayoutAnimation(this, animationType)
-        binding.rvListSurvey.layoutAnimation = animation
-
-        binding.rvListSurvey.layoutManager = LinearLayoutManager(this)
-        binding.rvListSurvey.adapter?.notifyDataSetChanged()
-        binding.rvListSurvey.scheduleLayoutAnimation()
-        binding.rvListSurvey.setHasFixedSize(true)
+        with(binding) {
+            rvListSurvey.layoutAnimation = animation
+            rvListSurvey.adapter?.notifyDataSetChanged()
+            rvListSurvey.scheduleLayoutAnimation()
+            rvListSurvey.setHasFixedSize(true)
+        }
     }
 
     private fun onGetData() {
@@ -50,7 +52,6 @@ class HasilSurveyActivity : AppCompatActivity() {
                 for (dataSnapshot1 in snapshot.children) {
                     val surveyor = dataSnapshot1.getValue(FormSurveyor::class.java)
                     surveyor?.let { dataSurvey.add(it) }
-
                 }
                 onShowData(dataSurvey)
             }
@@ -58,7 +59,6 @@ class HasilSurveyActivity : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {
 
             }
-
         })
     }
 
@@ -100,4 +100,23 @@ class HasilSurveyActivity : AppCompatActivity() {
         thread.start()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        val itemMenu = menu?.findItem(R.id.action_search) as MenuItem
+        val searchView = itemMenu.actionView as SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if (newText != null) {
+                    listSurveyAdapter.filter?.filter(newText)
+                }
+                return false
+            }
+        })
+        return super.onCreateOptionsMenu(menu)
+    }
 }

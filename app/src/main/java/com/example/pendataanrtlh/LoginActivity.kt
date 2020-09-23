@@ -30,6 +30,8 @@ class LoginActivity : AppCompatActivity() {
 //                Intent(Intent(this, UploadPhotoActivity::class.java))
 //            startActivity(intentLoginActivity)
 //        }
+        binding.textNomorKTP.setText("12345")
+        binding.textPassword.setText("1")
 
         binding.btnLogin.setOnClickListener {
             inUser = binding.textNomorKTP.text.toString().trim { it <= ' ' }
