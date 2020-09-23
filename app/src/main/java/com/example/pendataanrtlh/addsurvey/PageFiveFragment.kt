@@ -26,7 +26,7 @@ class PageFiveFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        
+
         binding.btnPrev.setOnClickListener {
             findNavController().navigate(R.id.action_FiveFragment_to_FourFragment)
         }

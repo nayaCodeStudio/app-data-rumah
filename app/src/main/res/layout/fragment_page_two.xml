@@ -269,6 +269,14 @@
                         android:textSize="@dimen/text_size_14" />
                 </LinearLayout>
 
+                <androidx.core.widget.ContentLoadingProgressBar
+                    android:id="@+id/loadKoordinat"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="visible" />
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnKoordinat"
                     style="@style/Widget.MaterialComponents.Button"
