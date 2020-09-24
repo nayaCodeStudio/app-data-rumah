@@ -25,11 +25,12 @@ class LoginActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         myRef = database.getReference(Data.REGISTER_FORM)
 
-//        binding.logoApp.setOnClickListener {
-//            val intentLoginActivity =
-//                Intent(Intent(this, UploadPhotoActivity::class.java))
-//            startActivity(intentLoginActivity)
-//        }
+        binding.logoApp.setOnClickListener {
+            val intentLoginActivity =
+                Intent(Intent(this, UploadPhotoActivity::class.java))
+            startActivity(intentLoginActivity)
+        }
+
         binding.textNomorKTP.setText("12345")
         binding.textPassword.setText("1")
 
@@ -69,7 +70,8 @@ class LoginActivity : AppCompatActivity() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val value = dataSnapshot.getValue(RegisterForm::class.java)
                 if (value?.noKTP == inUser && value.password == inPassword) {
-                    val intentLoginActivity = Intent(this@LoginActivity, MainMenuActivity::class.java)
+                    val intentLoginActivity =
+                        Intent(this@LoginActivity, MainMenuActivity::class.java)
                     intentLoginActivity.putExtra(MainMenuActivity.EXTRA_USER, value.noKTP)
                     intentLoginActivity.putExtra(MainMenuActivity.EXTRA_PASS, value.password)
                     startActivity(intentLoginActivity)

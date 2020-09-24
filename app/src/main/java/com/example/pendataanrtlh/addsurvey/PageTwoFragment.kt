@@ -228,7 +228,7 @@ class PageTwoFragment : Fragment() {
             val addresses = geocoder.getFromLocation(lat, lon, 1)
             val address = addresses[0].getAddressLine(0)
             Log.d("alamat", "lokasi $address")
-//            binding.titikKoordinat.text = address
+//            binding.btnKoordinat.text = address
 
         } catch (e: Exception) {
             e.printStackTrace()

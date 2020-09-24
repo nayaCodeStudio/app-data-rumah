@@ -50,8 +50,8 @@ class UploadPhotoActivity : AppCompatActivity() {
     private fun uploadImageDua() {
 //        val emailExtra = intent.getStringExtra("joe@gmail.com")
 //        val emailUser = emailExtra?.replace("""[$,.@ ]""".toRegex(), "")
-
-        val namaFile = "${UUID.randomUUID()}.jpg"
+        val setNamaFile = "kondisi_balok"
+        val namaFile = "$setNamaFile.jpg"
         val pathImage = "gambar/$namaFile"
 
         val storageRef = FirebaseStorage
