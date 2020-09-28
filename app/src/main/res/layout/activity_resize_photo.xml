@@ -106,6 +106,16 @@
             android:layout_marginTop="8dp"
             android:text="Choose image" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" />
+
         <Button
             android:id="@+id/compressImageButton"
             android:layout_width="match_parent"
@@ -113,12 +123,11 @@
             android:layout_marginTop="8dp"
             android:text="Compress image" />
 
-        <Button
-            android:id="@+id/customCompressImageButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Custom compress" />
-
+<!--        <Button-->
+<!--            android:id="@+id/customCompressImageButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="Custom compress" />-->
     </LinearLayout>
 </ScrollView>

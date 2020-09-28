@@ -1,5 +1,7 @@
 package com.example.pendataanrtlh.utils
 
+import android.net.Uri
+
 /**
  ** Written by @JoeFachrizal 29/08/2020 00.14
  **/
@@ -62,4 +64,6 @@ object Data {
     var noKTPSurveyor: String? = null
     var fullName: String? = null
     var tglInput: String? = null
+
+    var imgPath: Uri? = null
 }

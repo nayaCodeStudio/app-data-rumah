@@ -1,4 +1,4 @@
-package com.example.pendataanrtlh;
+package com.example.pendataanrtlh.utils;
 
 import android.content.Context;
 import android.database.Cursor;

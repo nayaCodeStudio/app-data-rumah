@@ -69,10 +69,10 @@ class UploadPhotoActivity : AppCompatActivity() {
                     databaseKonf.child("buktiPembayaran").setValue(it.toString())
                     progressBar.visibility = View.GONE
                     Toast.makeText(this, "Add Image Successfully", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, MainMenuActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                    startActivity(intent)
-                    finishAffinity()
+//                    val intent = Intent(this, MainMenuActivity::class.java)
+//                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+//                    startActivity(intent)
+//                    finishAffinity()
                 }
             }
             .addOnFailureListener {

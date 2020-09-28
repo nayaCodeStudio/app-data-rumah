@@ -1,20 +1,20 @@
 package com.example.pendataanrtlh
 
 import android.content.Intent
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.pendataanrtlh.utils.Data.imgPath
+import com.example.pendataanrtlh.utils.FileUtil
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.storage.FirebaseStorage
 import id.zelory.compressor.Compressor
-import id.zelory.compressor.constraint.format
-import id.zelory.compressor.constraint.quality
-import id.zelory.compressor.constraint.resolution
-import id.zelory.compressor.constraint.size
 import id.zelory.compressor.loadBitmap
 import kotlinx.android.synthetic.main.activity_resize_photo.*
 import kotlinx.coroutines.launch
@@ -45,7 +45,7 @@ class ResizePhotoActivity : AppCompatActivity() {
     private fun setupClickListener() {
         chooseImageButton.setOnClickListener { chooseImage() }
         compressImageButton.setOnClickListener { compressImage() }
-        customCompressImageButton.setOnClickListener { customCompressImage() }
+//        customCompressImageButton.setOnClickListener { customCompressImage() }
     }
 
     private fun chooseImage() {
@@ -59,34 +59,40 @@ class ResizePhotoActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 // Default compression
                 compressedImage = Compressor.compress(this@ResizePhotoActivity, imageFile)
-                setCompressedImage()
+                val filee = Uri.fromFile(compressedImage)
+//                uploadImageDua(filee)
+//                setCompressedImage()
+                imgPath = filee
+                finish()
             }
         } ?: showError("Please choose an image!")
     }
 
-    private fun customCompressImage() {
-        actualImage?.let { imageFile ->
-            lifecycleScope.launch {
-                // Default compression with custom destination file
-                /*compressedImage = Compressor.compress(this@MainActivity, imageFile) {
-                    default()
-                    getExternalFilesDir(Environment.DIRECTORY_PICTURES)?.also {
-                        val file = File("${it.absolutePath}${File.separator}my_image.${imageFile.extension}")
-                        destination(file)
-                    }
-                }*/
-
-                // Full custom
-                compressedImage = Compressor.compress(this@ResizePhotoActivity, imageFile) {
-                    resolution(1280, 720)
-                    quality(80)
-                    format(Bitmap.CompressFormat.WEBP)
-                    size(2_097_152) // 2 MB
-                }
-                setCompressedImage()
-            }
-        } ?: showError("Please choose an image!")
-    }
+//    private fun customCompressImage() {
+//        actualImage?.let { imageFile ->
+//            lifecycleScope.launch {
+//                // Default compression with custom destination file
+//                compressedImage = Compressor.compress(this@ResizePhotoActivity, imageFile) {
+//                    default()
+//                    getExternalFilesDir(Environment.DIRECTORY_PICTURES)?.also {
+//                        val file = File("${it.absolutePath}${File.separator}my_image.${imageFile.extension}")
+//                        destination(file)
+//                        val filee = Uri.fromFile(file)
+//                        uploadImageDua(filee)
+//                    }
+//                }
+//
+//                // Full custom
+///*                compressedImage = Compressor.compress(this@ResizePhotoActivity, imageFile) {
+//                    resolution(1280, 720)
+//                    quality(80)
+//                    format(Bitmap.CompressFormat.WEBP)
+//                    size(2_097_152) // 2 MB
+//                }*/
+//                setCompressedImage()
+//            }
+//        } ?: showError("Please choose an image!")
+//    }
 
     private fun setCompressedImage() {
         compressedImage?.let {
@@ -139,6 +145,38 @@ class ResizePhotoActivity : AppCompatActivity() {
         val units = arrayOf("B", "KB", "MB", "GB", "TB")
         val digitGroups = (log10(size.toDouble()) / log10(1024.0)).toInt()
         return DecimalFormat("#,##0.#").format(size / 1024.0.pow(digitGroups.toDouble())) + " " + units[digitGroups]
+    }
+
+    private fun uploadImageDua(filee: Uri) {
+        val setNamaFile = "kondisi_balok"
+        val namaFile = "$setNamaFile.jpg"
+        val pathImage = "gambar/$namaFile"
+
+        val storageRef = FirebaseStorage
+            .getInstance()
+            .reference.child(pathImage)
+
+        val databaseKonf = FirebaseDatabase
+            .getInstance()
+            .getReference("DATA_PEMESAN_TEST")
+            .child("jojojo")
+
+        storageRef.putFile(filee)
+            .addOnSuccessListener {
+                storageRef.downloadUrl.addOnSuccessListener {
+                    databaseKonf.child("buktiPembayaran").setValue(it.toString())
+                    progressBar.visibility = View.GONE
+                    Toast.makeText(this, "Add Image Successfully", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .addOnFailureListener {
+                progressBar.visibility = View.GONE
+                Toast.makeText(this, "Info File : ${it.message}", Toast.LENGTH_SHORT).show()
+            }.addOnProgressListener { taskSnapshot ->
+                progressBar.visibility = View.VISIBLE
+                val progress = 100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount
+                progressBar.progress = progress.toInt()
+            }
     }
 }
 

@@ -190,6 +190,7 @@
                     app:backgroundTint="@color/bgBiru"
                     app:cornerRadius="@dimen/separator_size_10"
                     app:rippleColor="@android:color/white" />
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
