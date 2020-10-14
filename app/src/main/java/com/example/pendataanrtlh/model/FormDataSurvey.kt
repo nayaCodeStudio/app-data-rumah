@@ -15,6 +15,7 @@ class FormDataSurvey (
     var usia: String? = null,
     var pendidikan: String? = null,
     var jenisKelamin: String? = null,
+    var titikKoordinat: String? = null,
     var almLengkp: String? = null,
     var noKTP: String? = null,
     var jumlhKK: String? = null,

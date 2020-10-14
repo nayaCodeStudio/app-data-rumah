@@ -93,7 +93,7 @@
         android:id="@+id/nameInstansi"
         style="@style/MyTemaH4"
         android:layout_width="wrap_content"
-        android:text="@string/text_kementrian_pekerjaan_umum_dan_perumahan_rakyat_ndirektorat_jendral_penyediaan_rumah_ndirektorat_rumah_swadaya"
+        android:text="@string/text_foot_title"
         android:textAlignment="center"
         android:textSize="@dimen/text_size_11"
         app:layout_constraintBottom_toBottomOf="parent"

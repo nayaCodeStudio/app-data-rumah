@@ -102,7 +102,7 @@
     <string name="text_aplikasi_pendataan_rumah_tidak_layak_huni">Aplikasi Survey Identifikasi Rumah Tidak Layak Huni</string>
     <string name="text_button_survey">Survey\nSekarang</string>
     <string name="text_button_hasil_survey">Hasil\nSurvey</string>
-    <string name="text_kementrian_pekerjaan_umum_dan_perumahan_rakyat_ndirektorat_jendral_penyediaan_rumah_ndirektorat_rumah_swadaya">Kementrian Pekerjaan Umum dan Perumahan Rakyat\nDirektorat Jendral Penyediaan Rumah\nDirektorat Rumah Swadaya</string>
+    <string name="text_foot_title">Kementrian Pekerjaan Umum</string>
     <string name="title_halaman_register">Halaman Register</string>
     <string name="no_ktp">No. KTP</string>
     <string name="password">Password</string>

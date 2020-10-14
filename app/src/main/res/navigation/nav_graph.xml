@@ -3,20 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/secondFragment">
+    app:startDestination="@id/firstFragment">
 
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.pendataanrtlh.addsurvey.PageOneFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_page_one">
-
         <action
-            android:id="@+id/action_firstFragment_to_sevenFragment"
-            app:destination="@id/sevenFragment" />
-        <action
-            android:id="@+id/action_firstFragment_to_sixFragment"
-            app:destination="@id/sixFragment" />
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
     </fragment>
 
     <fragment
@@ -28,6 +24,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
             app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
     </fragment>
 
     <fragment
@@ -82,11 +81,11 @@
         tools:layout="@layout/fragment_page_six" >
 
         <action
-            android:id="@+id/action_SixFragment_to_FiveFragment"
-            app:destination="@id/fourFragment" />
+            android:id="@+id/action_sixFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
         <action
-            android:id="@+id/action_sixFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            android:id="@+id/action_sixFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
 
     </fragment>
 
@@ -94,16 +93,6 @@
         android:id="@+id/sevenFragment"
         android:name="com.example.pendataanrtlh.addsurvey.PageSevenFragment"
         android:label="fragment_seven"
-        tools:layout="@layout/fragment_page_seven" >
+        tools:layout="@layout/fragment_page_seven" />
 
-        <action
-            android:id="@+id/action_SevenFragment_to_MainMenuActivity"
-            app:destination="@id/mainMenuActivity" />
-    </fragment>
-
-    <activity
-        android:id="@+id/mainMenuActivity"
-        android:name="com.example.pendataanrtlh.MainMenuActivity"
-        android:label="activity_main_menu"
-        tools:layout="@layout/activity_main_menu" />
 </navigation>

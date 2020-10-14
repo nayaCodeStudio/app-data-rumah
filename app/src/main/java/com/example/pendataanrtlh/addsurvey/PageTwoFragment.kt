@@ -35,6 +35,7 @@ import com.example.pendataanrtlh.utils.Data.pendidikan
 import com.example.pendataanrtlh.utils.Data.penghasilan
 import com.example.pendataanrtlh.utils.Data.statusRumah
 import com.example.pendataanrtlh.utils.Data.statusTanah
+import com.example.pendataanrtlh.utils.Data.titikKoordinat
 import com.example.pendataanrtlh.utils.Data.usia
 import com.google.android.gms.location.LocationServices
 import java.util.*
@@ -207,7 +208,7 @@ class PageTwoFragment : Fragment() {
 
                     val resultCoordinat = "$currentLat, $currentLong"
                     binding.titikKoordinat.text = resultCoordinat
-
+                    titikKoordinat = resultCoordinat
                     Log.d("posisi hp", "lokasi $resultCoordinat")
 
                     getAddressesLatLot(currentLat, currentLong)

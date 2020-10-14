@@ -19,6 +19,7 @@ object Data {
     var pendidikan: String? = null
     var jenisKelamin: String? = null
     var almLengkp: String? = null
+    var titikKoordinat: String? = null
     var noKTPUser: String? = null
     var jumlhKK: String? = null
     var pekerjaan: String? = null
@@ -66,4 +67,11 @@ object Data {
     var tglInput: String? = null
 
     var imgPath: Uri? = null
+    var imgKondisiKolom: Uri? = null
+    var imgKondisiAtap: Uri? = null
+
+    var img1: Uri? = null
+    var img2: Uri? = null
+    var img3: Uri? = null
+
 }

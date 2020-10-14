@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.logoApp.setOnClickListener {
             val intentLoginActivity =
-                Intent(Intent(this, UploadPhotoActivity::class.java))
+                Intent(Intent(this, ResizePhotoActivity::class.java))
             startActivity(intentLoginActivity)
         }
 
