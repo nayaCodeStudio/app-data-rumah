@@ -210,7 +210,7 @@
         android:focusable="true"
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
-        android:text="Selesai"
+        android:text="Selanjutnya"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_14"

@@ -147,6 +147,7 @@
     <string name="ambil_foto_dinding">Ambil Foto Dinding</string>
     <string name="foto_kondisi_lantai">Foto Kondisi Lantai :</string>
     <string name="titik_koordinat_lokasi">Titik Koordinat Lokasi :</string>
+    <string name="upload_image">Upload Image</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>pilih</item>

@@ -126,9 +126,9 @@
                     android:textSize="@dimen/text_size_16" />
 
                 <TextView
+                    android:id="@+id/text_material_atap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text_material_atap"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:text="@string/text_material_atap_terluas" />
@@ -153,9 +153,9 @@
                     android:id="@+id/listKondisiAtap"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_atap" />
 
                 <TextView
@@ -166,25 +166,59 @@
                     android:layout_marginBottom="5dp"
                     android:text="@string/foto_kondisi_atap" />
 
-                <ImageView
-                    android:id="@+id/fotoAtap"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="5dp"
-                    android:src="@drawable/no_image" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiAtap1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiAtap2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiAtap3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBarKondisiAtap"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnFotoAtap"
+                    android:id="@+id/compressImageButtonKondisiAtap"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="@string/ambil_foto_atap"
+                    android:text="@string/upload_image"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -234,25 +268,59 @@
                     android:layout_marginBottom="5dp"
                     android:text="@string/foto_kondisi_dinding" />
 
-                <ImageView
-                    android:id="@+id/fotoDinding"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="5dp"
-                    android:src="@drawable/no_image" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiDinding1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiDinding2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiDinding3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBarKondisiDinding"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnFotoDinding"
+                    android:id="@+id/compressImageButtonKondisiDinding"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="@string/ambil_foto_dinding"
+                    android:text="@string/upload_image"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -302,25 +370,59 @@
                     android:layout_marginBottom="5dp"
                     android:text="@string/foto_kondisi_lantai" />
 
-                <ImageView
-                    android:id="@+id/fotoLantai"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="5dp"
-                    android:src="@drawable/no_image" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiLantai1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiLantai2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+
+                    <ImageView
+                        android:id="@+id/fotoKondisiLantai3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/separator_size_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_photo" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBarKondisiLantai"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnFotoLantai"
+                    android:id="@+id/compressImageButtonKondisiLantai"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:letterSpacing="0"
-                    android:text="@string/ambil_foto_atap"
+                    android:text="@string/upload_image"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -328,7 +430,6 @@
                     app:backgroundTint="@color/bgBiru"
                     app:cornerRadius="@dimen/separator_size_10"
                     app:rippleColor="@android:color/white" />
-
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton

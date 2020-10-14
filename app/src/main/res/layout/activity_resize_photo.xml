@@ -140,7 +140,6 @@
                 android:src="@drawable/ic_add_photo" />
         </LinearLayout>
 
-
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
