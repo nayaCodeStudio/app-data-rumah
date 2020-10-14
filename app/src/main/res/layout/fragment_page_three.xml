@@ -229,23 +229,6 @@
                     android:progress="0"
                     android:visibility="gone" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/compressImageButtonKondisiKolom"
-                    style="@style/Widget.MaterialComponents.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_margin="5dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:letterSpacing="0"
-                    android:text="@string/upload_image"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/text_size_16"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/bgBiru"
-                    app:cornerRadius="@dimen/separator_size_10"
-                    app:rippleColor="@android:color/white" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -308,23 +291,6 @@
                     android:max="100"
                     android:progress="0"
                     android:visibility="gone" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/compressImageButtonKondisiKonstruksiAtap"
-                    style="@style/Widget.MaterialComponents.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_margin="5dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:letterSpacing="0"
-                    android:text="@string/upload_image"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/text_size_16"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/bgBiru"
-                    app:cornerRadius="@dimen/separator_size_10"
-                    app:rippleColor="@android:color/white" />
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
