@@ -126,12 +126,14 @@
                     android:textSize="@dimen/text_size_16" />
 
                 <TextView
-                    android:id="@+id/text_material_atap"
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_material_atap_terluas" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_material_atap_terluas"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listMaterialAtap"
@@ -142,12 +144,14 @@
                     android:entries="@array/list_material_atap" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_kondisi_atap" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_kondisi_atap"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listKondisiAtap"
@@ -159,12 +163,14 @@
                     android:entries="@array/list_kondisi_atap" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="@string/foto_kondisi_atap" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/foto_kondisi_atap"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -211,12 +217,14 @@
                     android:visibility="gone" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_material_dinding_terluas" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_material_dinding_terluas"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listMaterialDinding"
@@ -227,12 +235,14 @@
                     android:entries="@array/list_material_dinding" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_kondisi_dinding" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_kondisi_dinding"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listKondisiDinding"
@@ -244,12 +254,14 @@
                     android:entries="@array/list_kondisi_dinding" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="@string/foto_kondisi_dinding" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/foto_kondisi_dinding"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,12 +308,14 @@
                     android:visibility="gone" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_material_lantai_terluas" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_material_lantai_terluas"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listMaterialLantai"
@@ -312,12 +326,14 @@
                     android:entries="@array/list_material_lantai" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/text_kondisi_lantai" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_kondisi_lantai"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <Spinner
                     android:id="@+id/listKondisiLantai"
@@ -329,12 +345,14 @@
                     android:entries="@array/list_kondisi_lantai" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="@string/foto_kondisi_lantai" />
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/foto_kondisi_lantai"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

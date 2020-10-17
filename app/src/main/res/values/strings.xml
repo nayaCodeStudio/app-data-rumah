@@ -88,12 +88,12 @@
     <string name="text_luas_rumah_meter_kubik">1. Luas Rumah (M²)</string>
     <string name="text_jumlah_penghuni_orang">2. Jumlah Penghuni (Orang)</string>
     <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal :</string>
-    <string name="text_material_atap_terluas">Material Atap Terluas :</string>
-    <string name="text_kondisi_atap">Kondisi Atap :</string>
-    <string name="text_material_dinding_terluas">Material Dinding Terluas :</string>
-    <string name="text_kondisi_dinding">Kondisi Dinding :</string>
-    <string name="text_material_lantai_terluas">Material Lantai Terluas :</string>
-    <string name="text_kondisi_lantai">Kondisi Lantai :</string>
+    <string name="text_material_atap_terluas">1. Material Atap Terluas :</string>
+    <string name="text_kondisi_atap">2. Kondisi Atap :</string>
+    <string name="text_material_dinding_terluas">5. Material Dinding Terluas :</string>
+    <string name="text_kondisi_dinding">6. Kondisi Dinding :</string>
+    <string name="text_material_lantai_terluas">8. Material Lantai Terluas :</string>
+    <string name="text_kondisi_lantai">9. Kondisi Lantai :</string>
     <string name="ttile_hasil_survey">Hasil Survey</string>
     <string name="sub_title_pendataan_rumah_tidak_layak_huni">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_aplikasi_pendataan_nrumah_tidak_layak_huni">Survey Identifikasi Rumah Tidak Layak Huni</string>
@@ -145,11 +145,11 @@
     <string name="text_hasil_alamat_pemilik_rumah">Alamat Pemilik Rumah :</string>
     <string name="text_hasil_disurvey_oleh">Disurvey Oleh :</string>
     <string name="text_hasil_tanggal_survey">Tanggal Survey :</string>
-    <string name="foto_kondisi_atap">Foto Kondisi Atap :</string>
+    <string name="foto_kondisi_atap">4. Foto Kondisi Atap :</string>
     <string name="ambil_foto_atap">Ambil Foto Atap</string>
-    <string name="foto_kondisi_dinding">Foto Kondisi Dinding :</string>
+    <string name="foto_kondisi_dinding">7. Foto Kondisi Dinding :</string>
     <string name="ambil_foto_dinding">Ambil Foto Dinding</string>
-    <string name="foto_kondisi_lantai">Foto Kondisi Lantai :</string>
+    <string name="foto_kondisi_lantai">10. Foto Kondisi Lantai :</string>
     <string name="titik_koordinat_lokasi">7. Titik Koordinat Lokasi :</string>
     <string name="upload_image">Upload Image</string>
 
