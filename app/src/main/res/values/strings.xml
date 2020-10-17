@@ -84,9 +84,9 @@
     <string name="text_jarak_sumber_air_minum_ke_tpa_tinja">4. Jarak Sumber Air Minum ke TPA Tinja :</string>
     <string name="text_sumber_air_minum">5. Sumber Air Minum :</string>
     <string name="text_sumber_listrik">6. Sumber Listrik :</string>
-    <string name="title_aspek_persyaratan_luas_dan_kebutuhan_ruang">Aspek Persyaratan Luas dan Kebutuhan Ruang</string>
-    <string name="text_luas_rumah_meter_kubik">Luas Rumah (M²)</string>
-    <string name="text_jumlah_penghuni_orang">Jumlah Penghuni (Orang)</string>
+    <string name="title_aspek_persyaratan_luas_dan_kebutuhan_ruang">1. Aspek Persyaratan Luas dan Kebutuhan Ruang</string>
+    <string name="text_luas_rumah_meter_kubik">1. Luas Rumah (M²)</string>
+    <string name="text_jumlah_penghuni_orang">2. Jumlah Penghuni (Orang)</string>
     <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal :</string>
     <string name="text_material_atap_terluas">Material Atap Terluas :</string>
     <string name="text_kondisi_atap">Kondisi Atap :</string>
