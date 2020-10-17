@@ -117,11 +117,22 @@
                 android:text="@string/title_lokasi_survey"
                 android:textSize="@dimen/text_size_16" />
 
+            <TextView
+                style="@style/MyTemaH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="@dimen/separator_size_4"
+                android:text="@string/title_no_des_kel"
+                android:textColor="@color/bgBiru"
+                android:textSize="@dimen/text_size_14" />
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textDesKel"
@@ -132,11 +143,22 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                style="@style/MyTemaH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="@dimen/separator_size_4"
+                android:text="@string/title_no_kec"
+                android:textColor="@color/bgBiru"
+                android:textSize="@dimen/text_size_14" />
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textKec"
@@ -147,11 +169,22 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                style="@style/MyTemaH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="@dimen/separator_size_4"
+                android:text="@string/title_no_KotKab"
+                android:textColor="@color/bgBiru"
+                android:textSize="@dimen/text_size_14" />
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textKotKab"
@@ -162,11 +195,22 @@
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                style="@style/MyTemaH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="@dimen/separator_size_4"
+                android:text="@string/title_no_prov"
+                android:textColor="@color/bgBiru"
+                android:textSize="@dimen/text_size_14" />
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextCustom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textProv"
