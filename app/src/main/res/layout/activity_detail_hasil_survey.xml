@@ -126,6 +126,7 @@
                         android:layout_marginEnd="@dimen/separator_size_10"
                         android:text="Name"
                         android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/bgBiru"
                         app:layout_constraintBottom_toTopOf="@+id/txtNIK"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView"

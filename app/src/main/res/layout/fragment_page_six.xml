@@ -162,16 +162,6 @@
                     android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_atap" />
 
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/foto_kondisi_atap"
-                    android:textColor="@color/bgBiru"
-                    android:textSize="@dimen/text_size_14" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -253,16 +243,6 @@
                     android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_dinding" />
 
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/foto_kondisi_dinding"
-                    android:textColor="@color/bgBiru"
-                    android:textSize="@dimen/text_size_14" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -343,16 +323,6 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:entries="@array/list_kondisi_lantai" />
-
-                <TextView
-                    style="@style/MyTemaH3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/foto_kondisi_lantai"
-                    android:textColor="@color/bgBiru"
-                    android:textSize="@dimen/text_size_14" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

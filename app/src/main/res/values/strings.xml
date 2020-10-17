@@ -90,10 +90,10 @@
     <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal :</string>
     <string name="text_material_atap_terluas">1. Material Atap Terluas :</string>
     <string name="text_kondisi_atap">2. Kondisi Atap :</string>
-    <string name="text_material_dinding_terluas">5. Material Dinding Terluas :</string>
-    <string name="text_kondisi_dinding">6. Kondisi Dinding :</string>
-    <string name="text_material_lantai_terluas">8. Material Lantai Terluas :</string>
-    <string name="text_kondisi_lantai">9. Kondisi Lantai :</string>
+    <string name="text_material_dinding_terluas">3. Material Dinding Terluas :</string>
+    <string name="text_kondisi_dinding">4. Kondisi Dinding :</string>
+    <string name="text_material_lantai_terluas">5. Material Lantai Terluas :</string>
+    <string name="text_kondisi_lantai">6. Kondisi Lantai :</string>
     <string name="ttile_hasil_survey">Hasil Survey</string>
     <string name="sub_title_pendataan_rumah_tidak_layak_huni">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_aplikasi_pendataan_nrumah_tidak_layak_huni">Survey Identifikasi Rumah Tidak Layak Huni</string>
