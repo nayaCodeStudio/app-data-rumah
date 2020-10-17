@@ -123,11 +123,22 @@
                     android:text="@string/title_identitas_penghuni_rumah"
                     android:textSize="@dimen/text_size_16" />
 
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_nomor_urut_rumah"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
                     app:boxCornerRadiusBottomEnd="@dimen/separator_size_10"
-                    app:boxCornerRadiusTopStart="@dimen/separator_size_10">
+                    app:boxCornerRadiusTopStart="@dimen/separator_size_10"
+                    app:hintEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoRumah"
@@ -137,6 +148,16 @@
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/nama_lengkap"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
@@ -152,6 +173,16 @@
                         android:inputType="textPersonName"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_usia_tahun"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
@@ -169,11 +200,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_pendidikan_terakhir"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -185,12 +218,13 @@
                     android:entries="@array/list_pendidikan_terakhir" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/jenis_kelamin"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -221,6 +255,16 @@
                         android:textAlignment="center" />
                 </com.google.android.material.chip.ChipGroup>
 
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_alamat_lengkap"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
@@ -236,12 +280,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/titik_koordinat_lokasi"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <LinearLayout
@@ -298,6 +343,16 @@
                     app:cornerRadius="@dimen/separator_size_10"
                     app:rippleColor="@android:color/white" />
 
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_nomor_ktp_nik"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
@@ -319,6 +374,16 @@
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
+                    android:text="@string/text_jumlah_kk_dalam_1_rumah"
+                    android:textColor="@color/bgBiru"
+                    android:textSize="@dimen/text_size_14" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextCustom"
                     android:layout_marginBottom="5dp"
@@ -335,12 +400,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_pekerjaan_utama"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -352,12 +418,13 @@
                     android:entries="@array/list_pekerjaan_utama" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -369,12 +436,13 @@
                     android:entries="@array/list_penghasilan" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_status_kepemilikan_tanah"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -386,12 +454,13 @@
                     android:entries="@array/list_status_tanah" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_status_kepemilikan_rumah"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -403,12 +472,13 @@
                     android:entries="@array/list_status_rumah" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_aset_rumah_ditempat_lain"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -441,12 +511,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_aset_tanah_ditempat_lain"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -479,12 +550,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -496,12 +568,13 @@
                     android:entries="@array/list_bantuan_perumahan" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/MyTemaH3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <CheckBox
