@@ -140,12 +140,13 @@
                     android:visibility="gone" />
 
                 <TextView
-                    android:id="@+id/text_pondasi"
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_pondasi"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -178,12 +179,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_kondisi_kolom_dan_balok"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -230,13 +232,13 @@
                 </LinearLayout>
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:fontFamily="@font/philosopher_bold"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_kondisi_konstruksi_atap"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner

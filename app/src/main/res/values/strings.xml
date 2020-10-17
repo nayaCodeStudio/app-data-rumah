@@ -74,9 +74,9 @@
     <string name="text_pernah_mendapatkan_bantuan_perumahan">16. Pernah Mendapatkan Bantuan Perumahan :</string>
     <string name="text_jenis_kawasan_lokasi_rumah_yang_ditempati">17. Jenis Kawasan Lokasi Rumah yang Ditempati :</string>
     <string name="title_kondisi_fisik_rumah_pada_aspek_keselamatan">Kondisi Fisik Rumah Pada Aspek Keselamatan</string>
-    <string name="text_pondasi">Pondasi :</string>
-    <string name="text_kondisi_kolom_dan_balok">Kondisi Kolom dan Balok :</string>
-    <string name="text_kondisi_konstruksi_atap">Kondisi Konstruksi Atap :</string>
+    <string name="text_pondasi">1. Pondasi :</string>
+    <string name="text_kondisi_kolom_dan_balok">2. Kondisi Kolom dan Balok :</string>
+    <string name="text_kondisi_konstruksi_atap">3. Kondisi Konstruksi Atap :</string>
     <string name="title_kondisi_fisik_rumah_pada_aspek_kesehatan">Kondisi Fisik Rumah Pada Aspek Kesehatan</string>
     <string name="text_jendela_lubang_cahaya">Jendela/Lubang Cahaya :</string>
     <string name="text_ventilasi">Ventilasi :</string>
