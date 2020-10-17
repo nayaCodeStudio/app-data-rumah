@@ -126,12 +126,13 @@
                     android:textSize="@dimen/text_size_16" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_jendela_lubang_cahaya"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -163,12 +164,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_ventilasi"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -200,12 +202,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -218,12 +221,13 @@
                     android:entries="@array/list_kepemilikan_kamar_mandi" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -255,12 +259,13 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_sumber_air_minum"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
@@ -273,12 +278,13 @@
                     android:entries="@array/list_sumber_air_minum" />
 
                 <TextView
+                    style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="@dimen/separator_size_4"
                     android:text="@string/text_sumber_listrik"
+                    android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
                 <Spinner
