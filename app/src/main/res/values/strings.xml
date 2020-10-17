@@ -54,17 +54,16 @@
     <string name="text_nama_provinsi">Nama Provinsi</string>
     <string name="text_tanggal_waktu_survey_tempat">Tanggal/Waktu Survey Tempat</string>
     <string name="title_identitas_penghuni_rumah">Identitas Penghuni Rumah</string>
-    <string name="text_nomor_urut_rumah">1. Nomor Urut Rumah</string>
-    <string name="text_nama_lengkap">Nama Lengkap</string>
-    <string name="text_usia_tahun">3. Usia (Tahun)</string>
+    <string name="text_nomor_urut_rumah">1. Nomor Urut Rumah :</string>
+    <string name="text_usia_tahun">3. Usia (Tahun) :</string>
     <string name="text_pendidikan_terakhir">4. Pendidikan Terakhir :</string>
-    <string name="text_jenis_kelamin">Jenis Kelamin</string>
+    <string name="text_jenis_kelamin">5. Jenis Kelamin</string>
     <string name="text_alamat_lengkap">6. Alamat Lengkap</string>
     <string name="text_foto_kondisi_atap_rumah_yang_disurvey">Foto Kondisi Atap Rumah Yang Disurvey :</string>
     <string name="text_foto_kondisi_dinding_rumah_yang_disurvey">Foto Kondisi Dinding Rumah Yang Disurvey :</string>
     <string name="text_foto_kondisi_lantai_rumah_yang_disurvey">Foto Kondisi Lantai Rumah Yang Disurvey :</string>
-    <string name="text_nomor_ktp_nik">8. Nomor KTP (NIK)</string>
-    <string name="text_jumlah_kk_dalam_1_rumah">9. Jumlah Kepala Keluarga dalam 1 Rumah</string>
+    <string name="text_nomor_ktp_nik">8. Nomor KTP (NIK) :</string>
+    <string name="text_jumlah_kk_dalam_1_rumah">9. Jumlah Kepala Keluarga dalam 1 Rumah :</string>
     <string name="text_pekerjaan_utama">10. Pekerjaan Utama :</string>
     <string name="text_penghasilan_atau_pengeluaran_perbulan">11. Penghasilan atau Pengeluaran Perbulan :</string>
     <string name="text_status_kepemilikan_tanah">12. Status Kepemilikan Tanah :</string>
@@ -84,10 +83,10 @@
     <string name="text_jarak_sumber_air_minum_ke_tpa_tinja">4. Jarak Sumber Air Minum ke TPA Tinja :</string>
     <string name="text_sumber_air_minum">5. Sumber Air Minum :</string>
     <string name="text_sumber_listrik">6. Sumber Listrik :</string>
-    <string name="title_aspek_persyaratan_luas_dan_kebutuhan_ruang">1. Aspek Persyaratan Luas dan Kebutuhan Ruang</string>
-    <string name="text_luas_rumah_meter_kubik">1. Luas Rumah (M²)</string>
-    <string name="text_jumlah_penghuni_orang">2. Jumlah Penghuni (Orang)</string>
-    <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal :</string>
+    <string name="title_aspek_persyaratan_luas_dan_kebutuhan_ruang">Aspek Persyaratan Luas dan Kebutuhan Ruang</string>
+    <string name="text_luas_rumah_meter_kubik">1. Luas Rumah (M²) :</string>
+    <string name="text_jumlah_penghuni_orang">2. Jumlah Penghuni (Orang) :</string>
+    <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal</string>
     <string name="text_material_atap_terluas">1. Material Atap Terluas :</string>
     <string name="text_kondisi_atap">2. Kondisi Atap :</string>
     <string name="text_material_dinding_terluas">3. Material Dinding Terluas :</string>
@@ -110,7 +109,7 @@
     <string name="title_halaman_register">Halaman Register</string>
     <string name="no_ktp">No. KTP</string>
     <string name="password">Password</string>
-    <string name="nama_lengkap">2. Nama Lengkap</string>
+    <string name="nama_lengkap">2. Nama Lengkap :</string>
     <string name="jenis_kelamin">5. Jenis Kelamin :</string>
     <string name="jk_pria">Pria</string>
     <string name="jk_wanita">Wanita</string>
@@ -152,6 +151,10 @@
     <string name="foto_kondisi_lantai">10. Foto Kondisi Lantai :</string>
     <string name="titik_koordinat_lokasi">7. Titik Koordinat Lokasi :</string>
     <string name="upload_image">Upload Image</string>
+    <string name="disurvey_oleh">disurvey oleh:</string>
+    <string name="dibuat_tanggal">dibuat tanggal:</string>
+    <string name="waktu_survey_tanggal_dan_jam">13 Sep 2020 08:00 AM</string>
+    <string name="detail_data_survey">Detail Data Survey</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>pilih</item>

@@ -37,6 +37,7 @@
             android:layout_marginEnd="@dimen/separator_size_10"
             android:text="Name"
             android:textSize="@dimen/text_size_15"
+            android:textColor="@color/bgBiru"
             card_view:layout_constraintBottom_toTopOf="@+id/txtNIK"
             card_view:layout_constraintEnd_toStartOf="@+id/view"
             card_view:layout_constraintStart_toEndOf="@+id/imageView"
@@ -102,7 +103,7 @@
             android:id="@+id/txtSurveyor"
             style="@style/MyTemaH4"
             android:layout_width="0dp"
-            android:text="di Survey Oleh:"
+            android:text="disurvey Oleh:"
             android:textSize="@dimen/text_size_11"
             card_view:layout_constraintEnd_toStartOf="@+id/view"
             card_view:layout_constraintStart_toStartOf="@+id/guideline12"
@@ -128,7 +129,5 @@
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </com.google.android.material.card.MaterialCardView>

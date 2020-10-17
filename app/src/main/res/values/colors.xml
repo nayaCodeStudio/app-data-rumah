@@ -11,4 +11,6 @@
     <color name="textColor2">#707070</color>
     <color name="bgOff">#C6C6C6</color>
     <color name="trans">#80FFFFFF</color>
+
+    <color name="spaceForm">#E5E5E5</color>
 </resources>

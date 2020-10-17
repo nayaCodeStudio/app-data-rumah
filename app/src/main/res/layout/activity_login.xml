@@ -79,28 +79,15 @@
 
         <ImageView
             android:id="@+id/logoApp"
-            android:layout_width="200dp"
-            android:layout_height="120dp"
+            android:layout_width="295dp"
+            android:layout_height="150dp"
             android:contentDescription="@string/imageview"
-            android:src="@drawable/logo_sirutlah_ii"
-            app:layout_constraintBottom_toTopOf="@+id/nameApp"
+            android:src="@drawable/logo_slpash_app"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline3"
             app:layout_constraintVertical_chainStyle="packed" />
-
-        <TextView
-            android:id="@+id/nameApp"
-            style="@style/MyTemaH4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_aplikasi_pendataan_nrumah_tidak_layak_huni"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size_13"
-            app:layout_constraintBottom_toTopOf="@+id/guideline"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logoApp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
