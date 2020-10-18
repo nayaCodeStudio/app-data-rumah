@@ -25,12 +25,12 @@ class LoginActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         myRef = database.getReference(Data.REGISTER_FORM)
 
-        binding.logoApp.setOnClickListener {
+ /*       binding.logoApp.setOnClickListener {
             val intentLoginActivity =
                 Intent(Intent(this, ResizePhotoActivity::class.java))
             startActivity(intentLoginActivity)
         }
-
+*/
         binding.textNomorKTP.setText("12345")
         binding.textPassword.setText("1")
 

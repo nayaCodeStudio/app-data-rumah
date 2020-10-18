@@ -66,6 +66,7 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding.pendidikanTerakhir.text = dataSurvey.pendidikan
         binding.jenisKelamin.text = dataSurvey.jenisKelamin
         binding.alamatLengkap.text = dataSurvey.almLengkp
+        binding.titikKoordinat.text = dataSurvey.titikKoordinat
         binding.nomorKTPDetail.text = dataSurvey.noKTP
         binding.jumlahKK.text = dataSurvey.jumlhKK
         binding.pekerjaanUtama.text = dataSurvey.pekerjaan
@@ -93,9 +94,5 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding.kondisiDinding.text = dataSurvey.konDinding
         binding.materialLantai.text = dataSurvey.matLantai
         binding.kondisiLantai.text = dataSurvey.konLantai
-        binding.namaDesa.text = dataSurvey.nameDesaKel
-        binding.namaKecamatan.text = dataSurvey.nameKec
-        binding.namaKabupaten.text = dataSurvey.nameKotaKab
-        binding.namaProvinsi.text = dataSurvey.nameProv
     }
 }

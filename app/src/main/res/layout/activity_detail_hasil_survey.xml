@@ -72,9 +72,9 @@
                 android:id="@+id/materialCardView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/separator_size_10"
                 app:cardCornerRadius="@dimen/separator_size_10"
                 app:cardElevation="4dp"
-                android:layout_margin="@dimen/separator_size_10"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,13 +84,14 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/separator_size_10">
 
                     <ImageView
                         android:id="@+id/logoSplash"
-                        android:layout_width="83dp"
+                        android:layout_width="80dp"
                         android:layout_height="53dp"
-                        android:layout_margin="15dp"
+                        android:layout_margin="@dimen/separator_size_10"
                         android:src="@drawable/logo_slpash_app"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -193,26 +194,14 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline12"
                         app:layout_constraintTop_toBottomOf="@+id/txtSurveyor" />
 
-                    <View
-                        android:id="@+id/view1"
-                        android:layout_width="0dp"
-                        android:layout_height="25dp"
-                        android:layout_marginStart="100dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="100dp"
-                        android:background="@drawable/ic_bottom_arrow"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tglInput" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:id="@+id/linearLayout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -229,9 +218,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
                     android:paddingTop="@dimen/separator_size_10"
+                    android:paddingStart="29dp"
+                    android:paddingEnd="29dp"
                     android:paddingBottom="@dimen/separator_size_10">
 
                     <TextView
@@ -244,10 +233,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_nomor_urut_rumah"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -262,10 +251,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nama_lengkap"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -280,10 +269,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_usia_tahun"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -298,10 +287,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_pendidikan_terakhir"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -316,10 +305,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jenis_kelamin"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -334,10 +323,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_alamat_lengkap"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -352,42 +341,42 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/titik_koordinat_lokasi"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/separator_size_10"
-                        android:gravity="center"
                         android:layout_marginBottom="5dp"
-                        android:orientation="horizontal" >
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="25dp"
-                            android:textAlignment="textStart"
                             android:layout_height="25dp"
                             android:layout_marginEnd="5dp"
-                            android:src="@drawable/ic_baseline_location_on_24" />
+                            android:src="@drawable/ic_baseline_location_on_24"
+                            android:textAlignment="textStart" />
 
                         <TextView
+                            android:id="@+id/titikKoordinat"
+                            style="@style/MyTemaH3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/isi_data"
-                            style="@style/MyTemaH3"
-                            android:textSize="@dimen/text_size_14"
-                            android:id="@+id/titikKoordinat"/>
+                            android:textSize="@dimen/text_size_14" />
                     </LinearLayout>
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_nomor_ktp_nik"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -402,10 +391,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jumlah_kk_dalam_1_rumah"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -420,10 +409,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_pekerjaan_utama"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -438,10 +427,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -456,10 +445,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_status_kepemilikan_tanah"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -474,10 +463,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_status_kepemilikan_rumah"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -492,10 +481,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_aset_rumah_ditempat_lain"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -510,10 +499,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_aset_tanah_ditempat_lain"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -528,10 +517,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -546,10 +535,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -574,9 +563,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:layout_marginBottom="@dimen/separator_size_10"
-                    android:paddingEnd="20dp">
+                    android:paddingStart="29dp"
+                    android:paddingEnd="29dp"
+                    android:paddingBottom="@dimen/separator_size_10">
 
                     <TextView
                         style="@style/MyTemaH1"
@@ -588,10 +577,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_pondasi"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -606,10 +595,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kondisi_kolom_dan_balok"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -658,10 +647,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kondisi_konstruksi_atap"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -720,9 +709,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:layout_marginBottom="@dimen/separator_size_10"
-                    android:paddingEnd="20dp">
+                    android:paddingStart="29dp"
+                    android:paddingEnd="29dp"
+                    android:paddingBottom="@dimen/separator_size_10">
 
                     <TextView
                         style="@style/MyTemaH1"
@@ -735,10 +724,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jendela_lubang_cahaya"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -753,10 +742,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_ventilasi"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -771,10 +760,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -789,10 +778,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -807,10 +796,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_sumber_air_minum"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -825,10 +814,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_sumber_listrik"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -853,9 +842,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:layout_marginBottom="@dimen/separator_size_10"
-                    android:paddingEnd="20dp" >
+                    android:paddingStart="29dp"
+                    android:paddingEnd="29dp"
+                    android:paddingBottom="@dimen/separator_size_10">
 
                     <TextView
                         style="@style/MyTemaH1"
@@ -868,10 +857,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_luas_rumah_meter_kubik"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -886,10 +875,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_jumlah_penghuni_orang"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -914,9 +903,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:layout_marginBottom="@dimen/separator_size_10">
+                    android:paddingStart="29dp"
+                    android:paddingEnd="29dp"
+                    android:paddingBottom="@dimen/separator_size_10">
 
                     <TextView
                         style="@style/MyTemaH1"
@@ -929,10 +918,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_material_atap_terluas"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -947,10 +936,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kondisi_atap"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -999,10 +988,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_material_dinding_terluas"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -1017,10 +1006,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kondisi_dinding"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -1069,10 +1058,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_material_lantai_terluas"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
@@ -1087,10 +1076,10 @@
 
                     <TextView
                         style="@style/MyTemaH3"
-                        android:textColor="@color/textColor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/text_kondisi_lantai"
+                        android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
                     <TextView
