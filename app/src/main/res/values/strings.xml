@@ -155,6 +155,21 @@
     <string name="dibuat_tanggal">dibuat tanggal:</string>
     <string name="waktu_survey_tanggal_dan_jam">13 Sep 2020 08:00 AM</string>
     <string name="detail_data_survey">Detail Data Survey</string>
+    <string name="fotoKondisiKolom1">fotoKondisiKolom1</string>
+    <string name="fotoKondisiKolom2">fotoKondisiKolom2</string>
+    <string name="fotoKondisiKolom3">fotoKondisiKolom3</string>
+    <string name="fotoKondisiKonstruksiAtap1">fotoKondisiKonstruksiAtap1</string>
+    <string name="fotoKondisiKonstruksiAtap2">fotoKondisiKonstruksiAtap2</string>
+    <string name="fotoKondisiKonstruksiAtap3">fotoKondisiKonstruksiAtap3</string>
+    <string name="fotoKondisiAtap1">fotoKondisiAtap1</string>
+    <string name="fotoKondisiAtap2">fotoKondisiAtap2</string>
+    <string name="fotoKondisiAtap3">fotoKondisiAtap3</string>
+    <string name="fotoKondisiDinding1">fotoKondisiDinding1</string>
+    <string name="fotoKondisiDinding2">fotoKondisiDinding2</string>
+    <string name="fotoKondisiDinding3">fotoKondisiDinding3</string>
+    <string name="fotoKondisiLantai1">fotoKondisiLantai1</string>
+    <string name="fotoKondisiLantai2">fotoKondisiLantai2</string>
+    <string name="fotoKondisiLantai3">fotoKondisiLantai3</string>
 
     <string-array name="list_pendidikan_terakhir">
         <item>pilih</item>

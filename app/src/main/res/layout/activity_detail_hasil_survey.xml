@@ -623,6 +623,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKolom1"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -632,6 +633,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKolom2"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -641,6 +643,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKolom3"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
                     </LinearLayout>
@@ -675,6 +678,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKonstruksiAtap1"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -684,6 +688,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKonstruksiAtap2"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -693,6 +698,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiKonstruksiAtap3"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
                     </LinearLayout>
@@ -963,6 +969,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
+                            android:contentDescription="@string/fotoKondisiAtap1"
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
@@ -973,6 +980,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiAtap2"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -982,6 +990,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiAtap3"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
                     </LinearLayout>
@@ -1034,6 +1043,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiDinding1"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -1043,6 +1053,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiDinding2"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
 
@@ -1052,6 +1063,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiDinding3"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
                     </LinearLayout>
@@ -1105,6 +1117,7 @@
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
+                            android:contentDescription="@string/fotoKondisiLantai1"
                             android:src="@drawable/ic_add_photo" />
 
                         <ImageView
@@ -1114,6 +1127,7 @@
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
+                            android:contentDescription="@string/fotoKondisiLantai2"
                             android:src="@drawable/ic_add_photo" />
 
                         <ImageView
@@ -1122,6 +1136,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/separator_size_10"
                             android:layout_weight="1"
+                            android:contentDescription="@string/fotoKondisiLantai3"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_add_photo" />
                     </LinearLayout>

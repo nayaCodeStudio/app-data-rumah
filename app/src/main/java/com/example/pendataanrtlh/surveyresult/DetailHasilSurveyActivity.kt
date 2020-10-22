@@ -1,10 +1,13 @@
 package com.example.pendataanrtlh.surveyresult
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.example.pendataanrtlh.databinding.ActivityDetailHasilSurveyBinding
 import com.example.pendataanrtlh.model.FormDataSurvey
 import com.example.pendataanrtlh.utils.Data
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.database.*
 
 class DetailHasilSurveyActivity : AppCompatActivity() {
@@ -18,6 +21,8 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         const val TGL_INPUT = "tgl_input"
         const val NAMA_SURVEYOR = "nama_surveyor"
         const val NIK_SURVEYOR = "nik_surveyor"
+        const val URL_IMAGE =
+            "https://firebasestorage.googleapis.com/v0/b/kuisoneranri.appspot.com/o/gambar%2Fform3_1_5555.jpg?alt=media&token=34e3f818-9129-4e65-ae91-f43e6d59e4fe"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,17 +30,90 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding = ActivityDetailHasilSurveyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        with(binding) {
+            /**Manggil Foto Kondisi Kolom**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKolom1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKolom2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKolom3)
+
+            /**Manggil Foto Kondisi Konstruksi Atap**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKonstruksiAtap1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKonstruksiAtap2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiKonstruksiAtap3)
+
+            /**Manggil Foto Kondisi Atap**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiAtap1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiAtap2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiAtap3)
+
+            /**Manggil Foto Kondisi Dinding**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiDinding1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiDinding2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiDinding3)
+
+            /**Manggil Foto Kondisi Lantai**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiLantai1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiLantai2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load(URL_IMAGE)
+                .into(fotoKondisiLantai3)
+
+            fotoKondisiKolom1.setOnClickListener {
+                dialogShow()
+            }
+        }
+
         database = FirebaseDatabase.getInstance()
         val namaUser = intent.getStringExtra(NAMA_USER).toString()
         val nikUser = intent.getStringExtra(NIK_USER).toString()
-        val tglInput = intent.getStringExtra(TGL_INPUT).toString()
-        val namaSurveyor = intent.getStringExtra(NAMA_SURVEYOR).toString()
+        val tgInput = intent.getStringExtra(TGL_INPUT).toString()
+        val nmSurveyor = intent.getStringExtra(NAMA_SURVEYOR).toString()
         val nikSurveyor = intent.getStringExtra(NIK_SURVEYOR).toString()
 
-        binding.namaLengkap.text = namaUser
-        binding.nomorKTP.text = nikUser
-        binding.tglInput.text = tglInput
-        binding.namaSurveyor.text = namaSurveyor
+        with(binding) {
+            namaLengkap.text = namaUser
+            nomorKTP.text = nikUser
+            tglInput.text = tgInput
+            namaSurveyor.text = nmSurveyor
+        }
 
         onGetData(nikUser)
 
@@ -57,6 +135,7 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
             }
 
         })
+
     }
 
     private fun onShowData(dataSurvey: FormDataSurvey) {
@@ -94,5 +173,27 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding.kondisiDinding.text = dataSurvey.konDinding
         binding.materialLantai.text = dataSurvey.matLantai
         binding.kondisiLantai.text = dataSurvey.konLantai
+    }
+
+    private fun dialogShow(){
+        MaterialAlertDialogBuilder(this)
+            .setTitle("Title")
+            .setMessage("Lorem")
+//            .setView(
+//                Glide.with(this@DetailHasilSurveyActivity)
+//                    .load(URL_IMAGE)
+//                    .into(fotoKondisiLantai3)
+//            )
+
+            .setNeutralButton("Cancel") { dialog, which ->
+                // Respond to neutral button press
+            }
+            .setNegativeButton("Decline") { dialog, which ->
+                // Respond to negative button press
+            }
+            .setPositiveButton("Accept") { dialog, which ->
+                // Respond to positive button press
+            }
+            .show()
     }
 }
