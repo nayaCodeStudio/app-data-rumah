@@ -48,7 +48,7 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         }
 
         onGetData(nikUser)
-        onGetURLPhotos("3452166488554538")
+        onGetURLPhotos(nikUser)
 
         binding.backArrow.setOnClickListener {
             finish()
