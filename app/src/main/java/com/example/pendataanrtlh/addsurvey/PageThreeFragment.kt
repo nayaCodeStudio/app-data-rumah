@@ -84,12 +84,14 @@ class PageThreeFragment : Fragment() {
     }
 
     private fun setupClickListener() {
-        binding.fotoKondisiKolom1.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_1) }
-        binding.fotoKondisiKolom2.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_2) }
-        binding.fotoKondisiKolom3.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_3) }
-        binding.fotoKondisiKonstruksiAtap1.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_4) }
-        binding.fotoKondisiKonstruksiAtap2.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_5) }
-        binding.fotoKondisiKonstruksiAtap3.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_6) }
+        with(binding) {
+            fotoKondisiKolom1.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_1) }
+            fotoKondisiKolom2.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_2) }
+            fotoKondisiKolom3.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_3) }
+            fotoKondisiKonstruksiAtap1.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_4) }
+            fotoKondisiKonstruksiAtap2.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_5) }
+            fotoKondisiKonstruksiAtap3.setOnClickListener { chooseImageMulti(PICK_IMAGE_REQUEST_6) }
+        }
     }
 
     private fun chooseImageMulti(requestCode: Int) {
@@ -192,7 +194,11 @@ class PageThreeFragment : Fragment() {
                                 )
                                 val file = Uri.fromFile(compressedImage)
                                 uploadImageDua(file, "form3_${requestCode}_$noKTPUser")
-                                binding.fotoKondisiKonstruksiAtap1.setImageBitmap(loadBitmap(compressedImage))
+                                binding.fotoKondisiKonstruksiAtap1.setImageBitmap(
+                                    loadBitmap(
+                                        compressedImage
+                                    )
+                                )
                             }
                         }
                     } catch (e: IOException) {
@@ -217,7 +223,11 @@ class PageThreeFragment : Fragment() {
                                 )
                                 val file = Uri.fromFile(compressedImage)
                                 uploadImageDua(file, "form3_${requestCode}_$noKTPUser")
-                                binding.fotoKondisiKonstruksiAtap2.setImageBitmap(loadBitmap(compressedImage))
+                                binding.fotoKondisiKonstruksiAtap2.setImageBitmap(
+                                    loadBitmap(
+                                        compressedImage
+                                    )
+                                )
                             }
                         }
                     } catch (e: IOException) {
@@ -242,7 +252,11 @@ class PageThreeFragment : Fragment() {
                                 )
                                 val file = Uri.fromFile(compressedImage)
                                 uploadImageDua(file, "form3_${requestCode}_$noKTPUser")
-                                binding.fotoKondisiKonstruksiAtap3.setImageBitmap(loadBitmap(compressedImage))
+                                binding.fotoKondisiKonstruksiAtap3.setImageBitmap(
+                                    loadBitmap(
+                                        compressedImage
+                                    )
+                                )
                             }
                         }
                     } catch (e: IOException) {
@@ -270,12 +284,14 @@ class PageThreeFragment : Fragment() {
                 storageRef.downloadUrl.addOnSuccessListener {
                     databaseKonf.child(nameImage).setValue(it.toString())
                     binding.progressBar.visibility = View.GONE
-                    Toast.makeText(requireContext(), "Add Image Successfully", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Add Image Successfully", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
             .addOnFailureListener {
                 binding.progressBar.visibility = View.GONE
-                Toast.makeText(requireContext(), "Info File : ${it.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Info File : ${it.message}", Toast.LENGTH_SHORT)
+                    .show()
             }.addOnProgressListener { taskSnapshot ->
                 binding.progressBar.visibility = View.VISIBLE
                 val progress = 100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount

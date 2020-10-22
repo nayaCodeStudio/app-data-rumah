@@ -28,6 +28,18 @@ class PageSixFragment : Fragment() {
     private lateinit var myRef: DatabaseReference
     private lateinit var myRef1: DatabaseReference
 
+    companion object {
+        private const val PICK_IMAGE_REQUEST_1 = 1
+        private const val PICK_IMAGE_REQUEST_2 = 2
+        private const val PICK_IMAGE_REQUEST_3 = 3
+        private const val PICK_IMAGE_REQUEST_4 = 4
+        private const val PICK_IMAGE_REQUEST_5 = 5
+        private const val PICK_IMAGE_REQUEST_6 = 6
+        private const val PICK_IMAGE_REQUEST_7 = 7
+        private const val PICK_IMAGE_REQUEST_8 = 8
+        private const val PICK_IMAGE_REQUEST_9 = 9
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,7 +47,6 @@ class PageSixFragment : Fragment() {
         binding = FragmentPageSixBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -129,5 +140,14 @@ class PageSixFragment : Fragment() {
                 Toast.makeText(context, "Harap diisi dahulu!", Toast.LENGTH_SHORT).show()
             }
         }
+
+        setupClickListener()
+    }
+
+    private fun setupClickListener() {
+        binding.fotoKondisiAtap1
+        binding.fotoKondisiAtap2
+        binding.fotoKondisiAtap3
+        binding
     }
 }
