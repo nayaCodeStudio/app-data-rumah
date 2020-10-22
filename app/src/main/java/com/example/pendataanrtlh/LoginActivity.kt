@@ -7,16 +7,17 @@ import android.widget.Toast
 import com.example.pendataanrtlh.databinding.ActivityLoginBinding
 import com.example.pendataanrtlh.model.RegisterForm
 import com.example.pendataanrtlh.utils.Data
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.database.*
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
+    private lateinit var myRef1: DatabaseReference
     private lateinit var inUser: String
     private lateinit var inPassword: String
-    private var strUser: String? = "12345"
-    private var admPass: String? = "adminrtlh"
+    private var versi: String? = "beta"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,44 +26,66 @@ class LoginActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         myRef = database.getReference(Data.REGISTER_FORM)
 
- /*       binding.logoApp.setOnClickListener {
-            val intentLoginActivity =
-                Intent(Intent(this, ResizePhotoActivity::class.java))
-            startActivity(intentLoginActivity)
-        }
-*/
+        /*       binding.logoApp.setOnClickListener {
+                   val intentLoginActivity =
+                       Intent(Intent(this, ResizePhotoActivity::class.java))
+                   startActivity(intentLoginActivity)
+               }
+       */
         binding.textNomorKTP.setText("12345")
         binding.textPassword.setText("1")
+        onLock()
 
-        binding.btnLogin.setOnClickListener {
-            inUser = binding.textNomorKTP.text.toString().trim { it <= ' ' }
-            inPassword = binding.textPassword.text.toString().trim { it <= ' ' }
+//        binding.btnLogin.setOnLongClickListener {
+//            if (inUser == strUser && inPassword == admPass) {
+//                val intent = Intent(this, RegisterActivity::class.java)
+//                startActivity(intent)
+//                Toast.makeText(this@LoginActivity, "Login berhasil!", Toast.LENGTH_SHORT)
+//                    .show()
+//            }
+//            true
+//        }
+    }
 
-            var inputKosong = false
-            when {
-                inUser.isEmpty() -> {
-                    inputKosong = true
-                    binding.textNomorKTP.error = getString(R.string.msg_error_empty)
+    private fun onLock() {
+        myRef1 = database.getReference("versiKode")
+        myRef1.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val versionCode = snapshot.getValue(String::class.java)
+                if (versi == versionCode) {
+                    onShowDialog()
                 }
-                inPassword.isEmpty() -> {
-                    inputKosong = true
-                    binding.textPassword.error = getString(R.string.msg_error_empty)
+                binding.btnLogin.setOnClickListener {
+                    if (versi == versionCode) {
+                        onShowDialog()
+                    } else {
+                        inUser = binding.textNomorKTP.text.toString().trim { it <= ' ' }
+                        inPassword = binding.textPassword.text.toString().trim { it <= ' ' }
+
+                        var inputKosong = false
+                        when {
+                            inUser.isEmpty() -> {
+                                inputKosong = true
+                                binding.textNomorKTP.error = getString(R.string.msg_error_empty)
+                            }
+                            inPassword.isEmpty() -> {
+                                inputKosong = true
+                                binding.textPassword.error = getString(R.string.msg_error_empty)
+                            }
+                        }
+                        if (!inputKosong) {
+                            onGetData(inUser, inPassword)
+                        }
+                    }
                 }
             }
-            if (!inputKosong) {
-                onGetData(inUser, inPassword)
-            }
-        }
 
-        binding.btnLogin.setOnLongClickListener {
-            if (inUser == strUser && inPassword == admPass) {
-                val intent = Intent(this, RegisterActivity::class.java)
-                startActivity(intent)
-                Toast.makeText(this@LoginActivity, "Login berhasil!", Toast.LENGTH_SHORT)
-                    .show()
+            override fun onCancelled(error: DatabaseError) {
+
             }
-            true
-        }
+
+        })
+
     }
 
     private fun onGetData(inUser: String, inPassword: String) {
@@ -91,5 +114,16 @@ class LoginActivity : AppCompatActivity() {
 
             }
         })
+    }
+
+    private fun onShowDialog() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle("Peringatan!")
+            .setMessage("Aplikasi Anda tidak bisa diakses")
+
+            .setPositiveButton("Ya") { _, _ ->
+                finish()
+            }
+            .show()
     }
 }
