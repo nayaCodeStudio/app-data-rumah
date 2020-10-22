@@ -1,14 +1,16 @@
 package com.example.pendataanrtlh.surveyresult
 
-import android.R
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.example.pendataanrtlh.R
 import com.example.pendataanrtlh.databinding.ActivityDetailHasilSurveyBinding
 import com.example.pendataanrtlh.model.FormDataSurvey
 import com.example.pendataanrtlh.utils.Data
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.item_view_foto.view.*
 
 class DetailHasilSurveyActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailHasilSurveyBinding
@@ -22,84 +24,14 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         const val NAMA_SURVEYOR = "nama_surveyor"
         const val NIK_SURVEYOR = "nik_surveyor"
         const val URL_IMAGE =
-            "https://firebasestorage.googleapis.com/v0/b/kuisoneranri.appspot.com/o/gambar%2Fform3_1_5555.jpg?alt=media&token=34e3f818-9129-4e65-ae91-f43e6d59e4fe"
+            "https://firebasestorage.googleapis.com/v0/b/kuisoneranri.appspot.com/o/gambar%2F"
+        const val KEY_IMAGE = ".jpg?alt=media&token=34e3f818-9129-4e65-ae91-f43e6d59e4fe"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailHasilSurveyBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        with(binding) {
-            /**Manggil Foto Kondisi Kolom**/
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKolom1)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKolom2)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKolom3)
-
-            /**Manggil Foto Kondisi Konstruksi Atap**/
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKonstruksiAtap1)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKonstruksiAtap2)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiKonstruksiAtap3)
-
-            /**Manggil Foto Kondisi Atap**/
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiAtap1)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiAtap2)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiAtap3)
-
-            /**Manggil Foto Kondisi Dinding**/
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiDinding1)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiDinding2)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiDinding3)
-
-            /**Manggil Foto Kondisi Lantai**/
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiLantai1)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiLantai2)
-
-            Glide.with(this@DetailHasilSurveyActivity)
-                .load(URL_IMAGE)
-                .into(fotoKondisiLantai3)
-
-            fotoKondisiKolom1.setOnClickListener {
-                dialogShow()
-            }
-        }
 
         database = FirebaseDatabase.getInstance()
         val namaUser = intent.getStringExtra(NAMA_USER).toString()
@@ -116,9 +48,144 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         }
 
         onGetData(nikUser)
+        onGetURLPhotos("3452166488554538")
 
         binding.backArrow.setOnClickListener {
             finish()
+        }
+    }
+
+    private fun onGetURLPhotos(nikUser: String) {
+
+        with(binding) {
+            /**Manggil Foto Kondisi Kolom**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_1_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKolom1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_2_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKolom2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_3_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKolom3)
+
+            /**Manggil Foto Kondisi Konstruksi Atap**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_4_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKonstruksiAtap1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_5_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKonstruksiAtap2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form3_6_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiKonstruksiAtap3)
+
+            /**Manggil Foto Kondisi Atap**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_1_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiAtap1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_2_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiAtap2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_3_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiAtap3)
+
+            /**Manggil Foto Kondisi Dinding**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_4_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiDinding1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_5_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiDinding2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_6_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiDinding3)
+
+            /**Manggil Foto Kondisi Lantai**/
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_7_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiLantai1)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_8_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiLantai2)
+
+            Glide.with(this@DetailHasilSurveyActivity)
+                .load("${URL_IMAGE}form6_9_$nikUser$KEY_IMAGE")
+                .placeholder(R.drawable.ic_add_photo)
+                .into(fotoKondisiLantai3)
+        }
+
+        with(binding) {
+            fotoKondisiKolom1.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_1_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiKolom2.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_2_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiKolom3.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_3_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiKonstruksiAtap1.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_4_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiKonstruksiAtap2.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_5_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiKonstruksiAtap3.setOnClickListener {
+                dialogShow("${URL_IMAGE}form3_6_$nikUser$KEY_IMAGE")
+            }
+
+            fotoKondisiAtap1.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_1_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiAtap2.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_2_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiAtap3.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_3_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiDinding1.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_4_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiDinding2.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_5_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiDinding3.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_6_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiLantai1.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_7_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiLantai2.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_8_$nikUser$KEY_IMAGE")
+            }
+            fotoKondisiLantai3.setOnClickListener {
+                dialogShow("${URL_IMAGE}form6_9_$nikUser$KEY_IMAGE")
+            }
         }
     }
 
@@ -175,25 +242,15 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         binding.kondisiLantai.text = dataSurvey.konLantai
     }
 
-    private fun dialogShow(){
-        MaterialAlertDialogBuilder(this)
-            .setTitle("Title")
-            .setMessage("Lorem")
-//            .setView(
-//                Glide.with(this@DetailHasilSurveyActivity)
-//                    .load(URL_IMAGE)
-//                    .into(fotoKondisiLantai3)
-//            )
+    private fun dialogShow(imageURL: String) {
+        val mDialogView = LayoutInflater.from(this).inflate(R.layout.item_view_foto, null)
 
-            .setNeutralButton("Cancel") { dialog, which ->
-                // Respond to neutral button press
-            }
-            .setNegativeButton("Decline") { dialog, which ->
-                // Respond to negative button press
-            }
-            .setPositiveButton("Accept") { dialog, which ->
-                // Respond to positive button press
-            }
+        Glide.with(this)
+            .load(imageURL)
+            .into(mDialogView.fotoView)
+
+        MaterialAlertDialogBuilder(this)
+            .setView(mDialogView)
             .show()
     }
 }

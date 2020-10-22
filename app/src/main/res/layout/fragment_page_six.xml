@@ -114,6 +114,16 @@
                 app:layout_constraintBottom_toTopOf="@+id/btnNext"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
+
                 <TextView
                     style="@style/MyTemaH2"
                     android:layout_gravity="center"
@@ -196,16 +206,6 @@
                         android:src="@drawable/ic_add_photo" />
                 </LinearLayout>
 
-                <ProgressBar
-                    android:id="@+id/progressBarKondisiAtap"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:max="100"
-                    android:progress="0"
-                    android:visibility="gone" />
-
                 <TextView
                     style="@style/MyTemaH3"
                     android:layout_width="wrap_content"
@@ -276,16 +276,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/ic_add_photo" />
                 </LinearLayout>
-
-                <ProgressBar
-                    android:id="@+id/progressBarKondisiDinding"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:max="100"
-                    android:progress="0"
-                    android:visibility="gone" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -358,15 +348,6 @@
                         android:src="@drawable/ic_add_photo" />
                 </LinearLayout>
 
-                <ProgressBar
-                    android:id="@+id/progressBarKondisiLantai"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:max="100"
-                    android:progress="0"
-                    android:visibility="gone" />
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton

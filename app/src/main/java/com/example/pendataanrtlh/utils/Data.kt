@@ -10,6 +10,7 @@ object Data {
     const val USER_DATA = "userData"
 
     const val DATA_SURVEY = "DataSurvey"
+    const val UPLOAD_FOTO = "uploadFoto"
     const val DATA_SURVEYOR = "DataSurveyor"
 
     //Fragment One
