@@ -24,7 +24,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var inPassword: String
     private lateinit var countDownTimer: CountDownTimer
 
-    //    private var timeValue: Long = 1
     private var beta: String? = "beta"
     private var trial: String? = "trial"
     private var full: String? = "full"
