@@ -50,8 +50,6 @@
         app:layout_constraintGuide_percent="0.95" />
 
     <View
-
-
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:background="@drawable/logo_ruhui"
@@ -244,11 +242,11 @@
 
     <TextView
         android:id="@+id/nameInstansi"
-        style="@style/MyTemaH4"
+        style="@style/MyTemaH2"
         android:layout_width="wrap_content"
         android:text="@string/text_foot_title"
         android:textAlignment="center"
-        android:textSize="@dimen/text_size_12"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

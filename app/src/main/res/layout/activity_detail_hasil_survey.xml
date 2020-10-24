@@ -92,7 +92,7 @@
                         android:layout_width="80dp"
                         android:layout_height="53dp"
                         android:layout_margin="@dimen/separator_size_10"
-                        android:src="@drawable/logo_slpash_app"
+                        android:src="@drawable/ic_sahrulah"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 

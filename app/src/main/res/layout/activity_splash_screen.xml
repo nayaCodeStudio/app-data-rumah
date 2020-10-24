@@ -12,7 +12,7 @@
         android:layout_height="186dp"
         android:layout_margin="50dp"
         android:contentDescription="@string/imageview"
-        android:src="@drawable/logo_slpash_app"
+        android:src="@drawable/ic_sahrulah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,26 +20,42 @@
 
     <TextView
         android:id="@+id/nameInstansi"
-        style="@style/MyTemaH4"
+        style="@style/MyTemaH2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/separator_size_4"
-        android:text="@string/sub_kementrian_pekerjaan_umum_dan_perumahan_rakyat_ndirektorat_jendral_penyediaan_rumah_ndirektorat_rumah_swadaya"
+        android:text="@string/text_foot_title"
         android:textAlignment="center"
-        android:textSize="@dimen/text_size_11"
-        app:layout_constraintBottom_toTopOf="@+id/versiApp"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toTopOf="@+id/groupVersiApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/versiApp"
-        style="@style/MyTemaH4"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/separator_size_16"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_11"
+        android:orientation="horizontal"
+        android:id="@+id/groupVersiApp"
+        android:layout_marginBottom="@dimen/separator_size_4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <TextView
+            style="@style/MyTemaH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versi App "
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:id="@+id/versiApp"
+            style="@style/MyTemaH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

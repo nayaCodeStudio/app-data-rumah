@@ -82,7 +82,7 @@
             android:layout_width="295dp"
             android:layout_height="150dp"
             android:contentDescription="@string/imageview"
-            android:src="@drawable/logo_slpash_app"
+            android:src="@drawable/ic_sahrulah"
             app:layout_constraintBottom_toTopOf="@+id/materialCardView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -200,6 +200,18 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.91" />
+
+        <TextView
+            style="@style/MyTemaH2"
+            android:layout_width="wrap_content"
+            android:text="@string/text_foot_title"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.384" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

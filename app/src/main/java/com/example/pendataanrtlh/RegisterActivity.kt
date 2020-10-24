@@ -26,12 +26,12 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun setData() {
         binding.btnRegister.setOnClickListener {
-            val inEmailAddress = binding.textEmail.text.toString().trim { it <= ' ' }
+            val inEmailAddress = binding.alamatEmail.text.toString().trim { it <= ' ' }
             val inPassword = binding.textPassword.text.toString().trim { it <= ' ' }
             val inFullName = binding.textFullName.text.toString().trim { it <= ' ' }
             val inNoKTP = binding.textNomorKTP.text.toString().trim { it <= ' ' }
-            val inNoHp = binding.textNomorHP.text.toString().trim { it <= ' ' }
-            val inAddress = binding.textAlamat.text.toString().trim { it <= ' ' }
+            val inNoHp = binding.nomorHP.text.toString().trim { it <= ' ' }
+            val inAddress = binding.textAddress.text.toString().trim { it <= ' ' }
 
             val inJenisKelamin = if (binding.chipPria.isChecked) {
                 "Pria"
@@ -43,7 +43,7 @@ class RegisterActivity : AppCompatActivity() {
             when {
                 inEmailAddress.isEmpty() -> {
                     inputKosong = true
-                    binding.textEmail.error = getString(R.string.msg_error_empty)
+                    binding.alamatEmail.error = getString(R.string.msg_error_empty)
                 }
                 inPassword.isEmpty() -> {
                     inputKosong = true
@@ -59,11 +59,11 @@ class RegisterActivity : AppCompatActivity() {
                 }
                 inNoHp.isEmpty() -> {
                     inputKosong = true
-                    binding.textNomorHP.error = getString(R.string.msg_error_empty)
+                    binding.nomorHP.error = getString(R.string.msg_error_empty)
                 }
                 inAddress.isEmpty() -> {
                     inputKosong = true
-                    binding.textAlamat.error = getString(R.string.msg_error_empty)
+                    binding.textAddress.error = getString(R.string.msg_error_empty)
                 }
             }
             if (!inputKosong) {
