@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_material_atap_terluas"
+                    android:text="@string/title_roofing_material"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kondisi_atap"
+                    android:text="@string/title_roof_condition"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -212,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_material_dinding_terluas"
+                    android:text="@string/title_wall_material"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -230,7 +230,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kondisi_dinding"
+                    android:text="@string/title_wall_condition"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -283,7 +283,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_material_lantai_terluas"
+                    android:text="@string/title_floor_material"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -301,7 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kondisi_lantai"
+                    android:text="@string/title_floor_condition"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 

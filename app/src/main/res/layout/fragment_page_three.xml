@@ -145,7 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_pondasi"
+                    android:text="@string/title_foundation"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -184,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kondisi_kolom_dan_balok"
+                    android:text="@string/title_construction_conditions"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -237,7 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kondisi_konstruksi_atap"
+                    android:text="@string/title_roof_construction_conditions"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 

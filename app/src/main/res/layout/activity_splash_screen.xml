@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".SplashScreenActivity">
 
     <ImageView
@@ -12,7 +13,7 @@
         android:layout_height="186dp"
         android:layout_margin="50dp"
         android:contentDescription="@string/imageview"
-        android:src="@drawable/ic_sahrulah"
+        android:src="@drawable/ic_new_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

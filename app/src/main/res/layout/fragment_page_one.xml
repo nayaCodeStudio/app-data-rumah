@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="@dimen/separator_size_4"
-                android:text="@string/title_no_des_kel"
+                android:text="@string/title_des_kel"
                 android:textColor="@color/bgBiru"
                 android:textSize="@dimen/text_size_14" />
 
@@ -138,7 +138,7 @@
                     android:id="@+id/textDesKel"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="@string/title_des_kel"
+                    android:hint="@string/title_hint_des_kel"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -149,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="@dimen/separator_size_4"
-                android:text="@string/title_no_kec"
+                android:text="@string/title_kec"
                 android:textColor="@color/bgBiru"
                 android:textSize="@dimen/text_size_14" />
 
@@ -164,7 +164,7 @@
                     android:id="@+id/textKec"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="@string/title_kec"
+                    android:hint="@string/title_hint_kec"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="@dimen/separator_size_4"
-                android:text="@string/title_no_KotKab"
+                android:text="@string/title_kot_kab"
                 android:textColor="@color/bgBiru"
                 android:textSize="@dimen/text_size_14" />
 
@@ -190,7 +190,7 @@
                     android:id="@+id/textKotKab"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="@string/title_KotKab"
+                    android:hint="@string/title_hint_kot_kab"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="@dimen/separator_size_4"
-                android:text="@string/title_no_prov"
+                android:text="@string/title_prov"
                 android:textColor="@color/bgBiru"
                 android:textSize="@dimen/text_size_14" />
 
@@ -216,7 +216,7 @@
                     android:id="@+id/textProv"
                     style="@style/MyTemaH3"
                     android:layout_height="50dp"
-                    android:hint="@string/title_prov"
+                    android:hint="@string/title_hint_prov"
                     android:inputType="text"
                     android:textSize="@dimen/text_size_14" />
             </com.google.android.material.textfield.TextInputLayout>

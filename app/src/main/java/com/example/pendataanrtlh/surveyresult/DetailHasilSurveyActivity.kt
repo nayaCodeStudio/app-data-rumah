@@ -38,7 +38,7 @@ class DetailHasilSurveyActivity : AppCompatActivity() {
         val nikUser = intent.getStringExtra(NIK_USER).toString()
         val tgInput = intent.getStringExtra(TGL_INPUT).toString()
         val nmSurveyor = intent.getStringExtra(NAMA_SURVEYOR).toString()
-        val nikSurveyor = intent.getStringExtra(NIK_SURVEYOR).toString()
+//        val nikSurveyor = intent.getStringExtra(NIK_SURVEYOR).toString()
 
         with(binding) {
             namaLengkap.text = namaUser

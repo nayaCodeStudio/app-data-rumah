@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">e-SARULAH</string>
+    <string name="app_name">datarumah</string>
     <string name="action_search">Search</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -7,25 +7,73 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="imageview">imageView</string>
-    <string name="msg_error_empty">Wajib Diisi</string>
-    <string name="title_des_kel">Desa / Kelurahan</string>
-    <string name="title_no_des_kel">1. Desa / Kelurahan</string>
-    <string name="title_kec">Kecamatan</string>
-    <string name="title_no_kec">2. Kecamatan</string>
-    <string name="title_KotKab">Kabupaten/Kota</string>
-    <string name="title_no_KotKab">3. Kabupaten/Kota</string>
-    <string name="title_prov">Provinsi</string>
-    <string name="title_no_prov">4. Provinsi</string>
-    <string name="title_lokasi_survey">Lokasi Tempat yang Disurvei</string>
+    <!--Title page-->
     <string name="title_page_off_1">1 dari 6 Halaman</string>
     <string name="title_page_off_2">2 dari 6 Halaman</string>
     <string name="title_page_off_3">3 dari 6 Halaman</string>
     <string name="title_page_off_4">4 dari 6 Halaman</string>
     <string name="title_page_off_5">5 dari 6 Halaman</string>
     <string name="title_page_off_6">6 dari 6 Halaman</string>
+    <!--end title page-->
+    <!--first page texts-->
+    <string name="title_des_kel">1. Desa / Kelurahan</string>
+    <string name="hint_des_kel">Desa / Kelurahan</string>
+    <string name="title_kec">2. Kecamatan</string>
+    <string name="hint_kec">Kecamatan</string>
+    <string name="title_kot_kab">3. Kabupaten/Kota</string>
+    <string name="hint_kot_kab">Kabupaten/Kota</string>
+    <string name="title_prov">4. Provinsi</string>
+    <string name="hint_prov">Provinsi</string>
+    <!--end first page texts-->
+    <!--second page texts-->
+    <string name="title_house_num">1. Nomor Urut Rumah :</string>
+    <string name="title_full_name">2. Nama Lengkap :</string>
+    <string name="title_age">3. Usia (Tahun) :</string>
+    <string name="title_last_education">4. Pendidikan Terakhir :</string>
+    <string name="title_sex">5. Jenis Kelamin :</string>
+    <string name="title_full_address">6. Alamat Lengkap :</string>
+    <string name="title_coordinates_point">7. Titik Koordinat Lokasi :</string>
+    <string name="hint_coordinates_point">Tentukan Koordinat Lokasi</string>
+    <string name="title_ktp_nik_number">8. Nomor KTP (NIK) :</string>
+    <string name="title_num_of_families_in_house">9. Jumlah Kepala Keluarga dalam 1 Rumah :</string>
+    <string name="title_main_work">10. Pekerjaan Utama :</string>
+    <string name="title_monthly_income_or_expenses">11. Penghasilan atau Pengeluaran Perbulan :</string>
+    <string name="title_land_ownership_status">12. Status Kepemilikan Tanah :</string>
+    <string name="title_house_ownership_status">13. Status Kepemilikan Rumah :</string>
+    <string name="title_home_assets_elsewhere">14. Aset Rumah Ditempat Lain :</string>
+    <string name="title_land_assets_elsewhere">15. Aset Tanah Ditempat Lain :</string>
+    <string name="title_housing_donation">16. Pernah Mendapatkan Bantuan Perumahan :</string>
+    <string name="title_area_type">17. Jenis Kawasan Lokasi Rumah yang Ditempati :</string>
+    <!--end second page texts-->
+    <!--page third page texts-->
+    <string name="title_foundation">1. Pondasi :</string>
+    <string name="title_construction_conditions">2. Kondisi Kolom dan Balok :</string>
+    <string name="title_roof_construction_conditions">3. Kondisi Konstruksi Atap :</string>
+    <!--end third page texts-->
+    <!--page fourth page texts-->
+    <string name="title_windows_or_light_holes">1. Jendela/Lubang Cahaya :</string>
+    <string name="title_ventilation">2. Ventilasi :</string>
+    <string name="title_bathroom_ownership">3. Kepemilikan Kamar Mandi dan Jamban :</string>
+    <string name="title_water_source_distance">4. Jarak Sumber Air Minum ke TPA Tinja :</string>
+    <string name="title_source_of_drinking_water">5. Sumber Air Minum :</string>
+    <string name="title_electric_source">6. Sumber Listrik :</string>
+    <!--end fourth page texts-->
+    <!--page fifth page texts-->
+    <string name="title_full_house_area">1. Luas Rumah (M²) :</string>
+    <string name="title_number_of_occupants">2. Jumlah Penghuni (Orang) :</string>
+    <!--end fifth page texts-->
+    <!--page sixth page texts-->
+    <string name="title_roofing_material">1. Material Atap Terluas :</string>
+    <string name="title_roof_condition">2. Kondisi Atap :</string>
+    <string name="title_wall_material">3. Material Dinding Terluas :</string>
+    <string name="title_wall_condition">4. Kondisi Dinding :</string>
+    <string name="title_floor_material">5. Material Lantai Terluas :</string>
+    <string name="title_floor_condition">6. Kondisi Lantai :</string>
+    <!--end sixth page texts-->
+
+    <string name="imageview">imageView</string>
+    <string name="msg_error_empty">Wajib Diisi</string>
+    <string name="title_lokasi_survey">Lokasi Tempat yang Disurvei</string>
     <string name="kurang_dari"><![CDATA[< 10 Meter]]></string>
     <string name="lebih_dari"><![CDATA[> 10 Meter]]></string>
     <string name="title_succes_survey">Terimakasih telah melakukan survey.</string>
@@ -37,62 +85,26 @@
     <string name="sub_title_detail_page_hasil_survey">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_identitas_surveyor">Identitas Surveyor</string>
     <string name="text_nama_surveyor">Nama Surveyor</string>
-    <string name="isi_nama_surveyor">-</string>
+    <string name="isi_data">-</string>
     <string name="text_email_surveyor">Email Surveyor</string>
-    <string name="isi_email_surveyor">-</string>
     <string name="text_no_hp_surveyor">No. HP</string>
     <string name="isi_no_hp_surveyor">-</string>
     <string name="text_no_ktp">No. KTP</string>
-    <string name="isi_no_ktp">-</string>
     <string name="text_alamat_surveyor">Alamat</string>
-    <string name="isi_alamat_surveyor">-</string>
     <string name="text_lokasi_tempat_yang_disurvey">Lokasi Tempat yang Disurvey</string>
     <string name="text_nama_desa_kelurahan">Nama Desa/Kelurahan</string>
-    <string name="isi_data">-</string>
     <string name="text_nama_kecamatan">Nama Kecamatan</string>
     <string name="text_nama_kabupaten_kota">Nama Kabupaten/Kota</string>
     <string name="text_nama_provinsi">Nama Provinsi</string>
     <string name="text_tanggal_waktu_survey_tempat">Tanggal/Waktu Survey Tempat</string>
     <string name="title_identitas_penghuni_rumah">Identitas Penghuni Rumah</string>
-    <string name="text_nomor_urut_rumah">1. Nomor Urut Rumah :</string>
-    <string name="text_usia_tahun">3. Usia (Tahun) :</string>
-    <string name="text_pendidikan_terakhir">4. Pendidikan Terakhir :</string>
-    <string name="text_jenis_kelamin">5. Jenis Kelamin</string>
-    <string name="text_alamat_lengkap">6. Alamat Lengkap</string>
     <string name="text_foto_kondisi_atap_rumah_yang_disurvey">Foto Kondisi Atap Rumah Yang Disurvey :</string>
     <string name="text_foto_kondisi_dinding_rumah_yang_disurvey">Foto Kondisi Dinding Rumah Yang Disurvey :</string>
     <string name="text_foto_kondisi_lantai_rumah_yang_disurvey">Foto Kondisi Lantai Rumah Yang Disurvey :</string>
-    <string name="text_nomor_ktp_nik">8. Nomor KTP (NIK) :</string>
-    <string name="text_jumlah_kk_dalam_1_rumah">9. Jumlah Kepala Keluarga dalam 1 Rumah :</string>
-    <string name="text_pekerjaan_utama">10. Pekerjaan Utama :</string>
-    <string name="text_penghasilan_atau_pengeluaran_perbulan">11. Penghasilan atau Pengeluaran Perbulan :</string>
-    <string name="text_status_kepemilikan_tanah">12. Status Kepemilikan Tanah :</string>
-    <string name="text_status_kepemilikan_rumah">13. Status Kepemilikan Rumah :</string>
-    <string name="text_aset_rumah_ditempat_lain">14. Aset Rumah Ditempat Lain :</string>
-    <string name="text_aset_tanah_ditempat_lain">15. Aset Tanah Ditempat Lain :</string>
-    <string name="text_pernah_mendapatkan_bantuan_perumahan">16. Pernah Mendapatkan Bantuan Perumahan :</string>
-    <string name="text_jenis_kawasan_lokasi_rumah_yang_ditempati">17. Jenis Kawasan Lokasi Rumah yang Ditempati :</string>
     <string name="title_kondisi_fisik_rumah_pada_aspek_keselamatan">Kondisi Fisik Rumah Pada Aspek Keselamatan</string>
-    <string name="text_pondasi">1. Pondasi :</string>
-    <string name="text_kondisi_kolom_dan_balok">2. Kondisi Kolom dan Balok :</string>
-    <string name="text_kondisi_konstruksi_atap">3. Kondisi Konstruksi Atap :</string>
     <string name="title_kondisi_fisik_rumah_pada_aspek_kesehatan">Kondisi Fisik Rumah Pada Aspek Kesehatan</string>
-    <string name="text_jendela_lubang_cahaya">1. Jendela/Lubang Cahaya :</string>
-    <string name="text_ventilasi">2. Ventilasi :</string>
-    <string name="text_kepemilikan_kamar_mandi_dan_jamban">3. Kepemilikan Kamar Mandi dan Jamban :</string>
-    <string name="text_jarak_sumber_air_minum_ke_tpa_tinja">4. Jarak Sumber Air Minum ke TPA Tinja :</string>
-    <string name="text_sumber_air_minum">5. Sumber Air Minum :</string>
-    <string name="text_sumber_listrik">6. Sumber Listrik :</string>
     <string name="title_aspek_persyaratan_luas_dan_kebutuhan_ruang">Aspek Persyaratan Luas dan Kebutuhan Ruang</string>
-    <string name="text_luas_rumah_meter_kubik">1. Luas Rumah (M²) :</string>
-    <string name="text_jumlah_penghuni_orang">2. Jumlah Penghuni (Orang) :</string>
     <string name="title_aspek_komponen_bahan_bangunan_sesuai_konteks_lokal">Aspek Komponen Bahan Bangunan Sesuai Konteks Lokal</string>
-    <string name="text_material_atap_terluas">1. Material Atap Terluas :</string>
-    <string name="text_kondisi_atap">2. Kondisi Atap :</string>
-    <string name="text_material_dinding_terluas">3. Material Dinding Terluas :</string>
-    <string name="text_kondisi_dinding">4. Kondisi Dinding :</string>
-    <string name="text_material_lantai_terluas">5. Material Lantai Terluas :</string>
-    <string name="text_kondisi_lantai">6. Kondisi Lantai :</string>
     <string name="ttile_hasil_survey">Hasil Survey</string>
     <string name="sub_title_pendataan_rumah_tidak_layak_huni">Identifikasi Rumah Tidak Layak Huni</string>
     <string name="title_aplikasi_pendataan_nrumah_tidak_layak_huni">Survey Identifikasi Rumah Tidak Layak Huni</string>
@@ -105,12 +117,10 @@
     <string name="text_aplikasi_pendataan_rumah_tidak_layak_huni">Aplikasi Survey Identifikasi Rumah Tidak Layak Huni</string>
     <string name="text_button_survey">Survey\nSekarang</string>
     <string name="text_button_hasil_survey">Hasil\nSurvey</string>
-    <string name="text_foot_title">Kementrian Pekerjaan Umum</string>
+    <string name="text_foot_title">Demo Aplikasi Pendataan Rumah</string>
     <string name="title_halaman_register">Halaman Register</string>
     <string name="no_ktp">No. KTP</string>
     <string name="password">Password</string>
-    <string name="nama_lengkap">2. Nama Lengkap :</string>
-    <string name="jenis_kelamin">5. Jenis Kelamin :</string>
     <string name="jk_pria">Pria</string>
     <string name="jk_wanita">Wanita</string>
     <string name="no_hp_aktif">No. HP Aktif</string>
@@ -149,7 +159,7 @@
     <string name="foto_kondisi_dinding">7. Foto Kondisi Dinding :</string>
     <string name="ambil_foto_dinding">Ambil Foto Dinding</string>
     <string name="foto_kondisi_lantai">10. Foto Kondisi Lantai :</string>
-    <string name="titik_koordinat_lokasi">7. Titik Koordinat Lokasi :</string>
+
     <string name="upload_image">Upload Image</string>
     <string name="disurvey_oleh">disurvey oleh:</string>
     <string name="dibuat_tanggal">dibuat tanggal:</string>
@@ -170,8 +180,10 @@
     <string name="fotoKondisiLantai1">fotoKondisiLantai1</string>
     <string name="fotoKondisiLantai2">fotoKondisiLantai2</string>
     <string name="fotoKondisiLantai3">fotoKondisiLantai3</string>
+    <string name="title_anonime">Anonime</string>
 
-    <string-array name="list_pendidikan_terakhir">
+    <!--list page two-->
+    <string-array name="list_last_education">
         <item>pilih</item>
         <item>Tidak Punya Ijazah</item>
         <item>SD/Sederajat</item>
@@ -182,7 +194,7 @@
         <item>Lainnya</item>
     </string-array>
 
-    <string-array name="list_pekerjaan_utama">
+    <string-array name="list_main_work">
         <item>pilih</item>
         <item>PNS</item>
         <item>TNI/POLRI</item>
@@ -202,7 +214,7 @@
         <item>Lainnya</item>
     </string-array>
 
-    <string-array name="list_penghasilan">
+    <string-array name="list_income">
         <item>pilih</item>
         <item>Kurang dari 1,2 juta</item>
         <item>1,9 – 2,1 juta</item>
@@ -213,26 +225,27 @@
         <item>Lebih dari 4,2 juta</item>
     </string-array>
 
-    <string-array name="list_status_tanah">
+    <string-array name="list_land_ownership_status">
         <item>pilih</item>
         <item>Milik Sendiri</item>
         <item>Bukan Milik Sendiri</item>
         <item>Tanah Negara</item>
     </string-array>
 
-    <string-array name="list_status_rumah">
+    <string-array name="list_house_ownership_status">
         <item>pilih</item>
         <item>Milik Sendiri</item>
         <item>Kontrak/Sewa</item>
         <item>Bukan Milik Sendiri</item>
     </string-array>
 
-    <string-array name="list_bantuan_perumahan">
+    <string-array name="list_housing_donation">
         <item>pilih</item>
         <item>Ya, Lebih dari 5 Tahun yang Lalu</item>
         <item>Ya, Kurang dari 5 Tahun yang Lalu</item>
         <item>Belum Pernah</item>
     </string-array>
+    <!--end list page two-->
 
     <string-array name="list_kondisi_kolom">
         <item>pilih</item>

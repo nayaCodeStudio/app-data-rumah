@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_nomor_urut_rumah"
+                    android:text="@string/title_house_num"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -144,7 +144,7 @@
                         android:id="@+id/textNoRumah"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/text_nomor_urut_rumah"
+                        android:hint="@string/title_house_num"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/nama_lengkap"
+                    android:text="@string/title_full_name"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -170,7 +170,7 @@
                         android:id="@+id/textNmLengkap"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/nama_lengkap"
+                        android:hint="@string/title_full_name"
                         android:inputType="textPersonName"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -181,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_usia_tahun"
+                    android:text="@string/title_age"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -196,7 +196,7 @@
                         android:id="@+id/textUsia"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/text_usia_tahun"
+                        android:hint="@string/title_age"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -207,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_pendidikan_terakhir"
+                    android:text="@string/title_last_education"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -217,7 +217,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_pendidikan_terakhir" />
+                    android:entries="@array/list_last_education" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -225,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/jenis_kelamin"
+                    android:text="@string/title_sex"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -263,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_alamat_lengkap"
+                    android:text="@string/title_full_address"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -277,7 +277,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textAlmtLengkap"
                         style="@style/MyTemaH3"
-                        android:hint="@string/text_alamat_lengkap"
+                        android:hint="@string/title_full_address"
                         android:inputType="textMultiLine"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -288,7 +288,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/titik_koordinat_lokasi"
+                    android:text="@string/title_coordinates_point"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -299,12 +299,14 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/imageview"
                         android:src="@drawable/ic_baseline_location_on_24"
                         android:textAlignment="textStart" />
 
@@ -337,7 +339,7 @@
                     android:letterSpacing="0"
                     android:paddingTop="@dimen/separator_size_8"
                     android:paddingBottom="@dimen/separator_size_8"
-                    android:text="Tentukan Koordinat Lokasi"
+                    android:text="@string/hint_coordinates_point"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/text_size_16"
@@ -352,7 +354,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_nomor_ktp_nik"
+                    android:text="@string/title_ktp_nik_number"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -365,10 +367,6 @@
                     app:counterMaxLength="16"
                     app:hintEnabled="false">
 
-                    <!--                    android:clickable="false"-->
-                    <!--                    android:cursorVisible="false"-->
-                    <!--                    android:focusable="false"-->
-                    <!--                    android:focusableInTouchMode="false"-->
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/textNoKTP"
                         style="@style/MyTemaH3"
@@ -384,7 +382,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_jumlah_kk_dalam_1_rumah"
+                    android:text="@string/title_num_of_families_in_house"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -399,7 +397,7 @@
                         android:id="@+id/textJumKK"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/text_jumlah_kk_dalam_1_rumah"
+                        android:hint="@string/title_num_of_families_in_house"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -410,7 +408,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_pekerjaan_utama"
+                    android:text="@string/title_main_work"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -420,7 +418,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_pekerjaan_utama" />
+                    android:entries="@array/list_main_work" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -428,7 +426,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
+                    android:text="@string/title_monthly_income_or_expenses"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -438,7 +436,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_penghasilan" />
+                    android:entries="@array/list_income" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -446,7 +444,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_status_kepemilikan_tanah"
+                    android:text="@string/title_land_ownership_status"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -456,7 +454,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_status_tanah" />
+                    android:entries="@array/list_land_ownership_status" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -464,7 +462,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_status_kepemilikan_rumah"
+                    android:text="@string/title_house_ownership_status"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -474,7 +472,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_status_rumah" />
+                    android:entries="@array/list_house_ownership_status" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -482,7 +480,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_aset_rumah_ditempat_lain"
+                    android:text="@string/title_home_assets_elsewhere"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -521,7 +519,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_aset_tanah_ditempat_lain"
+                    android:text="@string/title_land_assets_elsewhere"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -560,7 +558,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
+                    android:text="@string/title_housing_donation"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -570,7 +568,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:entries="@array/list_bantuan_perumahan" />
+                    android:entries="@array/list_housing_donation" />
 
                 <TextView
                     style="@style/MyTemaH3"
@@ -578,7 +576,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
+                    android:text="@string/title_area_type"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 

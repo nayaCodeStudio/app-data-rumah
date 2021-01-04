@@ -46,17 +46,6 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.95" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/logo_ruhui"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toTopOf="@+id/guideline5"
-            android:contentDescription="@string/imageview" />
-
         <View
             android:id="@+id/view7"
             android:layout_width="0dp"
@@ -82,7 +71,7 @@
             android:layout_width="295dp"
             android:layout_height="150dp"
             android:contentDescription="@string/imageview"
-            android:src="@drawable/ic_sahrulah"
+            android:src="@drawable/ic_new_logo"
             app:layout_constraintBottom_toTopOf="@+id/materialCardView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

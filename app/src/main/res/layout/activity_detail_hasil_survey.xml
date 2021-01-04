@@ -92,7 +92,7 @@
                         android:layout_width="80dp"
                         android:layout_height="53dp"
                         android:layout_margin="@dimen/separator_size_10"
-                        android:src="@drawable/ic_sahrulah"
+                        android:src="@drawable/ic_new_logo"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -136,7 +136,7 @@
                         style="@style/MyTemaH4"
                         android:layout_width="0dp"
                         android:layout_marginEnd="@dimen/separator_size_10"
-                        android:text="0123456789"
+                        android:text=""
                         android:textSize="@dimen/text_size_13"
                         app:layout_constraintBottom_toBottomOf="@+id/txtNIK"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -188,7 +188,7 @@
                         style="@style/MyTemaH2"
                         android:layout_width="0dp"
                         android:layout_marginEnd="@dimen/separator_size_10"
-                        android:text="Andi Chairunnas"
+                        android:text="@string/title_anonime"
                         android:textSize="@dimen/text_size_12"
                         app:layout_constraintEnd_toEndOf="@+id/txtSurveyor"
                         app:layout_constraintStart_toStartOf="@+id/guideline12"
@@ -235,7 +235,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_nomor_urut_rumah"
+                        android:text="@string/title_house_num"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -253,7 +253,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/nama_lengkap"
+                        android:text="@string/title_full_name"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -271,7 +271,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_usia_tahun"
+                        android:text="@string/title_age"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -289,7 +289,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_pendidikan_terakhir"
+                        android:text="@string/title_last_education"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -307,7 +307,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jenis_kelamin"
+                        android:text="@string/title_sex"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -325,7 +325,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_alamat_lengkap"
+                        android:text="@string/title_full_address"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -343,7 +343,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/titik_koordinat_lokasi"
+                        android:text="@string/title_coordinates_point"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -360,7 +360,8 @@
                             android:layout_height="25dp"
                             android:layout_marginEnd="5dp"
                             android:src="@drawable/ic_baseline_location_on_24"
-                            android:textAlignment="textStart" />
+                            android:textAlignment="textStart"
+                            android:contentDescription="@string/imageview" />
 
                         <TextView
                             android:id="@+id/titikKoordinat"
@@ -375,7 +376,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_nomor_ktp_nik"
+                        android:text="@string/title_ktp_nik_number"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -393,7 +394,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jumlah_kk_dalam_1_rumah"
+                        android:text="@string/title_num_of_families_in_house"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -411,7 +412,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_pekerjaan_utama"
+                        android:text="@string/title_main_work"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -429,7 +430,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_penghasilan_atau_pengeluaran_perbulan"
+                        android:text="@string/title_monthly_income_or_expenses"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -447,7 +448,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_status_kepemilikan_tanah"
+                        android:text="@string/title_land_ownership_status"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -465,7 +466,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_status_kepemilikan_rumah"
+                        android:text="@string/title_house_ownership_status"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -483,7 +484,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_aset_rumah_ditempat_lain"
+                        android:text="@string/title_home_assets_elsewhere"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -501,7 +502,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_aset_tanah_ditempat_lain"
+                        android:text="@string/title_land_assets_elsewhere"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -519,7 +520,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_pernah_mendapatkan_bantuan_perumahan"
+                        android:text="@string/title_housing_donation"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -537,7 +538,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jenis_kawasan_lokasi_rumah_yang_ditempati"
+                        android:text="@string/title_area_type"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -579,7 +580,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_pondasi"
+                        android:text="@string/title_foundation"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -597,7 +598,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kondisi_kolom_dan_balok"
+                        android:text="@string/title_construction_conditions"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -652,7 +653,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kondisi_konstruksi_atap"
+                        android:text="@string/title_roof_construction_conditions"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -732,7 +733,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jendela_lubang_cahaya"
+                        android:text="@string/title_windows_or_light_holes"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -750,7 +751,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_ventilasi"
+                        android:text="@string/title_ventilation"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -768,7 +769,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
+                        android:text="@string/title_bathroom_ownership"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -786,7 +787,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
+                        android:text="@string/title_water_source_distance"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -804,7 +805,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_sumber_air_minum"
+                        android:text="@string/title_source_of_drinking_water"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -822,7 +823,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_sumber_listrik"
+                        android:text="@string/title_electric_source"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -865,7 +866,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_luas_rumah_meter_kubik"
+                        android:text="@string/title_full_house_area"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -883,7 +884,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_jumlah_penghuni_orang"
+                        android:text="@string/title_number_of_occupants"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -926,7 +927,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_material_atap_terluas"
+                        android:text="@string/title_roofing_material"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -944,7 +945,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kondisi_atap"
+                        android:text="@string/title_roof_condition"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -999,7 +1000,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_material_dinding_terluas"
+                        android:text="@string/title_wall_material"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -1017,7 +1018,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kondisi_dinding"
+                        android:text="@string/title_wall_condition"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -1072,7 +1073,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_material_lantai_terluas"
+                        android:text="@string/title_floor_material"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 
@@ -1090,7 +1091,7 @@
                         style="@style/MyTemaH3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_kondisi_lantai"
+                        android:text="@string/title_floor_condition"
                         android:textColor="@color/textColor2"
                         android:textSize="@dimen/text_size_12" />
 

@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_luas_rumah_meter_kubik"
+                    android:text="@string/title_full_house_area"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -145,7 +145,7 @@
                         android:id="@+id/textLuasRumah"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/text_luas_rumah_meter_kubik"
+                        android:hint="@string/title_full_house_area"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_jumlah_penghuni_orang"
+                    android:text="@string/title_number_of_occupants"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -171,7 +171,7 @@
                         android:id="@+id/textJumPenghuni"
                         style="@style/MyTemaH3"
                         android:layout_height="50dp"
-                        android:hint="@string/text_jumlah_penghuni_orang"
+                        android:hint="@string/title_number_of_occupants"
                         android:inputType="number"
                         android:textSize="@dimen/text_size_14" />
                 </com.google.android.material.textfield.TextInputLayout>

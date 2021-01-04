@@ -19,11 +19,11 @@ class AddSurveyActivity : AppCompatActivity() {
             .setTitle("Peringatan!")
             .setMessage("Apakah anda akan keluar dari survey?")
 
-            .setNegativeButton("Batal") { dialog, which ->
+            .setNegativeButton("Batal") { _, _ ->
                 null
             }
 
-            .setPositiveButton("Ya") { dialog, which ->
+            .setPositiveButton("Ya") { _, _ ->
 //                super.onBackPressed()
                 finish()
             }

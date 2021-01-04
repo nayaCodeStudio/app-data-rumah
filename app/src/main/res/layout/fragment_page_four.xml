@@ -105,9 +105,8 @@
             <LinearLayout
                 android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
                 android:orientation="vertical"
                 android:paddingStart="24dp"
                 android:paddingEnd="24dp"
@@ -131,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_jendela_lubang_cahaya"
+                    android:text="@string/title_windows_or_light_holes"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -169,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_ventilasi"
+                    android:text="@string/title_ventilation"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -207,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_kepemilikan_kamar_mandi_dan_jamban"
+                    android:text="@string/title_bathroom_ownership"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -226,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_jarak_sumber_air_minum_ke_tpa_tinja"
+                    android:text="@string/title_water_source_distance"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -264,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_sumber_air_minum"
+                    android:text="@string/title_source_of_drinking_water"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 
@@ -283,7 +282,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="@dimen/separator_size_4"
-                    android:text="@string/text_sumber_listrik"
+                    android:text="@string/title_electric_source"
                     android:textColor="@color/bgBiru"
                     android:textSize="@dimen/text_size_14" />
 

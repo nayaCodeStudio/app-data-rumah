@@ -80,25 +80,25 @@ class HasilSurveyActivity : AppCompatActivity() {
         })
     }
 
-    private fun onShowTime() {
-        val thread = object : Thread() {
-            override fun run() {
-                try {
-                    while (!isInterrupted) {
-                        sleep(1000)
-                        runOnUiThread {
-                            val date = System.currentTimeMillis()
-                            val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
-                            val dateString = sdf.format(date)
-//                            Data.tglInput = dateString
-                        }
-                    }
-                } catch (e: InterruptedException) {
-                }
-            }
-        }
-        thread.start()
-    }
+//    private fun onShowTime() {
+//        val thread = object : Thread() {
+//            override fun run() {
+//                try {
+//                    while (!isInterrupted) {
+//                        sleep(1000)
+//                        runOnUiThread {
+//                            val date = System.currentTimeMillis()
+//                            val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+//                            val dateString = sdf.format(date)
+////                            Data.tglInput = dateString
+//                        }
+//                    }
+//                } catch (e: InterruptedException) {
+//                }
+//            }
+//        }
+//        thread.start()
+//    }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
